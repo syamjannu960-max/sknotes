@@ -6,6 +6,7 @@ import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues } from "./schemas";
 import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from "./firebase";
+import { getCourseBySlug } from "./data";
 
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
@@ -30,11 +31,15 @@ export async function updateCourse(id: string, values: CourseFormValues) {
             return { success: false, error: "Course ID is required for an update." };
         }
         const courseRef = doc(db, "courses", id);
-        const updatedCourse = { name: values.name, slug: slugify(values.name) };
+        const newSlug = slugify(values.name);
+        const updatedCourse = { name: values.name, slug: newSlug };
         await updateDoc(courseRef, updatedCourse);
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        revalidatePath(`/courses/${updatedCourse.slug}`);
+        const course = await getCourseBySlug(newSlug);
+        if (course) {
+            revalidatePath(`/courses/${course.slug}`);
+        }
         return { success: true, data: updatedCourse };
     } catch (error: any) {
         console.error("Error updating course: ", error);
