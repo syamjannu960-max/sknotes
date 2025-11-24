@@ -18,8 +18,9 @@ export async function addCourse(values: CourseFormValues) {
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
         return { success: true, data: newCourse };
-    } catch (error) {
-        return { success: false, error: "Failed to add course." };
+    } catch (error: any) {
+        console.error("Error adding course: ", error);
+        return { success: false, error: `Failed to add course: ${error.message}` };
     }
 }
 
@@ -35,8 +36,9 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         revalidatePath("/courses");
         revalidatePath(`/courses/${updatedCourse.slug}`);
         return { success: true, data: updatedCourse };
-    } catch (error) {
-        return { success: false, error: "Failed to update course." };
+    } catch (error: any) {
+        console.error("Error updating course: ", error);
+        return { success: false, error: `Failed to update course: ${error.message}` };
     }
 }
 
@@ -46,8 +48,9 @@ export async function deleteCourse(id: string) {
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
         return { success: true };
-    } catch (error) {
-        return { success: false, error: "Failed to delete course." };
+    } catch (error: any) {
+        console.error("Error deleting course: ", error);
+        return { success: false, error: `Failed to delete course: ${error.message}` };
     }
 }
 
@@ -59,8 +62,9 @@ export async function addSemester(values: SemesterFormValues) {
         await addDoc(collection(db, "semesters"), newSemester);
         revalidatePath("/admin/semesters");
         return { success: true, data: newSemester };
-    } catch (error) {
-        return { success: false, error: "Failed to add semester." };
+    } catch (error: any) {
+        console.error("Error adding semester: ", error);
+        return { success: false, error: `Failed to add semester: ${error.message}` };
     }
 }
 
@@ -71,8 +75,9 @@ export async function updateSemester(id: string, values: SemesterFormValues) {
         await updateDoc(semesterRef, updatedSemester);
         revalidatePath("/admin/semesters");
         return { success: true, data: updatedSemester };
-    } catch (error) {
-        return { success: false, error: "Failed to update semester." };
+    } catch (error: any) {
+        console.error("Error updating semester: ", error);
+        return { success: false, error: `Failed to update semester: ${error.message}` };
     }
 }
 
@@ -81,8 +86,9 @@ export async function deleteSemester(id: string) {
         await deleteDoc(doc(db, "semesters", id));
         revalidatePath("/admin/semesters");
         return { success: true };
-    } catch (error) {
-        return { success: false, error: "Failed to delete semester." };
+    } catch (error: any) {
+        console.error("Error deleting semester: ", error);
+        return { success: false, error: `Failed to delete semester: ${error.message}` };
     }
 }
 
@@ -96,8 +102,9 @@ export async function addChapter(values: ChapterFormValues) {
         await addDoc(collection(db, "chapters"), newChapter);
         revalidatePath("/admin/chapters");
         return { success: true, data: newChapter };
-    } catch (error) {
-        return { success: false, error: "Failed to add chapter." };
+    } catch (error: any) {
+        console.error("Error adding chapter: ", error);
+        return { success: false, error: `Failed to add chapter: ${error.message}` };
     }
 }
 
@@ -111,8 +118,9 @@ export async function updateChapter(id: string, values: ChapterFormValues) {
         await updateDoc(chapterRef, updatedChapter);
         revalidatePath("/admin/chapters");
         return { success: true, data: updatedChapter };
-    } catch (error) {
-        return { success: false, error: "Failed to update chapter." };
+    } catch (error: any) {
+        console.error("Error updating chapter: ", error);
+        return { success: false, error: `Failed to update chapter: ${error.message}` };
     }
 }
 
@@ -121,8 +129,9 @@ export async function deleteChapter(id: string) {
         await deleteDoc(doc(db, "chapters", id));
         revalidatePath("/admin/chapters");
         return { success: true };
-    } catch (error) {
-        return { success: false, error: "Failed to delete chapter." };
+    } catch (error: any) {
+        console.error("Error deleting chapter: ", error);
+        return { success: false, error: `Failed to delete chapter: ${error.message}` };
     }
 }
 
@@ -136,8 +145,9 @@ export async function addUnit(values: UnitFormValues) {
         await addDoc(collection(db, "units"), newUnit);
         revalidatePath("/admin/units");
         return { success: true, data: newUnit };
-    } catch (error) {
-        return { success: false, error: "Failed to add unit." };
+    } catch (error: any) {
+        console.error("Error adding unit: ", error);
+        return { success: false, error: `Failed to add unit: ${error.message}` };
     }
 }
 
@@ -151,8 +161,9 @@ export async function updateUnit(id: string, values: UnitFormValues) {
         await updateDoc(unitRef, updatedUnit);
         revalidatePath("/admin/units");
         return { success: true, data: updatedUnit };
-    } catch (error) {
-        return { success: false, error: "Failed to update unit." };
+    } catch (error: any) {
+        console.error("Error updating unit: ", error);
+        return { success: false, error: `Failed to update unit: ${error.message}` };
     }
 }
 
@@ -161,7 +172,8 @@ export async function deleteUnit(id: string) {
         await deleteDoc(doc(db, "units", id));
         revalidatePath("/admin/units");
         return { success: true };
-    } catch (error) {
-        return { success: false, error: "Failed to delete unit." };
+    } catch (error: any) {
+        console.error("Error deleting unit: ", error);
+        return { success: false, error: `Failed to delete unit: ${error.message}` };
     }
 }
