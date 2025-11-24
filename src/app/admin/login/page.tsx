@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useFormState } from "react-dom";
 import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -9,48 +9,36 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { BookOpen, Loader2 } from 'lucide-react';
 import Link from 'next/link';
+import { handleAdminLogin } from "@/lib/actions";
+import { useEffect } from "react";
 
-// NOTE: This is a mock login. In a real app, you would use Firebase Auth.
-async function signIn(email: string) {
-    // Mock sign in. In a real app, this would be:
-    // await signInWithEmailAndPassword(auth, email, password);
-    console.log(`Signing in with ${email}`);
-    if (email.endsWith('@admin.com')) {
-      // In a real app, the session/cookie would be set by Firebase automatically or via a server action
-      return { success: true };
-    }
-    return { success: false, error: "Invalid credentials. Use an email ending in @admin.com" };
-}
-
+const initialState = {
+    success: false,
+    message: "",
+};
 
 export default function AdminLoginPage() {
     const router = useRouter();
     const { toast } = useToast();
-    const [email, setEmail] = useState('admin@admin.com');
-    const [password, setPassword] = useState('password');
-    const [isLoading, setIsLoading] = useState(false);
+    const [state, formAction] = useFormState(handleAdminLogin, initialState);
 
-    const handleLogin = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsLoading(true);
-
-        const result = await signIn(email);
-        
-        if (result.success) {
+    useEffect(() => {
+        if (state.success) {
             toast({
                 title: "Login Successful",
                 description: "Redirecting to dashboard...",
             });
-            router.push('/admin/courses');
-        } else {
+            // Use router.replace to avoid the login page being in the history
+            router.replace('/admin/courses');
+        } else if (state.message) {
             toast({
                 variant: "destructive",
                 title: "Login Failed",
-                description: result.error || "An unknown error occurred.",
+                description: state.message,
             });
-            setIsLoading(false);
         }
-    };
+    }, [state, router, toast]);
+
 
     return (
         <div className="flex min-h-screen items-center justify-center bg-muted/40">
@@ -69,38 +57,35 @@ export default function AdminLoginPage() {
                     <CardDescription>Enter your credentials to access the admin panel</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form onSubmit={handleLogin} className="space-y-4">
+                    <form action={formAction} className="space-y-4">
                         <div className="space-y-2">
-                            <Label htmlFor="email">Email</Label>
+                            <Label htmlFor="username">Username</Label>
                             <Input
-                                id="email"
-                                type="email"
-                                placeholder="admin@example.com"
+                                id="username"
+                                name="username"
+                                type="text"
+                                placeholder="admin"
                                 required
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                disabled={isLoading}
+                                defaultValue="admin"
                             />
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="password">Password</Label>
                             <Input
                                 id="password"
+                                name="password"
                                 type="password"
                                 required
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                disabled={isLoading}
+                                defaultValue="password"
                             />
                         </div>
-                        <Button type="submit" className="w-full" disabled={isLoading}>
-                            {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                            {isLoading ? 'Signing in...' : 'Sign In'}
+                        <Button type="submit" className="w-full">
+                           Sign In
                         </Button>
                     </form>
                 </CardContent>
                  <CardFooter>
-                    <p className="text-xs text-muted-foreground text-center w-full">This is a mock login. Use any email ending with <span className="font-semibold text-primary">@admin.com</span>.</p>
+                    <p className="text-xs text-muted-foreground text-center w-full">Enter your admin username and password. For this demo, a user with username 'admin' and password 'password' is expected.</p>
                 </CardFooter>
             </Card>
         </div>

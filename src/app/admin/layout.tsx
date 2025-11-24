@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { BookOpen, Book, GraduationCap, Library, FileText, LogOut, PanelLeft, Home } from "lucide-react";
-
 import {
   SidebarProvider,
   Sidebar,
@@ -17,7 +16,8 @@ import {
   SidebarInset,
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { logout } from "@/lib/actions";
+import { useAuth } from "@/hooks/use-auth";
 
 const menuItems = [
     { href: "/admin/courses", label: "Courses", icon: Book },
@@ -28,15 +28,11 @@ const menuItems = [
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    const router = useRouter();
-    const isMobile = useIsMobile();
+    useAuth(); // This hook will handle redirection
 
     if (pathname === '/admin/login') {
         return <>{children}</>;
     }
-    
-    // In a real app, you'd have auth protection here.
-    // e.g. const { user } = useAuth(); if (!user) router.push('/admin/login');
 
     return (
         <SidebarProvider>
@@ -75,10 +71,14 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                             </Link>
                         </SidebarMenuItem>
                         <SidebarMenuItem>
-                            <SidebarMenuButton onClick={() => router.push('/admin/login')} tooltip={{children: 'Logout'}}>
-                                <LogOut />
-                                <span>Logout</span>
-                            </SidebarMenuButton>
+                            <form action={logout}>
+                                <SidebarMenuButton asChild className="w-full">
+                                    <button type="submit">
+                                        <LogOut />
+                                        <span>Logout</span>
+                                    </button>
+                                </SidebarMenuButton>
+                            </form>
                         </SidebarMenuItem>
                     </SidebarMenu>
                 </SidebarFooter>

@@ -12,7 +12,7 @@ runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_127ce6fc._.js");
 runtime.loadChunk("server/chunks/ssr/a4885_@grpc_grpc-js_f12df2dc._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_protobufjs_5fdb6dbc._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@firebase_firestore_dist_index_node_mjs_27b3c722._.js");
-runtime.loadChunk("server/chunks/ssr/node_modules_768f9aab._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_b3f04a04._.js");
 runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__edde48c7._.js");
 runtime.loadChunk("server/chunks/ssr/_9d0c8543._.js");
 runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/courses/[courseSlug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)", CHUNK_PUBLIC_PATH);

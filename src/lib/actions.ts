@@ -5,10 +5,54 @@ import { revalidatePath } from "next/cache";
 import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, SubjectFormValues, UnitFormValues } from "./schemas";
 import { db } from "./firebase";
-import { collection, addDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc, deleteDoc, query, where, getDocs } from "firebase/firestore";
+import { cookies } from 'next/headers'
+import { redirect } from "next/navigation";
 
 const success = (data?: any) => ({ success: true, data });
 const error = (message: string) => ({ success: false, error: message });
+
+// Auth Actions
+export async function handleAdminLogin(prevState: any, formData: FormData) {
+    try {
+        const username = formData.get('username') as string;
+        const password = formData.get('password') as string;
+
+        if (!username || !password) {
+            return { success: false, message: 'Username and password are required.' };
+        }
+
+        const usersRef = collection(db, 'users');
+        const q = query(usersRef, where('username', '==', username), where('password', '==', password));
+        const querySnapshot = await getDocs(q);
+
+        if (querySnapshot.empty) {
+            return { success: false, message: 'Invalid username or password.' };
+        }
+        
+        // In a real app, you'd use a more secure method like JWTs.
+        // For this demo, we set a simple cookie.
+        const user = querySnapshot.docs[0].data();
+        cookies().set('session', JSON.stringify({ username: user.username, isAdmin: true }), {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            maxAge: 60 * 60 * 24, // 1 day
+            path: '/',
+        });
+        
+        return { success: true, message: "Login successful!" };
+
+    } catch (e: any) {
+        console.error("handleAdminLogin action error:", e.message);
+        return { success: false, message: 'An unexpected server error occurred.' };
+    }
+}
+
+export async function logout() {
+    cookies().delete('session');
+    redirect('/admin/login');
+}
+
 
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
@@ -179,7 +223,8 @@ export async function updateUnit(id: string, values: UnitFormValues) {
         await updateDoc(unitRef, updatedUnit);
         revalidatePath("/admin/units");
         return success(updatedUnit);
-    } catch (e: any) {
+    } catch (e: any)
+{
         console.error("updateUnit action error:", e.message);
         return error("Failed to update unit. " + e.message);
     }
