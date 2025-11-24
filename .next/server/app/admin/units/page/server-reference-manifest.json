@@ -1,0 +1,60 @@
+{
+  "node": {
+    "00d252c810a1ee6338f62ffb78386895d8949a2dc2": {
+      "workers": {
+        "app/admin/units/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/units/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/units/page": "action-browser"
+      }
+    },
+    "00e02778abeb46032cbd64d9c27bd413ece71c7dd3": {
+      "workers": {
+        "app/admin/units/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/units/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/units/page": "action-browser"
+      }
+    },
+    "40876b3ef803aca13c15e5a7986640c909a8db249b": {
+      "workers": {
+        "app/admin/units/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/units/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/units/page": "action-browser"
+      }
+    },
+    "60551febb87fa9e9cd2545cf19068519d153f00156": {
+      "workers": {
+        "app/admin/units/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/units/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/units/page": "action-browser"
+      }
+    },
+    "400651fd469cb671660422867061720947fd9fc1dc": {
+      "workers": {
+        "app/admin/units/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/units/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/units/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

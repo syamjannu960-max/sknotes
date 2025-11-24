@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { UnitFormValues, unitSchema } from "@/lib/schemas";
-import { Chapter } from "@/lib/types";
+import { Subject } from "@/lib/types";
 import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogClose,
 } from "@/components/ui/dialog";
@@ -24,15 +24,15 @@ type UnitFormProps = {
   onSubmit: (values: UnitFormValues) => void;
   defaultValue?: UnitFormValues;
   isSubmitting: boolean;
-  chapters: Chapter[];
+  subjects: Subject[];
 };
 
 export function UnitForm({
-  isOpen, onOpenChange, onSubmit, defaultValue, isSubmitting, chapters
+  isOpen, onOpenChange, onSubmit, defaultValue, isSubmitting, subjects
 }: UnitFormProps) {
   const form = useForm<UnitFormValues>({
     resolver: zodResolver(unitSchema),
-    defaultValues: defaultValue || { title: "", chapterId: "", content: "" },
+    defaultValues: defaultValue || { title: "", subjectId: "", content: "" },
   });
 
   return (
@@ -43,12 +43,12 @@ export function UnitForm({
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 max-h-[80vh] overflow-y-auto p-1 pr-4">
-            <FormField control={form.control} name="chapterId" render={({ field }) => (
+            <FormField control={form.control} name="subjectId" render={({ field }) => (
                 <FormItem>
-                    <FormLabel>Chapter</FormLabel>
+                    <FormLabel>Subject</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl><SelectTrigger><SelectValue placeholder="Select a chapter" /></SelectTrigger></FormControl>
-                    <SelectContent>{chapters.map(c => <SelectItem key={c.id} value={c.id}>{c.title}</SelectItem>)}</SelectContent>
+                    <FormControl><SelectTrigger><SelectValue placeholder="Select a subject" /></SelectTrigger></FormControl>
+                    <SelectContent>{subjects.map(s => <SelectItem key={s.id} value={s.id}>{s.title}</SelectItem>)}</SelectContent>
                     </Select>
                     <FormMessage />
                 </FormItem>

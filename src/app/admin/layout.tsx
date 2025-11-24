@@ -22,7 +22,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const menuItems = [
     { href: "/admin/courses", label: "Courses", icon: Book },
     { href: "/admin/semesters", label: "Semesters", icon: GraduationCap },
-    { href: "/admin/chapters", label: "Chapters", icon: Library },
+    { href: "/admin/subjects", label: "Subjects", icon: Library },
     { href: "/admin/units", label: "Units", icon: FileText },
 ];
 

@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useTransition, useEffect } from "react";
-import { getUnits, getChapters } from "@/lib/data";
+import { getUnits, getSubjects } from "@/lib/data";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Edit, Trash2 } from "lucide-react";
@@ -11,12 +11,12 @@ import { UnitForm } from "@/components/admin/unit-form";
 import { UnitFormValues } from "@/lib/schemas";
 import { useToast } from "@/hooks/use-toast";
 import { DeleteConfirmationDialog } from "@/components/admin/delete-confirmation-dialog";
-import { Unit, Chapter } from "@/lib/types";
+import { Unit, Subject } from "@/lib/types";
 import { addUnit, updateUnit, deleteUnit } from "@/lib/actions";
 
 export default function UnitsAdminPage() {
     const [units, setUnits] = useState<Unit[]>([]);
-    const [chapters, setChapters] = useState<Chapter[]>([]);
+    const [subjects, setSubjects] = useState<Subject[]>([]);
     const [isFetching, startFetching] = useTransition();
     const [isSubmitting, startSubmitting] = useTransition();
     const { toast } = useToast();
@@ -27,9 +27,9 @@ export default function UnitsAdminPage() {
 
     const fetchAllData = () => {
         startFetching(async () => {
-            const [unitsData, chaptersData] = await Promise.all([getUnits(), getChapters()]);
+            const [unitsData, subjectsData] = await Promise.all([getUnits(), getSubjects()]);
             setUnits(unitsData);
-            setChapters(chaptersData);
+            setSubjects(subjectsData);
         });
     }
 
@@ -81,7 +81,7 @@ export default function UnitsAdminPage() {
         });
     }
     
-    const getChapterTitle = (chapterId: string) => chapters.find(c => c.id === chapterId)?.title || 'N/A';
+    const getSubjectTitle = (subjectId: string) => subjects.find(s => s.id === subjectId)?.title || 'N/A';
 
     return (
         <div>
@@ -92,7 +92,7 @@ export default function UnitsAdminPage() {
                     <TableHeader>
                         <TableRow>
                             <TableHead>Unit Title</TableHead>
-                            <TableHead>Chapter</TableHead>
+                            <TableHead>Subject</TableHead>
                             <TableHead className="w-[100px] text-right">Actions</TableHead>
                         </TableRow>
                     </TableHeader>
@@ -102,7 +102,7 @@ export default function UnitsAdminPage() {
                         ) : units.map(unit => (
                             <TableRow key={unit.id}>
                                 <TableCell className="font-medium">{unit.title}</TableCell>
-                                <TableCell>{getChapterTitle(unit.chapterId)}</TableCell>
+                                <TableCell>{getSubjectTitle(unit.subjectId)}</TableCell>
                                 <TableCell className="text-right">
                                     <Button variant="ghost" size="icon" onClick={() => openEditForm(unit)}>
                                         <Edit className="h-4 w-4" />
@@ -123,7 +123,7 @@ export default function UnitsAdminPage() {
                 onSubmit={handleFormSubmit}
                 defaultValue={selectedUnit}
                 isSubmitting={isSubmitting}
-                chapters={chapters}
+                subjects={subjects}
             />}
 
             <DeleteConfirmationDialog 

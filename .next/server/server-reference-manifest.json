@@ -1,0 +1,268 @@
+{
+  "node": {
+    "002d94ea346186b288994452558419087c6a342198": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser",
+        "app/admin/courses/page": "action-browser",
+        "app/courses/page": "rsc"
+      }
+    },
+    "00c1793332d3faf0f02b11b20a73b8258889696cc1": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser",
+        "app/courses/page": "rsc"
+      }
+    },
+    "00d252c810a1ee6338f62ffb78386895d8949a2dc2": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "00e02778abeb46032cbd64d9c27bd413ece71c7dd3": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser",
+        "app/courses/page": "rsc"
+      }
+    },
+    "4021e058a2f2f660927dab7e5b50547f90139d9616": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "403a668430c6cba8a843063f0f8691e14eb459f252": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "4042bd79fa7c5dfc7c56424135865103c58c3fe6c1": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "4042fd0f8b845ee8338900b488d89b68e442255a31": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "40567672f65c5ac92bf3b2c085ec1275a0446d5181": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "4070ba49f8d215e579e3d01c7ed0489e31391792c2": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "40891b8d3c4886d22799e0f4f5264afbff78d6eda4": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "4092de94538f8c03317dffcb882b76f371678a95df": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "40d0d64e656546a8d341c5bd0d98249df68a41b983": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "601a754bb64ef867c35084630a6cf9bf888f5d5516": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "60d4d058e635b456d28e5edff8fd9b983978d5b1ba": {
+      "workers": {
+        "app/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/courses/page": "rsc"
+      }
+    },
+    "40d22acf6c44f9633eadc575eda839e3c133e11986": {
+      "workers": {
+        "app/admin/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/courses/page": "action-browser"
+      }
+    },
+    "6036f5c243be6fc6adc3a6f47fb502bf42d53ec960": {
+      "workers": {
+        "app/admin/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/courses/page": "action-browser"
+      }
+    },
+    "40a2d49b631ffae968360ec5c5e6c381f9a1f81e4f": {
+      "workers": {
+        "app/admin/courses/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/courses/page": "action-browser"
+      }
+    },
+    "4014b090a06a97ceb49b48f3be3e064facb9893d63": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "607f7c44cdd6e974a8e1d631b79abff724cc7ce490": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "40af762e45d47a4564fe2dceaa6ed268ae7f59b9df": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "40e25fe93b5ffb0abce93491f55db1f6da4eb6a924": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "h2GBnuJnBYyQ2p/47d4XYlTfSjbu0+13qMpHdrxEt6s="
+}

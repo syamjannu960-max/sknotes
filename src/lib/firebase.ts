@@ -1,19 +1,31 @@
 
 import { initializeApp, getApps, getApp, FirebaseOptions } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { Course } from "./types";
 
 // These variables are exposed to the client and MUST be prefixed with NEXT_PUBLIC_
-const firebaseConfig: FirebaseOptions = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+const firebaseConfig = {
+  apiKey: "AIzaSyBbxkY3ShS_MyWSxNyDlhrJY12tSkdKWck",
+  authDomain: "studio-6210322441-2160a.firebaseapp.com",
+  projectId: "studio-6210322441-2160a",
+  storageBucket: "studio-6210322441-2160a.firebasestorage.app",
+  messagingSenderId: "669204761026",
+  appId: "1:669204761026:web:234778eaa62cb11b32ae5b"
 };
 
 // Initialize Firebase for client-side usage
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore(app);
+
+// Function to get all courses
+export async function getCourses(): Promise<Course[]> {
+  const coursesCol = collection(db, 'courses');
+  const courseSnapshot = await getDocs(coursesCol);
+  const courseList = courseSnapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data(),
+  })) as Course[];
+  return courseList;
+}
 
 export { app, db };

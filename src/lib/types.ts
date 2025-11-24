@@ -11,21 +11,21 @@ export type Semester = {
   slug: string;
 };
 
-export type Chapter = {
+export type Subject = {
   id: string;
   title: string;
   slug: string;
   courseId: string;
   semesterId: string;
-  description: string; // Syllabus for the chapter
-  pdfUrl?: string; // PDF for the whole chapter
+  description: string; // Syllabus for the subject
+  pdfUrl?: string; // PDF for the whole subject
 };
 
 export type Unit = {
   id: string;
   title: string;
   slug: string;
-  chapterId: string;
+  subjectId: string;
   content: string; // Content for this specific unit
 };
 
@@ -37,5 +37,5 @@ export type BreadcrumbItem = {
 
 export type CourseWithId = Course & { id: string };
 export type SemesterWithId = Semester & { id: string };
-export type ChapterWithId = Chapter & { id: string };
+export type SubjectWithId = Subject & { id: string };
 export type UnitWithId = Unit & { id: string };

@@ -1,0 +1,49 @@
+{
+  "node": {
+    "00c1793332d3faf0f02b11b20a73b8258889696cc1": {
+      "workers": {
+        "app/admin/semesters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/semesters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/semesters/page": "action-browser"
+      }
+    },
+    "40683cb46383eef4471608f732328e6ca7be2c5fe3": {
+      "workers": {
+        "app/admin/semesters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/semesters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/semesters/page": "action-browser"
+      }
+    },
+    "60580725355c614a27107521361695b45429a2bf91": {
+      "workers": {
+        "app/admin/semesters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/semesters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/semesters/page": "action-browser"
+      }
+    },
+    "404fc726e8e39c193898bd5e7669906c08add30f28": {
+      "workers": {
+        "app/admin/semesters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/semesters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/semesters/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

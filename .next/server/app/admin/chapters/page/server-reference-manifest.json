@@ -1,0 +1,82 @@
+{
+  "node": {
+    "00e02778abeb46032cbd64d9c27bd413ece71c7dd3": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "002d94ea346186b288994452558419087c6a342198": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "00c1793332d3faf0f02b11b20a73b8258889696cc1": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "4014b090a06a97ceb49b48f3be3e064facb9893d63": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "607f7c44cdd6e974a8e1d631b79abff724cc7ce490": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "40af762e45d47a4564fe2dceaa6ed268ae7f59b9df": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    },
+    "40e25fe93b5ffb0abce93491f55db1f6da4eb6a924": {
+      "workers": {
+        "app/admin/chapters/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/chapters/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/ai/flows/enrich-chapter-content.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/chapters/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

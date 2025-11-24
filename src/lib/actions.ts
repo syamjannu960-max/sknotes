@@ -3,17 +3,11 @@
 
 import { revalidatePath } from "next/cache";
 import { slugify } from "./utils";
-import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues } from "./schemas";
+import { CourseFormValues, SemesterFormValues, SubjectFormValues, UnitFormValues } from "./schemas";
 import { adminDb } from "./firebase-admin";
 
-// Generic success and error handlers
 const success = (data?: any) => ({ success: true, data });
-const error = (message: string, details?: any) => {
-    // Detailed server-side logging
-    console.error("Server Action Error:", message, "Details:", details);
-    // Return a user-friendly error message
-    return { success: false, error: message };
-};
+const error = (message: string) => ({ success: false, error: message });
 
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
@@ -33,7 +27,8 @@ export async function addCourse(values: CourseFormValues) {
 
         return success({ ...newCourse, id: docRef.id });
     } catch (e: any) {
-        return error("Failed to add course.", e.message);
+        console.error("addCourse action error:", e.message);
+        return error("Failed to add course. " + e.message);
     }
 }
 
@@ -54,7 +49,8 @@ export async function updateCourse(id: string, values: CourseFormValues) {
 
         return success(updatedCourse);
     } catch (e: any) {
-        return error("Failed to update course.", e.message);
+        console.error("updateCourse action error:", e.message);
+        return error("Failed to update course. " + e.message);
     }
 }
 
@@ -66,7 +62,8 @@ export async function deleteCourse(id: string) {
         revalidatePath("/courses");
         return success();
     } catch (e: any) {
-        return error("Failed to delete course.", e.message);
+        console.error("deleteCourse action error:", e.message);
+        return error("Failed to delete course. " + e.message);
     }
 }
 
@@ -79,7 +76,8 @@ export async function addSemester(values: SemesterFormValues) {
         revalidatePath("/admin/semesters");
         return success(newSemester);
     } catch (e: any) {
-        return error("Failed to add semester.", e.message);
+        console.error("addSemester action error:", e.message);
+        return error("Failed to add semester. " + e.message);
     }
 }
 
@@ -93,7 +91,8 @@ export async function updateSemester(id: string, values: SemesterFormValues) {
         revalidatePath("/admin/semesters");
         return success(updatedSemester);
     } catch (e: any) {
-        return error("Failed to update semester.", e.message);
+        console.error("updateSemester action error:", e.message);
+        return error("Failed to update semester. " + e.message);
     }
 }
 
@@ -104,48 +103,52 @@ export async function deleteSemester(id: string) {
         revalidatePath("/admin/semesters");
         return success();
     } catch (e: any) {
-        return error("Failed to delete semester.", e.message);
+        console.error("deleteSemester action error:", e.message);
+        return error("Failed to delete semester. " + e.message);
     }
 }
 
-// Chapter Actions
-export async function addChapter(values: ChapterFormValues) {
+// Subject Actions
+export async function addSubject(values: SubjectFormValues) {
     try {
-        const newChapter = { 
+        const newSubject = { 
             ...values,
             slug: slugify(values.title),
         };
-        await adminDb.collection("chapters").add(newChapter);
-        revalidatePath("/admin/chapters");
-        return success(newChapter);
+        await adminDb.collection("subjects").add(newSubject);
+        revalidatePath("/admin/subjects");
+        return success(newSubject);
     } catch (e: any) {
-        return error("Failed to add chapter.", e.message);
+        console.error("addSubject action error:", e.message);
+        return error("Failed to add subject. " + e.message);
     }
 }
 
-export async function updateChapter(id: string, values: ChapterFormValues) {
+export async function updateSubject(id: string, values: SubjectFormValues) {
     try {
-        if (!id) return error("Chapter ID is required for update.");
-        const chapterRef = adminDb.collection("chapters").doc(id);
+        if (!id) return error("Subject ID is required for update.");
+        const subjectRef = adminDb.collection("subjects").doc(id);
         const { id: _, ...updateData } = values; // Exclude id from update data
-        const updatedChapter = { ...updateData, slug: slugify(values.title) };
+        const updatedSubject = { ...updateData, slug: slugify(values.title) };
 
-        await chapterRef.update(updatedChapter);
-        revalidatePath("/admin/chapters");
-        return success(updatedChapter);
+        await subjectRef.update(updatedSubject);
+        revalidatePath("/admin/subjects");
+        return success(updatedSubject);
     } catch (e: any) {
-        return error("Failed to update chapter.", e.message);
+        console.error("updateSubject action error:", e.message);
+        return error("Failed to update subject. " + e.message);
     }
 }
 
-export async function deleteChapter(id: string) {
+export async function deleteSubject(id: string) {
     try {
-        if (!id) return error("Chapter ID is required for deletion.");
-        await adminDb.collection("chapters").doc(id).delete();
-        revalidatePath("/admin/chapters");
+        if (!id) return error("Subject ID is required for deletion.");
+        await adminDb.collection("subjects").doc(id).delete();
+        revalidatePath("/admin/subjects");
         return success();
     } catch (e: any) {
-        return error("Failed to delete chapter.", e.message);
+        console.error("deleteSubject action error:", e.message);
+        return error("Failed to delete subject. " + e.message);
     }
 }
 
@@ -160,7 +163,8 @@ export async function addUnit(values: UnitFormValues) {
         revalidatePath("/admin/units");
         return success(newUnit);
     } catch (e: any) {
-        return error("Failed to add unit.", e.message);
+        console.error("addUnit action error:", e.message);
+        return error("Failed to add unit. " + e.message);
     }
 }
 
@@ -175,7 +179,8 @@ export async function updateUnit(id: string, values: UnitFormValues) {
         revalidatePath("/admin/units");
         return success(updatedUnit);
     } catch (e: any) {
-        return error("Failed to update unit.", e.message);
+        console.error("updateUnit action error:", e.message);
+        return error("Failed to update unit. " + e.message);
     }
 }
 
@@ -186,6 +191,7 @@ export async function deleteUnit(id: string) {
         revalidatePath("/admin/units");
         return success();
     } catch (e: any) {
-        return error("Failed to delete unit.", e.message);
+        console.error("deleteUnit action error:", e.message);
+        return error("Failed to delete unit. " + e.message);
     }
 }

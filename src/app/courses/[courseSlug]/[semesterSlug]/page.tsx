@@ -1,4 +1,4 @@
-import { getCourseBySlug, getSemesterBySlug, getChaptersForSemester } from "@/lib/data";
+import { getCourseBySlug, getSemesterBySlug, getSubjectsForSemester } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/user/breadcrumb";
@@ -21,7 +21,7 @@ export default async function SemesterPage({ params }: Props) {
   const semester = await getSemesterBySlug(params.semesterSlug);
   if (!course || !semester) notFound();
   
-  const chapters = await getChaptersForSemester(course.id, semester.id);
+  const subjects = await getSubjectsForSemester(course.id, semester.id);
 
   const breadcrumbItems = [
       { label: 'Courses', href: '/courses' },
@@ -33,19 +33,19 @@ export default async function SemesterPage({ params }: Props) {
     <div>
         <Breadcrumbs items={breadcrumbItems} />
         <h1 className="text-4xl font-bold font-headline mb-2">{semester.name}</h1>
-        <p className="text-lg text-muted-foreground mb-8">Chapters available for {course.name}.</p>
+        <p className="text-lg text-muted-foreground mb-8">Subjects available for {course.name}.</p>
 
         <div className="space-y-4">
-            {chapters.length > 0 ? (
-                chapters.map(chapter => (
-                    <Link href={`/courses/${course.slug}/${semester.slug}/${chapter.slug}`} key={chapter.id} className="group block">
+            {subjects.length > 0 ? (
+                subjects.map(subject => (
+                    <Link href={`/courses/${course.slug}/${semester.slug}/${subject.slug}`} key={subject.id} className="group block">
                         <Card className="hover:border-primary hover:bg-muted/50 transition-all duration-200">
                             <CardHeader className="flex flex-row items-center justify-between">
                                 <div className="flex items-center gap-4">
                                     <Library className="h-8 w-8 text-primary"/>
                                     <div>
-                                        <CardTitle className="text-xl font-headline">{chapter.title}</CardTitle>
-                                        <CardDescription className="line-clamp-1" dangerouslySetInnerHTML={{ __html: chapter.description }} />
+                                        <CardTitle className="text-xl font-headline">{subject.title}</CardTitle>
+                                        <CardDescription className="line-clamp-1" dangerouslySetInnerHTML={{ __html: subject.description }} />
                                     </div>
                                 </div>
                                 <ArrowRight className="h-6 w-6 text-muted-foreground group-hover:translate-x-1 group-hover:text-primary transition-transform"/>
@@ -54,7 +54,7 @@ export default async function SemesterPage({ params }: Props) {
                     </Link>
                 ))
             ) : (
-                <p>No chapters found for this semester.</p>
+                <p>No subjects found for this semester.</p>
             )}
         </div>
     </div>
