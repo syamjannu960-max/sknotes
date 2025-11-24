@@ -29,3 +29,6 @@ export const unitSchema = z.object({
     content: z.string().min(20, "Content must be at least 20 characters long."),
 });
 export type UnitFormValues = z.infer<typeof unitSchema>;
+
+export const chapterSchema = subjectSchema;
+export type ChapterFormValues = SubjectFormValues;

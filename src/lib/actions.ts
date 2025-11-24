@@ -4,7 +4,8 @@
 import { revalidatePath } from "next/cache";
 import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, SubjectFormValues, UnitFormValues } from "./schemas";
-import { adminDb } from "./firebase-admin";
+import { db } from "./firebase";
+import { collection, addDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
 
 const success = (data?: any) => ({ success: true, data });
 const error = (message: string) => ({ success: false, error: message });
@@ -20,7 +21,7 @@ export async function addCourse(values: CourseFormValues) {
             slug: slug,
             imageUrl: `https://picsum.photos/seed/${slug}/600/400` 
         };
-        const docRef = await adminDb.collection("courses").add(newCourse);
+        const docRef = await addDoc(collection(db, "courses"), newCourse);
         
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
@@ -37,11 +38,11 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         if (!id) return error("Course ID is required for an update.");
         if (!values.name) return error("Course name is required.");
 
-        const courseRef = adminDb.collection("courses").doc(id);
+        const courseRef = doc(db, "courses", id);
         const newSlug = slugify(values.name);
         const updatedCourse = { name: values.name, slug: newSlug };
         
-        await courseRef.update(updatedCourse);
+        await updateDoc(courseRef, updatedCourse);
         
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
@@ -57,7 +58,7 @@ export async function updateCourse(id: string, values: CourseFormValues) {
 export async function deleteCourse(id: string) {
     try {
         if (!id) return error("Course ID is required for deletion.");
-        await adminDb.collection("courses").doc(id).delete();
+        await deleteDoc(doc(db, "courses", id));
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
         return success();
@@ -72,7 +73,7 @@ export async function addSemester(values: SemesterFormValues) {
     try {
         if (!values.name) return error("Semester name is required.");
         const newSemester = { name: values.name, slug: slugify(values.name) };
-        await adminDb.collection("semesters").add(newSemester);
+        await addDoc(collection(db, "semesters"), newSemester);
         revalidatePath("/admin/semesters");
         return success(newSemester);
     } catch (e: any) {
@@ -85,9 +86,9 @@ export async function updateSemester(id: string, values: SemesterFormValues) {
     try {
         if (!id) return error("Semester ID is required for update.");
         if (!values.name) return error("Semester name is required.");
-        const semesterRef = adminDb.collection("semesters").doc(id);
+        const semesterRef = doc(db, "semesters", id);
         const updatedSemester = { name: values.name, slug: slugify(values.name) };
-        await semesterRef.update(updatedSemester);
+        await updateDoc(semesterRef, updatedSemester);
         revalidatePath("/admin/semesters");
         return success(updatedSemester);
     } catch (e: any) {
@@ -99,7 +100,7 @@ export async function updateSemester(id: string, values: SemesterFormValues) {
 export async function deleteSemester(id: string) {
     try {
         if (!id) return error("Semester ID is required for deletion.");
-        await adminDb.collection("semesters").doc(id).delete();
+        await deleteDoc(doc(db, "semesters", id));
         revalidatePath("/admin/semesters");
         return success();
     } catch (e: any) {
@@ -115,7 +116,7 @@ export async function addSubject(values: SubjectFormValues) {
             ...values,
             slug: slugify(values.title),
         };
-        await adminDb.collection("subjects").add(newSubject);
+        await addDoc(collection(db, "subjects"), newSubject);
         revalidatePath("/admin/subjects");
         return success(newSubject);
     } catch (e: any) {
@@ -127,11 +128,11 @@ export async function addSubject(values: SubjectFormValues) {
 export async function updateSubject(id: string, values: SubjectFormValues) {
     try {
         if (!id) return error("Subject ID is required for update.");
-        const subjectRef = adminDb.collection("subjects").doc(id);
+        const subjectRef = doc(db, "subjects", id);
         const { id: _, ...updateData } = values; // Exclude id from update data
         const updatedSubject = { ...updateData, slug: slugify(values.title) };
 
-        await subjectRef.update(updatedSubject);
+        await updateDoc(subjectRef, updatedSubject);
         revalidatePath("/admin/subjects");
         return success(updatedSubject);
     } catch (e: any) {
@@ -143,7 +144,7 @@ export async function updateSubject(id: string, values: SubjectFormValues) {
 export async function deleteSubject(id: string) {
     try {
         if (!id) return error("Subject ID is required for deletion.");
-        await adminDb.collection("subjects").doc(id).delete();
+        await deleteDoc(doc(db, "subjects", id));
         revalidatePath("/admin/subjects");
         return success();
     } catch (e: any) {
@@ -159,7 +160,7 @@ export async function addUnit(values: UnitFormValues) {
             ...values,
             slug: slugify(values.title),
         };
-        await adminDb.collection("units").add(newUnit);
+        await addDoc(collection(db, "units"), newUnit);
         revalidatePath("/admin/units");
         return success(newUnit);
     } catch (e: any) {
@@ -171,11 +172,11 @@ export async function addUnit(values: UnitFormValues) {
 export async function updateUnit(id: string, values: UnitFormValues) {
     try {
         if (!id) return error("Unit ID is required for update.");
-        const unitRef = adminDb.collection("units").doc(id);
+        const unitRef = doc(db, "units", id);
         const { id: _, ...updateData } = values;
         const updatedUnit = { ...updateData, slug: slugify(values.title) };
 
-        await unitRef.update(updatedUnit);
+        await updateDoc(unitRef, updatedUnit);
         revalidatePath("/admin/units");
         return success(updatedUnit);
     } catch (e: any) {
@@ -187,7 +188,7 @@ export async function updateUnit(id: string, values: UnitFormValues) {
 export async function deleteUnit(id: string) {
     try {
         if (!id) return error("Unit ID is required for deletion.");
-        await adminDb.collection("units").doc(id).delete();
+        await deleteDoc(doc(db, "units", id));
         revalidatePath("/admin/units");
         return success();
     } catch (e: any) {
