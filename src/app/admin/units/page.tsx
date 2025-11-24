@@ -1,7 +1,8 @@
+
 "use client";
 
 import { useState, useTransition, useEffect } from "react";
-import { getUnits, getChapters, getChapterById } from "@/lib/data";
+import { getUnits, getChapters } from "@/lib/data";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Edit, Trash2 } from "lucide-react";
@@ -11,6 +12,7 @@ import { UnitFormValues } from "@/lib/schemas";
 import { useToast } from "@/hooks/use-toast";
 import { DeleteConfirmationDialog } from "@/components/admin/delete-confirmation-dialog";
 import { Unit, Chapter } from "@/lib/types";
+import { addUnit, updateUnit, deleteUnit } from "@/lib/actions";
 
 export default function UnitsAdminPage() {
     const [units, setUnits] = useState<Unit[]>([]);
@@ -31,6 +33,11 @@ export default function UnitsAdminPage() {
         });
     }, []);
 
+    const fetchUnits = async () => {
+        const unitsData = await getUnits();
+        setUnits(unitsData);
+    }
+
     const openNewForm = () => {
         setSelectedUnit(undefined);
         setIsFormOpen(true);
@@ -47,15 +54,32 @@ export default function UnitsAdminPage() {
     }
 
     const handleFormSubmit = async (values: UnitFormValues) => {
-        console.log("Submitting unit form:", values);
-        toast({ title: 'Action not implemented', description: 'This is a mock action.' });
-        setIsFormOpen(false);
+        startSubmitting(async () => {
+            const action = values.id ? updateUnit : addUnit;
+            const result = await action(values);
+
+            if (result.success) {
+                toast({ title: `Unit ${values.id ? 'updated' : 'added'} successfully` });
+                fetchUnits();
+                setIsFormOpen(false);
+            } else {
+                toast({ variant: 'destructive', title: "Error", description: result.error });
+            }
+        });
     };
     
     const handleDeleteConfirm = async () => {
         if (!selectedUnit) return;
-        toast({ title: 'Action not implemented', description: 'This is a mock action.' });
-        setIsDeleteOpen(false);
+        startSubmitting(async () => {
+            const result = await deleteUnit(selectedUnit.id);
+            if (result.success) {
+                toast({ title: "Unit deleted successfully" });
+                fetchUnits();
+                setIsDeleteOpen(false);
+            } else {
+                toast({ variant: 'destructive', title: "Error", description: result.error });
+            }
+        });
     }
     
     const getChapterTitle = (chapterId: string) => chapters.find(c => c.id === chapterId)?.title || 'N/A';

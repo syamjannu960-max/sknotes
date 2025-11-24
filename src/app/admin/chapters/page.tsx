@@ -1,7 +1,8 @@
+
 "use client";
 
 import { useState, useTransition, useEffect } from "react";
-import { getChapters, getCourses, getSemesters, getCourseById, getSemesterById } from "@/lib/data";
+import { getChapters, getCourses, getSemesters } from "@/lib/data";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Edit, Trash2 } from "lucide-react";
@@ -11,12 +12,7 @@ import { ChapterFormValues } from "@/lib/schemas";
 import { useToast } from "@/hooks/use-toast";
 import { DeleteConfirmationDialog } from "@/components/admin/delete-confirmation-dialog";
 import { Chapter, Course, Semester } from "@/lib/types";
-
-// Mock server actions for chapters
-const addChapter = async (data: any) => ({ success: true });
-const updateChapter = async (id: string, data: any) => ({ success: true });
-const deleteChapter = async (id: string) => ({ success: true });
-
+import { addChapter, updateChapter, deleteChapter } from "@/lib/actions";
 
 export default function ChaptersAdminPage() {
     const [chapters, setChapters] = useState<Chapter[]>([]);
@@ -39,6 +35,11 @@ export default function ChaptersAdminPage() {
         });
     }, []);
 
+    const fetchChapters = async () => {
+        const chaptersData = await getChapters();
+        setChapters(chaptersData);
+    }
+
     const openNewForm = () => {
         setSelectedChapter(undefined);
         setIsFormOpen(true);
@@ -55,15 +56,32 @@ export default function ChaptersAdminPage() {
     }
 
     const handleFormSubmit = async (values: ChapterFormValues) => {
-        console.log("Submitting chapter form:", values);
-        toast({ title: 'Action not implemented', description: 'This is a mock action.' });
-        setIsFormOpen(false);
+        startSubmitting(async () => {
+            const action = values.id ? updateChapter : addChapter;
+            const result = await action(values);
+
+            if (result.success) {
+                toast({ title: `Chapter ${values.id ? 'updated' : 'added'} successfully` });
+                fetchChapters();
+                setIsFormOpen(false);
+            } else {
+                toast({ variant: 'destructive', title: "Error", description: result.error });
+            }
+        });
     };
     
     const handleDeleteConfirm = async () => {
         if (!selectedChapter) return;
-        toast({ title: 'Action not implemented', description: 'This is a mock action.' });
-        setIsDeleteOpen(false);
+        startSubmitting(async () => {
+            const result = await deleteChapter(selectedChapter.id);
+            if (result.success) {
+                toast({ title: "Chapter deleted successfully" });
+                fetchChapters();
+                setIsDeleteOpen(false);
+            } else {
+                toast({ variant: 'destructive', title: "Error", description: result.error });
+            }
+        });
     }
     
     const getCourseName = (courseId: string) => courses.find(c => c.id === courseId)?.name || 'N/A';

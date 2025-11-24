@@ -21,17 +21,12 @@ import { addCourse, updateCourse, deleteCourse } from "@/lib/actions";
 import { DeleteConfirmationDialog } from "@/components/admin/delete-confirmation-dialog";
 import { Course } from "@/lib/types";
 
-// This would typically be a server component fetching initial data
-// but we make it client to handle state easily for this example.
 export default function CoursesAdminPage() {
-    // In a real app, this would be `const initialCourses = await getCourses()` passed as a prop
     const [courses, setCourses] = useState<Course[]>([]);
     const [isFetching, startFetching] = useTransition();
     const [isSubmitting, startSubmitting] = useTransition();
-
     const { toast } = useToast();
 
-    // Dialog states
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedCourse, setSelectedCourse] = useState<Course | undefined>(undefined);
@@ -61,11 +56,10 @@ export default function CoursesAdminPage() {
     const handleFormSubmit = async (values: CourseFormValues) => {
         startSubmitting(async () => {
             const action = values.id ? updateCourse : addCourse;
-            const result = await action(values as any);
+            const result = await action(values);
 
             if (result.success) {
                 toast({ title: `Course ${values.id ? 'updated' : 'added'} successfully` });
-                // In a real app, we'd refetch or update state smartly
                 const data = await getCourses();
                 setCourses(data);
                 setIsFormOpen(false);
@@ -123,13 +117,15 @@ export default function CoursesAdminPage() {
                 </Table>
             </div>
 
-            <CourseForm 
-                isOpen={isFormOpen}
-                onOpenChange={setIsFormOpen}
-                onSubmit={handleFormSubmit}
-                defaultValue={selectedCourse}
-                isSubmitting={isSubmitting}
-            />
+            {isFormOpen && (
+              <CourseForm 
+                  isOpen={isFormOpen}
+                  onOpenChange={setIsFormOpen}
+                  onSubmit={handleFormSubmit}
+                  defaultValue={selectedCourse}
+                  isSubmitting={isSubmitting}
+              />
+            )}
 
             <DeleteConfirmationDialog 
                 isOpen={isDeleteOpen}
@@ -139,3 +135,4 @@ export default function CoursesAdminPage() {
             />
         </div>
     );
+}

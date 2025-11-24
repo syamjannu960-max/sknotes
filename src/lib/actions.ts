@@ -4,7 +4,7 @@
 import { revalidatePath } from "next/cache";
 import { courses, semesters, chapters, units } from "./data";
 import { slugify } from "./utils";
-import { CourseFormValues, SemesterFormValues } from "./schemas";
+import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues } from "./schemas";
 
 // Mock delay to simulate network latency
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
@@ -15,7 +15,6 @@ export async function addCourse(values: CourseFormValues) {
     if (!values.name) {
         return { success: false, error: "Course name is required." };
     }
-    console.log("Adding course:", values.name);
     const newCourse = { id: `c-${Date.now()}`, name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
     courses.push(newCourse);
     revalidatePath("/admin/courses");
@@ -28,7 +27,6 @@ export async function updateCourse(values: CourseFormValues) {
     if (!values.id) {
         return { success: false, error: "Course ID is required for an update." };
     }
-    console.log("Updating course:", values.id, values.name);
     const course = courses.find(c => c.id === values.id);
     if (course) {
         course.name = values.name;
@@ -43,7 +41,6 @@ export async function updateCourse(values: CourseFormValues) {
 
 export async function deleteCourse(id: string) {
     await delay(500);
-    console.log("Deleting course:", id);
     const index = courses.findIndex(c => c.id === id);
     if (index > -1) {
         courses.splice(index, 1);
@@ -58,7 +55,6 @@ export async function deleteCourse(id: string) {
 // Semester Actions
 export async function addSemester(values: SemesterFormValues) {
     await delay(500);
-    console.log("Adding semester:", values.name);
     const newSemester = { id: `s-${Date.now()}`, name: values.name, slug: slugify(values.name) };
     semesters.push(newSemester);
     revalidatePath("/admin/semesters");
@@ -67,7 +63,6 @@ export async function addSemester(values: SemesterFormValues) {
 
 export async function updateSemester(values: SemesterFormValues) {
     await delay(500);
-    console.log("Updating semester:", values.id, values.name);
     const semester = semesters.find(s => s.id === values.id);
     if (semester) {
         semester.name = values.name;
@@ -80,7 +75,6 @@ export async function updateSemester(values: SemesterFormValues) {
 
 export async function deleteSemester(id: string) {
     await delay(500);
-    console.log("Deleting semester:", id);
     const index = semesters.findIndex(s => s.id === id);
     if (index > -1) {
         semesters.splice(index, 1);
@@ -90,6 +84,78 @@ export async function deleteSemester(id: string) {
     return { success: false, error: "Semester not found" };
 }
 
-// NOTE: Chapter and Unit actions would follow a similar pattern.
-// For brevity, they are omitted here but would be implemented similarly
-// using the mock data arrays and revalidatePath.
+// Chapter Actions
+export async function addChapter(values: ChapterFormValues) {
+    await delay(500);
+    const newChapter: Chapter = { 
+        id: `ch-${Date.now()}`, 
+        slug: slugify(values.title),
+        ...values,
+    };
+    chapters.push(newChapter);
+    revalidatePath("/admin/chapters");
+    return { success: true, data: newChapter };
+}
+
+export async function updateChapter(values: ChapterFormValues) {
+    await delay(500);
+    if (!values.id) {
+        return { success: false, error: "Chapter ID is required for an update." };
+    }
+    const chapter = chapters.find(c => c.id === values.id);
+    if (chapter) {
+        Object.assign(chapter, { ...values, slug: slugify(values.title) });
+        revalidatePath("/admin/chapters");
+        return { success: true, data: chapter };
+    }
+    return { success: false, error: "Chapter not found" };
+}
+
+export async function deleteChapter(id: string) {
+    await delay(500);
+    const index = chapters.findIndex(c => c.id === id);
+    if (index > -1) {
+        chapters.splice(index, 1);
+        revalidatePath("/admin/chapters");
+        return { success: true };
+    }
+    return { success: false, error: "Chapter not found" };
+}
+
+// Unit Actions
+export async function addUnit(values: UnitFormValues) {
+    await delay(500);
+    const newUnit: Unit = { 
+        id: `u-${Date.now()}`, 
+        slug: slugify(values.title),
+        ...values,
+    };
+    units.push(newUnit);
+    revalidatePath("/admin/units");
+    return { success: true, data: newUnit };
+}
+
+export async function updateUnit(values: UnitFormValues) {
+    await delay(500);
+    if (!values.id) {
+        return { success: false, error: "Unit ID is required for an update." };
+    }
+    const unit = units.find(u => u.id === values.id);
+    if (unit) {
+        Object.assign(unit, { ...values, slug: slugify(values.title) });
+        revalidatePath("/admin/units");
+        return { success: true, data: unit };
+    }
+    return { success: false, error: "Unit not found" };
+}
+
+export async function deleteUnit(id: string) {
+    await delay(500);
+    const index = units.findIndex(u => u.id === id);
+    if (index > -1) {
+        units.splice(index, 1);
+        revalidatePath("/admin/units");
+        return { success: true };
+    }
+    return { success: false, error: "Unit not found" };
+}
