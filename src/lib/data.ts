@@ -1,7 +1,6 @@
 import { collection, getDocs, doc, getDoc, query, where } from 'firebase/firestore';
 import { db } from './firebase';
 import type { Course, Semester, Chapter, Unit, CourseWithId, SemesterWithId, ChapterWithId, UnitWithId } from './types';
-import { PlaceHolderImages } from './placeholder-images';
 
 const coursesCollection = collection(db, 'courses');
 const semestersCollection = collection(db, 'semesters');
