@@ -29,9 +29,9 @@ export default function SubjectsAdminPage() {
     const fetchAllData = () => {
         startFetching(async () => {
             const [subjectsData, coursesData, semestersData] = await Promise.all([getSubjects(), getCourses(), getSemesters()]);
-            setSubjects(subjectsData);
-            setCourses(coursesData);
-            setSemesters(semestersData);
+            setSubjects(subjectsData || []);
+            setCourses(coursesData || []);
+            setSemesters(semestersData || []);
         });
     };
 

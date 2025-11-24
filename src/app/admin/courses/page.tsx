@@ -34,7 +34,7 @@ export default function CoursesAdminPage() {
     const fetchCourses = () => {
         startFetching(async () => {
             const data = await getCourses();
-            setCourses(data);
+            setCourses(data || []);
         });
     }
 

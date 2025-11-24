@@ -34,7 +34,7 @@ export default function SemestersAdminPage() {
     const fetchSemesters = () => {
         startFetching(async () => {
             const data = await getSemesters();
-            setSemesters(data);
+            setSemesters(data || []);
         });
     }
 

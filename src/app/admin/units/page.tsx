@@ -28,8 +28,8 @@ export default function UnitsAdminPage() {
     const fetchAllData = () => {
         startFetching(async () => {
             const [unitsData, subjectsData] = await Promise.all([getUnits(), getSubjects()]);
-            setUnits(unitsData);
-            setSubjects(subjectsData);
+            setUnits(unitsData || []);
+            setSubjects(subjectsData || []);
         });
     }
 
