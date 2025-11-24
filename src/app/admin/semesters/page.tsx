@@ -29,12 +29,16 @@ export default function SemestersAdminPage() {
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedSemester, setSelectedSemester] = useState<Semester | undefined>(undefined);
-
-    useEffect(() => {
+    
+    const fetchSemesters = () => {
         startFetching(async () => {
             const data = await getSemesters();
             setSemesters(data);
         });
+    }
+
+    useEffect(() => {
+        fetchSemesters();
     }, []);
 
     const openNewForm = () => {
@@ -54,13 +58,11 @@ export default function SemestersAdminPage() {
 
     const handleFormSubmit = async (values: SemesterFormValues) => {
         startSubmitting(async () => {
-            const action = values.id ? updateSemester : addSemester;
-            // @ts-ignore
-            const result = await action(values);
+            const action = values.id ? () => updateSemester(values.id!, values) : () => addSemester(values);
+            const result = await action();
             if (result.success) {
                 toast({ title: `Semester ${values.id ? 'updated' : 'added'} successfully` });
-                const data = await getSemesters();
-                setSemesters(data);
+                fetchSemesters();
                 setIsFormOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
@@ -75,8 +77,7 @@ export default function SemestersAdminPage() {
              const result = await deleteSemester(selectedSemester.id);
              if (result.success) {
                 toast({ title: "Semester deleted successfully" });
-                const data = await getSemesters();
-                setSemesters(data);
+                fetchSemesters();
                 setIsDeleteOpen(false);
              } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });

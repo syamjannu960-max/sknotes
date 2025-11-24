@@ -34,3 +34,8 @@ export type BreadcrumbItem = {
   label: string;
   href: string;
 };
+
+export type CourseWithId = Course & { id: string };
+export type SemesterWithId = Semester & { id: string };
+export type ChapterWithId = Chapter & { id: string };
+export type UnitWithId = Unit & { id: string };

@@ -25,18 +25,17 @@ export default function UnitsAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedUnit, setSelectedUnit] = useState<Unit | undefined>(undefined);
 
-    useEffect(() => {
+    const fetchAllData = () => {
         startFetching(async () => {
             const [unitsData, chaptersData] = await Promise.all([getUnits(), getChapters()]);
             setUnits(unitsData);
             setChapters(chaptersData);
         });
-    }, []);
-
-    const fetchUnits = async () => {
-        const unitsData = await getUnits();
-        setUnits(unitsData);
     }
+
+    useEffect(() => {
+        fetchAllData();
+    }, []);
 
     const openNewForm = () => {
         setSelectedUnit(undefined);
@@ -55,12 +54,12 @@ export default function UnitsAdminPage() {
 
     const handleFormSubmit = async (values: UnitFormValues) => {
         startSubmitting(async () => {
-            const action = values.id ? updateUnit : addUnit;
-            const result = await action(values);
+            const action = values.id ? () => updateUnit(values.id!, values) : () => addUnit(values);
+            const result = await action();
 
             if (result.success) {
                 toast({ title: `Unit ${values.id ? 'updated' : 'added'} successfully` });
-                fetchUnits();
+                fetchAllData();
                 setIsFormOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
@@ -74,7 +73,7 @@ export default function UnitsAdminPage() {
             const result = await deleteUnit(selectedUnit.id);
             if (result.success) {
                 toast({ title: "Unit deleted successfully" });
-                fetchUnits();
+                fetchAllData();
                 setIsDeleteOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });

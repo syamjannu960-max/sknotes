@@ -26,19 +26,18 @@ export default function ChaptersAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedChapter, setSelectedChapter] = useState<Chapter | undefined>(undefined);
 
-    useEffect(() => {
+    const fetchAllData = async () => {
         startFetching(async () => {
             const [chaptersData, coursesData, semestersData] = await Promise.all([getChapters(), getCourses(), getSemesters()]);
             setChapters(chaptersData);
             setCourses(coursesData);
             setSemesters(semestersData);
         });
-    }, []);
+    };
 
-    const fetchChapters = async () => {
-        const chaptersData = await getChapters();
-        setChapters(chaptersData);
-    }
+    useEffect(() => {
+        fetchAllData();
+    }, []);
 
     const openNewForm = () => {
         setSelectedChapter(undefined);
@@ -57,12 +56,12 @@ export default function ChaptersAdminPage() {
 
     const handleFormSubmit = async (values: ChapterFormValues) => {
         startSubmitting(async () => {
-            const action = values.id ? updateChapter : addChapter;
-            const result = await action(values);
+            const action = values.id ? () => updateChapter(values.id!, values) : () => addChapter(values);
+            const result = await action();
 
             if (result.success) {
                 toast({ title: `Chapter ${values.id ? 'updated' : 'added'} successfully` });
-                fetchChapters();
+                fetchAllData();
                 setIsFormOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
@@ -76,7 +75,7 @@ export default function ChaptersAdminPage() {
             const result = await deleteChapter(selectedChapter.id);
             if (result.success) {
                 toast({ title: "Chapter deleted successfully" });
-                fetchChapters();
+                fetchAllData();
                 setIsDeleteOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });

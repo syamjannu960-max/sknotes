@@ -2,160 +2,166 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { courses, semesters, chapters, units } from "./data";
 import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues } from "./schemas";
-
-// Mock delay to simulate network latency
-const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
+import { db } from "./firebase";
 
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
-    await delay(500);
-    if (!values.name) {
-        return { success: false, error: "Course name is required." };
-    }
-    const newCourse = { id: `c-${Date.now()}`, name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
-    courses.push(newCourse);
-    revalidatePath("/admin/courses");
-    revalidatePath("/courses");
-    return { success: true, data: newCourse };
-}
-
-export async function updateCourse(values: CourseFormValues) {
-    await delay(500);
-    if (!values.id) {
-        return { success: false, error: "Course ID is required for an update." };
-    }
-    const course = courses.find(c => c.id === values.id);
-    if (course) {
-        course.name = values.name;
-        course.slug = slugify(values.name);
+    try {
+        if (!values.name) {
+            return { success: false, error: "Course name is required." };
+        }
+        const newCourse = { name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
+        await addDoc(collection(db, "courses"), newCourse);
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        revalidatePath(`/courses/${course.slug}`);
-        return { success: true, data: course };
+        return { success: true, data: newCourse };
+    } catch (error) {
+        return { success: false, error: "Failed to add course." };
     }
-    return { success: false, error: "Course not found" };
+}
+
+export async function updateCourse(id: string, values: CourseFormValues) {
+    try {
+        if (!id) {
+            return { success: false, error: "Course ID is required for an update." };
+        }
+        const courseRef = doc(db, "courses", id);
+        const updatedCourse = { name: values.name, slug: slugify(values.name) };
+        await updateDoc(courseRef, updatedCourse);
+        revalidatePath("/admin/courses");
+        revalidatePath("/courses");
+        revalidatePath(`/courses/${updatedCourse.slug}`);
+        return { success: true, data: updatedCourse };
+    } catch (error) {
+        return { success: false, error: "Failed to update course." };
+    }
 }
 
 export async function deleteCourse(id: string) {
-    await delay(500);
-    const index = courses.findIndex(c => c.id === id);
-    if (index > -1) {
-        courses.splice(index, 1);
+    try {
+        await deleteDoc(doc(db, "courses", id));
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
         return { success: true };
+    } catch (error) {
+        return { success: false, error: "Failed to delete course." };
     }
-    return { success: false, error: "Course not found" };
 }
 
 
 // Semester Actions
 export async function addSemester(values: SemesterFormValues) {
-    await delay(500);
-    const newSemester = { id: `s-${Date.now()}`, name: values.name, slug: slugify(values.name) };
-    semesters.push(newSemester);
-    revalidatePath("/admin/semesters");
-    return { success: true, data: newSemester };
+    try {
+        const newSemester = { name: values.name, slug: slugify(values.name) };
+        await addDoc(collection(db, "semesters"), newSemester);
+        revalidatePath("/admin/semesters");
+        return { success: true, data: newSemester };
+    } catch (error) {
+        return { success: false, error: "Failed to add semester." };
+    }
 }
 
-export async function updateSemester(values: SemesterFormValues) {
-    await delay(500);
-    const semester = semesters.find(s => s.id === values.id);
-    if (semester) {
-        semester.name = values.name;
-        semester.slug = slugify(values.name);
+export async function updateSemester(id: string, values: SemesterFormValues) {
+    try {
+        const semesterRef = doc(db, "semesters", id);
+        const updatedSemester = { name: values.name, slug: slugify(values.name) };
+        await updateDoc(semesterRef, updatedSemester);
         revalidatePath("/admin/semesters");
-        return { success: true, data: semester };
+        return { success: true, data: updatedSemester };
+    } catch (error) {
+        return { success: false, error: "Failed to update semester." };
     }
-    return { success: false, error: "Semester not found" };
 }
 
 export async function deleteSemester(id: string) {
-    await delay(500);
-    const index = semesters.findIndex(s => s.id === id);
-    if (index > -1) {
-        semesters.splice(index, 1);
+    try {
+        await deleteDoc(doc(db, "semesters", id));
         revalidatePath("/admin/semesters");
         return { success: true };
+    } catch (error) {
+        return { success: false, error: "Failed to delete semester." };
     }
-    return { success: false, error: "Semester not found" };
 }
 
 // Chapter Actions
 export async function addChapter(values: ChapterFormValues) {
-    await delay(500);
-    const newChapter: Chapter = { 
-        id: `ch-${Date.now()}`, 
-        slug: slugify(values.title),
-        ...values,
-    };
-    chapters.push(newChapter);
-    revalidatePath("/admin/chapters");
-    return { success: true, data: newChapter };
+    try {
+        const newChapter = { 
+            slug: slugify(values.title),
+            ...values,
+        };
+        await addDoc(collection(db, "chapters"), newChapter);
+        revalidatePath("/admin/chapters");
+        return { success: true, data: newChapter };
+    } catch (error) {
+        return { success: false, error: "Failed to add chapter." };
+    }
 }
 
-export async function updateChapter(values: ChapterFormValues) {
-    await delay(500);
-    if (!values.id) {
-        return { success: false, error: "Chapter ID is required for an update." };
-    }
-    const chapter = chapters.find(c => c.id === values.id);
-    if (chapter) {
-        Object.assign(chapter, { ...values, slug: slugify(values.title) });
+export async function updateChapter(id: string, values: ChapterFormValues) {
+    try {
+        if (!id) {
+            return { success: false, error: "Chapter ID is required for an update." };
+        }
+        const chapterRef = doc(db, "chapters", id);
+        const updatedChapter = { ...values, slug: slugify(values.title) };
+        await updateDoc(chapterRef, updatedChapter);
         revalidatePath("/admin/chapters");
-        return { success: true, data: chapter };
+        return { success: true, data: updatedChapter };
+    } catch (error) {
+        return { success: false, error: "Failed to update chapter." };
     }
-    return { success: false, error: "Chapter not found" };
 }
 
 export async function deleteChapter(id: string) {
-    await delay(500);
-    const index = chapters.findIndex(c => c.id === id);
-    if (index > -1) {
-        chapters.splice(index, 1);
+    try {
+        await deleteDoc(doc(db, "chapters", id));
         revalidatePath("/admin/chapters");
         return { success: true };
+    } catch (error) {
+        return { success: false, error: "Failed to delete chapter." };
     }
-    return { success: false, error: "Chapter not found" };
 }
 
 // Unit Actions
 export async function addUnit(values: UnitFormValues) {
-    await delay(500);
-    const newUnit: Unit = { 
-        id: `u-${Date.now()}`, 
-        slug: slugify(values.title),
-        ...values,
-    };
-    units.push(newUnit);
-    revalidatePath("/admin/units");
-    return { success: true, data: newUnit };
+    try {
+        const newUnit = { 
+            slug: slugify(values.title),
+            ...values,
+        };
+        await addDoc(collection(db, "units"), newUnit);
+        revalidatePath("/admin/units");
+        return { success: true, data: newUnit };
+    } catch (error) {
+        return { success: false, error: "Failed to add unit." };
+    }
 }
 
-export async function updateUnit(values: UnitFormValues) {
-    await delay(500);
-    if (!values.id) {
-        return { success: false, error: "Unit ID is required for an update." };
-    }
-    const unit = units.find(u => u.id === values.id);
-    if (unit) {
-        Object.assign(unit, { ...values, slug: slugify(values.title) });
+export async function updateUnit(id: string, values: UnitFormValues) {
+    try {
+        if (!id) {
+            return { success: false, error: "Unit ID is required for an update." };
+        }
+        const unitRef = doc(db, "units", id);
+        const updatedUnit = { ...values, slug: slugify(values.title) };
+        await updateDoc(unitRef, updatedUnit);
         revalidatePath("/admin/units");
-        return { success: true, data: unit };
+        return { success: true, data: updatedUnit };
+    } catch (error) {
+        return { success: false, error: "Failed to update unit." };
     }
-    return { success: false, error: "Unit not found" };
 }
 
 export async function deleteUnit(id: string) {
-    await delay(500);
-    const index = units.findIndex(u => u.id === id);
-    if (index > -1) {
-        units.splice(index, 1);
+    try {
+        await deleteDoc(doc(db, "units", id));
         revalidatePath("/admin/units");
         return { success: true };
+    } catch (error) {
+        return { success: false, error: "Failed to delete unit." };
     }
-    return { success: false, error: "Unit not found" };
 }

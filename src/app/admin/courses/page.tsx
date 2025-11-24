@@ -31,11 +31,15 @@ export default function CoursesAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedCourse, setSelectedCourse] = useState<Course | undefined>(undefined);
 
-    useEffect(() => {
+    const fetchCourses = () => {
         startFetching(async () => {
             const data = await getCourses();
             setCourses(data);
         });
+    }
+
+    useEffect(() => {
+        fetchCourses();
     }, []);
 
     const openNewForm = () => {
@@ -55,13 +59,12 @@ export default function CoursesAdminPage() {
 
     const handleFormSubmit = async (values: CourseFormValues) => {
         startSubmitting(async () => {
-            const action = values.id ? updateCourse : addCourse;
-            const result = await action(values);
+            const action = values.id ? () => updateCourse(values.id!, values) : () => addCourse(values);
+            const result = await action();
 
             if (result.success) {
                 toast({ title: `Course ${values.id ? 'updated' : 'added'} successfully` });
-                const data = await getCourses();
-                setCourses(data);
+                fetchCourses();
                 setIsFormOpen(false);
             } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
@@ -76,8 +79,7 @@ export default function CoursesAdminPage() {
              const result = await deleteCourse(selectedCourse.id);
              if (result.success) {
                 toast({ title: "Course deleted successfully" });
-                const data = await getCourses();
-                setCourses(data);
+                fetchCourses();
                 setIsDeleteOpen(false);
              } else {
                 toast({ variant: 'destructive', title: "Error", description: result.error });

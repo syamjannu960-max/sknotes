@@ -1,67 +1,116 @@
-import type { Course, Semester, Chapter, Unit } from './types';
+import { collection, getDocs, doc, getDoc, query, where } from 'firebase/firestore';
+import { db } from './firebase';
+import type { Course, Semester, Chapter, Unit, CourseWithId, SemesterWithId, ChapterWithId, UnitWithId } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
-const csImage = PlaceHolderImages.find(p => p.id === 'course-cs')!.imageUrl;
-const mechImage = PlaceHolderImages.find(p => p.id === 'course-mech')!.imageUrl;
-const civilImage = PlaceHolderImages.find(p => p.id === 'course-civil')!.imageUrl;
-const bbaImage = PlaceHolderImages.find(p => p.id === 'course-bba')!.imageUrl;
-
-export const courses: Course[] = [
-  { id: '1', name: 'Computer Science Notes', slug: 'cs-notes', imageUrl: csImage },
-  { id: '2', name: 'Mechanical Engineering', slug: 'mech-eng', imageUrl: mechImage },
-  { id: '3', name: 'Civil Engineering', slug: 'civil-eng', imageUrl: civilImage },
-  { id: '4', name: 'Business Administration', slug: 'bba', imageUrl: bbaImage },
-];
-
-export const semesters: Semester[] = [
-  { id: '1', name: '1st Semester', slug: '1st-sem' },
-  { id: '2', name: '2nd Semester', slug: '2nd-sem' },
-  { id: '3', name: '3rd Semester', slug: '3rd-sem' },
-  { id: '4', name: '4th Semester', slug: '4th-sem' },
-];
-
-export const chapters: Chapter[] = [
-  { id: 'ch1', courseId: '1', semesterId: '1', title: 'Introduction to Programming', slug: 'intro-to-programming', description: '<p>This chapter covers the fundamentals of programming using a modern language. Topics include variables, data types, control structures, and basic syntax.</p>', pdfUrl: '#' },
-  { id: 'ch2', courseId: '1', semesterId: '1', title: 'Data Structures', slug: 'data-structures', description: '<p>An in-depth look at fundamental data structures. You will learn about arrays, linked lists, stacks, and queues, and how to implement them.</p>' },
-  { id: 'ch3', courseId: '1', semesterId: '2', title: 'Algorithms', slug: 'algorithms', description: '<p>Explore common algorithms for sorting, searching, and graph traversal. Understand algorithm complexity and performance analysis.</p>', pdfUrl: '#' },
-  { id: 'ch4', courseId: '2', semesterId: '1', title: 'Engineering Mechanics', slug: 'engineering-mechanics', description: '<p>Core principles of statics, dynamics, and mechanics of materials. Essential for all mechanical engineers.</p>' },
-];
-
-export const units: Unit[] = [
-  { id: 'u1-1', chapterId: 'ch1', title: 'Variables and Data Types', slug: 'variables', content: '<h1>Unit 1: Variables and Data Types</h1><p>In programming, a variable is a storage location paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. This unit will explore primitive and complex data types.</p>' },
-  { id: 'u1-2', chapterId: 'ch1', title: 'Control Flow', slug: 'control-flow', content: '<h1>Unit 2: Control Flow</h1><p>Control flow is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated. This includes conditional statements (if-else) and loops (for, while).</p>' },
-  { id: 'u2-1', chapterId: 'ch2', title: 'Arrays and Lists', slug: 'arrays', content: '<h1>Unit 1: Arrays and Lists</h1><p>This unit introduces array data structures, discussing their properties, operations, and use cases in detail.</p>' },
-  { id: 'u3-1', chapterId: 'ch3', title: 'Sorting Algorithms', slug: 'sorting', content: '<h1>Unit 1: Sorting Algorithms</h1><p>Learn about various sorting algorithms like Bubble Sort, Merge Sort, and Quick Sort. We will analyze their time and space complexity.</p>'},
-];
+const coursesCollection = collection(db, 'courses');
+const semestersCollection = collection(db, 'semesters');
+const chaptersCollection = collection(db, 'chapters');
+const unitsCollection = collection(db, 'units');
 
 // Data fetching functions
-export const getCourses = async (): Promise<Course[]> => courses;
-export const getCourseBySlug = async (slug: string): Promise<Course | undefined> => courses.find(c => c.slug === slug);
-export const getCourseById = async (id: string): Promise<Course | undefined> => courses.find(c => c.id === id);
+export async function getCourses(): Promise<CourseWithId[]> {
+    const snapshot = await getDocs(coursesCollection);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Course, id: doc.id }));
+}
 
-export const getSemesters = async (): Promise<Semester[]> => semesters;
-export const getSemesterBySlug = async (slug: string): Promise<Semester | undefined> => semesters.find(s => s.slug === slug);
-export const getSemesterById = async (id: string): Promise<Semester | undefined> => semesters.find(s => s.id === id);
+export async function getCourseBySlug(slug: string): Promise<CourseWithId | undefined> {
+    const q = query(coursesCollection, where("slug", "==", slug));
+    const snapshot = await getDocs(q);
+    if (snapshot.empty) return undefined;
+    const doc = snapshot.docs[0];
+    return { ...doc.data() as Course, id: doc.id };
+}
+
+export async function getCourseById(id: string): Promise<CourseWithId | undefined> {
+    const docRef = doc(db, 'courses', id);
+    const docSnap = await getDoc(docRef);
+    if (!docSnap.exists()) return undefined;
+    return { ...docSnap.data() as Course, id: docSnap.id };
+}
 
 
-export const getSemestersForCourse = async (courseId: string): Promise<Semester[]> => {
-  const relevantChapters = chapters.filter(c => c.courseId === courseId);
-  const semesterIds = [...new Set(relevantChapters.map(c => c.semesterId))];
-  return semesters.filter(s => semesterIds.includes(s.id));
+export async function getSemesters(): Promise<SemesterWithId[]> {
+    const snapshot = await getDocs(semestersCollection);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Semester, id: doc.id }));
+}
+
+export async function getSemesterBySlug(slug: string): Promise<SemesterWithId | undefined> {
+    const q = query(semestersCollection, where("slug", "==", slug));
+    const snapshot = await getDocs(q);
+    if (snapshot.empty) return undefined;
+    const doc = snapshot.docs[0];
+    return { ...doc.data() as Semester, id: doc.id };
+}
+
+export async function getSemesterById(id: string): Promise<SemesterWithId | undefined> {
+    const docRef = doc(db, 'semesters', id);
+    const docSnap = await getDoc(docRef);
+    if (!docSnap.exists()) return undefined;
+    return { ...docSnap.data() as Semester, id: docSnap.id };
+}
+
+
+export async function getSemestersForCourse(courseId: string): Promise<SemesterWithId[]> {
+  const q = query(chaptersCollection, where("courseId", "==", courseId));
+  const snapshot = await getDocs(q);
+  const semesterIds = [...new Set(snapshot.docs.map(doc => doc.data().semesterId))];
+  
+  if (semesterIds.length === 0) return [];
+
+  const semestersQuery = query(semestersCollection, where('__name__', 'in', semesterIds));
+  const semestersSnapshot = await getDocs(semestersQuery);
+  return semestersSnapshot.docs.map(doc => ({ ...doc.data() as Semester, id: doc.id }));
 };
 
-export const getChaptersForSemester = async (courseId: string, semesterId: string): Promise<Chapter[]> => {
-  return chapters.filter(c => c.courseId === courseId && c.semesterId === semesterId);
+export async function getChaptersForSemester(courseId: string, semesterId: string): Promise<ChapterWithId[]> {
+    const q = query(chaptersCollection, where("courseId", "==", courseId), where("semesterId", "==", semesterId));
+    const snapshot = await getDocs(q);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Chapter, id: doc.id }));
 };
-export const getChapters = async (): Promise<Chapter[]> => chapters;
-export const getChapterBySlug = async (slug: string): Promise<Chapter | undefined> => chapters.find(c => c.slug === slug);
-export const getChapterById = async (id: string): Promise<Chapter | undefined> => chapters.find(c => c.id === id);
 
+export async function getChapters(): Promise<ChapterWithId[]> {
+    const snapshot = await getDocs(chaptersCollection);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Chapter, id: doc.id }));
+}
 
-export const getUnitsForChapter = async (chapterId: string): Promise<Unit[]> => {
-    return units.filter(u => u.chapterId === chapterId);
+export async function getChapterBySlug(slug: string): Promise<ChapterWithId | undefined> {
+    const q = query(chaptersCollection, where("slug", "==", slug));
+    const snapshot = await getDocs(q);
+    if (snapshot.empty) return undefined;
+    const doc = snapshot.docs[0];
+    return { ...doc.data() as Chapter, id: doc.id };
 };
-export const getUnits = async (): Promise<Unit[]> => units;
-export const getUnitBySlug = async (slug:string, chapterId:string): Promise<Unit | undefined> => units.find(u => u.slug === slug && u.chapterId === chapterId);
-export const getUnitById = async (id: string): Promise<Unit | undefined> => units.find(u => u.id === id);
 
+export async function getChapterById(id: string): Promise<ChapterWithId | undefined> {
+    const docRef = doc(db, 'chapters', id);
+    const docSnap = await getDoc(docRef);
+    if (!docSnap.exists()) return undefined;
+    return { ...docSnap.data() as Chapter, id: docSnap.id };
+};
+
+
+export async function getUnitsForChapter(chapterId: string): Promise<UnitWithId[]> {
+    const q = query(unitsCollection, where("chapterId", "==", chapterId));
+    const snapshot = await getDocs(q);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Unit, id: doc.id }));
+};
+
+export async function getUnits(): Promise<UnitWithId[]> {
+    const snapshot = await getDocs(unitsCollection);
+    return snapshot.docs.map(doc => ({ ...doc.data() as Unit, id: doc.id }));
+};
+
+export async function getUnitBySlug(slug:string, chapterId:string): Promise<UnitWithId | undefined> {
+    const q = query(unitsCollection, where("slug", "==", slug), where("chapterId", "==", chapterId));
+    const snapshot = await getDocs(q);
+    if (snapshot.empty) return undefined;
+    const doc = snapshot.docs[0];
+    return { ...doc.data() as Unit, id: doc.id };
+};
+export async function getUnitById(id: string): Promise<UnitWithId | undefined> {
+    const docRef = doc(db, 'units', id);
+    const docSnap = await getDoc(docRef);
+    if (!docSnap.exists()) return undefined;
+    return { ...docSnap.data() as Unit, id: docSnap.id };
+};
