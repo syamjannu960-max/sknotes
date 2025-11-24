@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useTransition, useEffect } from "react";
@@ -60,7 +61,8 @@ export default function CoursesAdminPage() {
     const handleFormSubmit = async (values: CourseFormValues) => {
         startSubmitting(async () => {
             const action = values.id ? updateCourse : addCourse;
-            const result = await action(values.id!, values.name);
+            // @ts-ignore
+            const result = await action(values);
 
             if (result.success) {
                 toast({ title: `Course ${values.id ? 'updated' : 'added'} successfully` });
@@ -138,4 +140,3 @@ export default function CoursesAdminPage() {
             />
         </div>
     );
-}

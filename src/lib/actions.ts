@@ -1,3 +1,4 @@
+
 "use server";
 
 import { revalidatePath } from "next/cache";
@@ -8,23 +9,26 @@ import { slugify } from "./utils";
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 // Course Actions
-export async function addCourse(name: string) {
+export async function addCourse(values: { name: string }) {
     await delay(500);
-    console.log("Adding course:", name);
-    const newCourse = { id: `c-${Date.now()}`, name, slug: slugify(name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
+    console.log("Adding course:", values.name);
+    const newCourse = { id: `c-${Date.now()}`, name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
     courses.push(newCourse);
     revalidatePath("/admin/courses");
+    revalidatePath("/courses");
     return { success: true, data: newCourse };
 }
 
-export async function updateCourse(id: string, name: string) {
+export async function updateCourse(values: { id: string, name: string }) {
     await delay(500);
-    console.log("Updating course:", id, name);
-    const course = courses.find(c => c.id === id);
+    console.log("Updating course:", values.id, values.name);
+    const course = courses.find(c => c.id === values.id);
     if (course) {
-        course.name = name;
-        course.slug = slugify(name);
+        course.name = values.name;
+        course.slug = slugify(values.name);
         revalidatePath("/admin/courses");
+        revalidatePath("/courses");
+        revalidatePath(`/courses/${course.slug}`);
         return { success: true, data: course };
     }
     return { success: false, error: "Course not found" };
@@ -37,6 +41,7 @@ export async function deleteCourse(id: string) {
     if (index > -1) {
         courses.splice(index, 1);
         revalidatePath("/admin/courses");
+        revalidatePath("/courses");
         return { success: true };
     }
     return { success: false, error: "Course not found" };
