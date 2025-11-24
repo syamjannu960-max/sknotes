@@ -4,13 +4,17 @@
 import { revalidatePath } from "next/cache";
 import { courses, semesters, chapters, units } from "./data";
 import { slugify } from "./utils";
+import { CourseFormValues, SemesterFormValues } from "./schemas";
 
 // Mock delay to simulate network latency
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 // Course Actions
-export async function addCourse(values: { name: string }) {
+export async function addCourse(values: CourseFormValues) {
     await delay(500);
+    if (!values.name) {
+        return { success: false, error: "Course name is required." };
+    }
     console.log("Adding course:", values.name);
     const newCourse = { id: `c-${Date.now()}`, name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
     courses.push(newCourse);
@@ -19,8 +23,11 @@ export async function addCourse(values: { name: string }) {
     return { success: true, data: newCourse };
 }
 
-export async function updateCourse(values: { id: string, name: string }) {
+export async function updateCourse(values: CourseFormValues) {
     await delay(500);
+    if (!values.id) {
+        return { success: false, error: "Course ID is required for an update." };
+    }
     console.log("Updating course:", values.id, values.name);
     const course = courses.find(c => c.id === values.id);
     if (course) {
@@ -49,7 +56,7 @@ export async function deleteCourse(id: string) {
 
 
 // Semester Actions
-export async function addSemester(values: { name: string }) {
+export async function addSemester(values: SemesterFormValues) {
     await delay(500);
     console.log("Adding semester:", values.name);
     const newSemester = { id: `s-${Date.now()}`, name: values.name, slug: slugify(values.name) };
@@ -58,7 +65,7 @@ export async function addSemester(values: { name: string }) {
     return { success: true, data: newSemester };
 }
 
-export async function updateSemester(values: { id: string, name: string }) {
+export async function updateSemester(values: SemesterFormValues) {
     await delay(500);
     console.log("Updating semester:", values.id, values.name);
     const semester = semesters.find(s => s.id === values.id);

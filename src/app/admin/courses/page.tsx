@@ -61,8 +61,7 @@ export default function CoursesAdminPage() {
     const handleFormSubmit = async (values: CourseFormValues) => {
         startSubmitting(async () => {
             const action = values.id ? updateCourse : addCourse;
-            // @ts-ignore
-            const result = await action(values);
+            const result = await action(values as any);
 
             if (result.success) {
                 toast({ title: `Course ${values.id ? 'updated' : 'added'} successfully` });
