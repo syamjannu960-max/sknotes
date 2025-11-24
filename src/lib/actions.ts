@@ -49,22 +49,22 @@ export async function deleteCourse(id: string) {
 
 
 // Semester Actions
-export async function addSemester(name: string) {
+export async function addSemester(values: { name: string }) {
     await delay(500);
-    console.log("Adding semester:", name);
-    const newSemester = { id: `s-${Date.now()}`, name, slug: slugify(name) };
+    console.log("Adding semester:", values.name);
+    const newSemester = { id: `s-${Date.now()}`, name: values.name, slug: slugify(values.name) };
     semesters.push(newSemester);
     revalidatePath("/admin/semesters");
     return { success: true, data: newSemester };
 }
 
-export async function updateSemester(id: string, name: string) {
+export async function updateSemester(values: { id: string, name: string }) {
     await delay(500);
-    console.log("Updating semester:", id, name);
-    const semester = semesters.find(s => s.id === id);
+    console.log("Updating semester:", values.id, values.name);
+    const semester = semesters.find(s => s.id === values.id);
     if (semester) {
-        semester.name = name;
-        semester.slug = slugify(name);
+        semester.name = values.name;
+        semester.slug = slugify(values.name);
         revalidatePath("/admin/semesters");
         return { success: true, data: semester };
     }

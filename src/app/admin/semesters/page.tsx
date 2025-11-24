@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import { getSemesters } from "@/lib/data";
 import {
   Table,
@@ -30,12 +30,12 @@ export default function SemestersAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedSemester, setSelectedSemester] = useState<Semester | undefined>(undefined);
 
-    useState(() => {
+    useEffect(() => {
         startFetching(async () => {
             const data = await getSemesters();
             setSemesters(data);
         });
-    });
+    }, []);
 
     const openNewForm = () => {
         setSelectedSemester(undefined);
@@ -55,7 +55,8 @@ export default function SemestersAdminPage() {
     const handleFormSubmit = async (values: SemesterFormValues) => {
         startSubmitting(async () => {
             const action = values.id ? updateSemester : addSemester;
-            const result = await action(values.id!, values.name);
+            // @ts-ignore
+            const result = await action(values);
             if (result.success) {
                 toast({ title: `Semester ${values.id ? 'updated' : 'added'} successfully` });
                 const data = await getSemesters();
