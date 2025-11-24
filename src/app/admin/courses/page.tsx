@@ -67,7 +67,7 @@ export default function CoursesAdminPage() {
                 fetchCourses();
                 setIsFormOpen(false);
             } else {
-                toast({ variant: 'destructive', title: "Error", description: result.error });
+                toast({ variant: 'destructive', title: "Error saving course", description: result.error });
             }
         });
     };
@@ -82,7 +82,7 @@ export default function CoursesAdminPage() {
                 fetchCourses();
                 setIsDeleteOpen(false);
              } else {
-                toast({ variant: 'destructive', title: "Error", description: result.error });
+                toast({ variant: 'destructive', title: "Error deleting course", description: result.error });
              }
         });
     }
