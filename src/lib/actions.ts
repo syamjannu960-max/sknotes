@@ -7,17 +7,22 @@ import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues
 import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
+// Generic success and error handlers
+const success = (data?: any) => ({ success: true, data });
+const error = (message: string, details?: any) => {
+    console.error(message, details);
+    return { success: false, error: message };
+};
+
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
     try {
-        if (!values.name) {
-            return { success: false, error: "Course name is required." };
-        }
+        if (!values.name) return error("Course name is required.");
+        
         const slug = slugify(values.name);
         const newCourse = { 
             name: values.name, 
             slug: slug,
-            // Using a static placeholder for now, this can be changed later
             imageUrl: `https://picsum.photos/seed/${slug}/600/400` 
         };
         const docRef = await addDoc(collection(db, "courses"), newCourse);
@@ -25,18 +30,17 @@ export async function addCourse(values: CourseFormValues) {
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
 
-        return { success: true, data: { ...newCourse, id: docRef.id } };
-    } catch (error: any) {
-        console.error("Error adding course: ", error);
-        return { success: false, error: error.message };
+        return success({ ...newCourse, id: docRef.id });
+    } catch (e: any) {
+        return error("Error adding course:", e.message);
     }
 }
 
 export async function updateCourse(id: string, values: CourseFormValues) {
     try {
-        if (!id) {
-            return { success: false, error: "Course ID is required for an update." };
-        }
+        if (!id) return error("Course ID is required for an update.");
+        if (!values.name) return error("Course name is required.");
+
         const courseRef = doc(db, "courses", id);
         const newSlug = slugify(values.name);
         const updatedCourse = { name: values.name, slug: newSlug };
@@ -45,64 +49,61 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        // Revalidating the specific course page. Note: This relies on the new slug.
-        // A more robust solution might involve revalidating the old slug path as well if it could change.
         revalidatePath(`/courses/${newSlug}`);
 
-        return { success: true, data: updatedCourse };
-    } catch (error: any) {
-        console.error("Error updating course: ", error);
-        return { success: false, error: error.message };
+        return success(updatedCourse);
+    } catch (e: any) {
+        return error("Error updating course:", e.message);
     }
 }
 
 export async function deleteCourse(id: string) {
     try {
+        if (!id) return error("Course ID is required for deletion.");
         await deleteDoc(doc(db, "courses", id));
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        return { success: true };
-    } catch (error: any) {
-        console.error("Error deleting course: ", error);
-        return { success: false, error: error.message };
+        return success();
+    } catch (e: any) {
+        return error("Error deleting course:", e.message);
     }
 }
-
 
 // Semester Actions
 export async function addSemester(values: SemesterFormValues) {
     try {
+        if (!values.name) return error("Semester name is required.");
         const newSemester = { name: values.name, slug: slugify(values.name) };
         await addDoc(collection(db, "semesters"), newSemester);
         revalidatePath("/admin/semesters");
-        return { success: true, data: newSemester };
-    } catch (error: any) {
-        console.error("Error adding semester: ", error);
-        return { success: false, error: error.message };
+        return success(newSemester);
+    } catch (e: any) {
+        return error("Error adding semester:", e.message);
     }
 }
 
 export async function updateSemester(id: string, values: SemesterFormValues) {
     try {
+        if (!id) return error("Semester ID is required for update.");
+        if (!values.name) return error("Semester name is required.");
         const semesterRef = doc(db, "semesters", id);
         const updatedSemester = { name: values.name, slug: slugify(values.name) };
         await updateDoc(semesterRef, updatedSemester);
         revalidatePath("/admin/semesters");
-        return { success: true, data: updatedSemester };
-    } catch (error: any) {
-        console.error("Error updating semester: ", error);
-        return { success: false, error: error.message };
+        return success(updatedSemester);
+    } catch (e: any) {
+        return error("Error updating semester:", e.message);
     }
 }
 
 export async function deleteSemester(id: string) {
     try {
+        if (!id) return error("Semester ID is required for deletion.");
         await deleteDoc(doc(db, "semesters", id));
         revalidatePath("/admin/semesters");
-        return { success: true };
-    } catch (error: any) {
-        console.error("Error deleting semester: ", error);
-        return { success: false, error: error.message };
+        return success();
+    } catch (e: any) {
+        return error("Error deleting semester:", e.message);
     }
 }
 
@@ -110,42 +111,40 @@ export async function deleteSemester(id: string) {
 export async function addChapter(values: ChapterFormValues) {
     try {
         const newChapter = { 
-            slug: slugify(values.title),
             ...values,
+            slug: slugify(values.title),
         };
         await addDoc(collection(db, "chapters"), newChapter);
         revalidatePath("/admin/chapters");
-        return { success: true, data: newChapter };
-    } catch (error: any) {
-        console.error("Error adding chapter: ", error);
-        return { success: false, error: error.message };
+        return success(newChapter);
+    } catch (e: any) {
+        return error("Error adding chapter:", e.message);
     }
 }
 
 export async function updateChapter(id: string, values: ChapterFormValues) {
     try {
-        if (!id) {
-            return { success: false, error: "Chapter ID is required for an update." };
-        }
+        if (!id) return error("Chapter ID is required for update.");
         const chapterRef = doc(db, "chapters", id);
         const updatedChapter = { ...values, slug: slugify(values.title) };
-        await updateDoc(chapterRef, updatedChapter);
+        // Remove id from the object to be updated to avoid Firestore errors
+        const { id: _, ...updateData } = updatedChapter;
+        await updateDoc(chapterRef, updateData);
         revalidatePath("/admin/chapters");
-        return { success: true, data: updatedChapter };
-    } catch (error: any) {
-        console.error("Error updating chapter: ", error);
-        return { success: false, error: error.message };
+        return success(updatedChapter);
+    } catch (e: any) {
+        return error("Error updating chapter:", e.message);
     }
 }
 
 export async function deleteChapter(id: string) {
     try {
+        if (!id) return error("Chapter ID is required for deletion.");
         await deleteDoc(doc(db, "chapters", id));
         revalidatePath("/admin/chapters");
-        return { success: true };
-    } catch (error: any) {
-        console.error("Error deleting chapter: ", error);
-        return { success: false, error: error.message };
+        return success();
+    } catch (e: any) {
+        return error("Error deleting chapter:", e.message);
     }
 }
 
@@ -153,41 +152,39 @@ export async function deleteChapter(id: string) {
 export async function addUnit(values: UnitFormValues) {
     try {
         const newUnit = { 
-            slug: slugify(values.title),
             ...values,
+            slug: slugify(values.title),
         };
         await addDoc(collection(db, "units"), newUnit);
         revalidatePath("/admin/units");
-        return { success: true, data: newUnit };
-    } catch (error: any) {
-        console.error("Error adding unit: ", error);
-        return { success: false, error: error.message };
+        return success(newUnit);
+    } catch (e: any) {
+        return error("Error adding unit:", e.message);
     }
 }
 
 export async function updateUnit(id: string, values: UnitFormValues) {
     try {
-        if (!id) {
-            return { success: false, error: "Unit ID is required for an update." };
-        }
+        if (!id) return error("Unit ID is required for update.");
         const unitRef = doc(db, "units", id);
         const updatedUnit = { ...values, slug: slugify(values.title) };
-        await updateDoc(unitRef, updatedUnit);
+        // Remove id from the object to be updated to avoid Firestore errors
+        const { id: _, ...updateData } = updatedUnit;
+        await updateDoc(unitRef, updateData);
         revalidatePath("/admin/units");
-        return { success: true, data: updatedUnit };
-    } catch (error: any) {
-        console.error("Error updating unit: ", error);
-        return { success: false, error: error.message };
+        return success(updatedUnit);
+    } catch (e: any) {
+        return error("Error updating unit:", e.message);
     }
 }
 
 export async function deleteUnit(id: string) {
     try {
+        if (!id) return error("Unit ID is required for deletion.");
         await deleteDoc(doc(db, "units", id));
         revalidatePath("/admin/units");
-        return { success: true };
-    } catch (error: any) {
-        console.error("Error deleting unit: ", error);
-        return { success: false, error: error.message };
+        return success();
+    } catch (e: any) {
+        return error("Error deleting unit:", e.message);
     }
 }
