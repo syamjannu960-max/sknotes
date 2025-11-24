@@ -6,7 +6,6 @@ import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, ChapterFormValues, UnitFormValues } from "./schemas";
 import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from "./firebase";
-import { getCourseBySlug } from "./data";
 
 // Course Actions
 export async function addCourse(values: CourseFormValues) {
@@ -14,14 +13,22 @@ export async function addCourse(values: CourseFormValues) {
         if (!values.name) {
             return { success: false, error: "Course name is required." };
         }
-        const newCourse = { name: values.name, slug: slugify(values.name), imageUrl: 'https://picsum.photos/seed/new/600/400' };
-        await addDoc(collection(db, "courses"), newCourse);
+        const slug = slugify(values.name);
+        const newCourse = { 
+            name: values.name, 
+            slug: slug,
+            // Using a static placeholder for now, this can be changed later
+            imageUrl: `https://picsum.photos/seed/${slug}/600/400` 
+        };
+        const docRef = await addDoc(collection(db, "courses"), newCourse);
+        
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        return { success: true, data: newCourse };
+
+        return { success: true, data: { ...newCourse, id: docRef.id } };
     } catch (error: any) {
         console.error("Error adding course: ", error);
-        return { success: false, error: `Failed to add course: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -33,17 +40,19 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         const courseRef = doc(db, "courses", id);
         const newSlug = slugify(values.name);
         const updatedCourse = { name: values.name, slug: newSlug };
+        
         await updateDoc(courseRef, updatedCourse);
+        
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
-        const course = await getCourseBySlug(newSlug);
-        if (course) {
-            revalidatePath(`/courses/${course.slug}`);
-        }
+        // Revalidating the specific course page. Note: This relies on the new slug.
+        // A more robust solution might involve revalidating the old slug path as well if it could change.
+        revalidatePath(`/courses/${newSlug}`);
+
         return { success: true, data: updatedCourse };
     } catch (error: any) {
         console.error("Error updating course: ", error);
-        return { success: false, error: `Failed to update course: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -55,7 +64,7 @@ export async function deleteCourse(id: string) {
         return { success: true };
     } catch (error: any) {
         console.error("Error deleting course: ", error);
-        return { success: false, error: `Failed to delete course: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -69,7 +78,7 @@ export async function addSemester(values: SemesterFormValues) {
         return { success: true, data: newSemester };
     } catch (error: any) {
         console.error("Error adding semester: ", error);
-        return { success: false, error: `Failed to add semester: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -82,7 +91,7 @@ export async function updateSemester(id: string, values: SemesterFormValues) {
         return { success: true, data: updatedSemester };
     } catch (error: any) {
         console.error("Error updating semester: ", error);
-        return { success: false, error: `Failed to update semester: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -93,7 +102,7 @@ export async function deleteSemester(id: string) {
         return { success: true };
     } catch (error: any) {
         console.error("Error deleting semester: ", error);
-        return { success: false, error: `Failed to delete semester: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -109,7 +118,7 @@ export async function addChapter(values: ChapterFormValues) {
         return { success: true, data: newChapter };
     } catch (error: any) {
         console.error("Error adding chapter: ", error);
-        return { success: false, error: `Failed to add chapter: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -125,7 +134,7 @@ export async function updateChapter(id: string, values: ChapterFormValues) {
         return { success: true, data: updatedChapter };
     } catch (error: any) {
         console.error("Error updating chapter: ", error);
-        return { success: false, error: `Failed to update chapter: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -136,7 +145,7 @@ export async function deleteChapter(id: string) {
         return { success: true };
     } catch (error: any) {
         console.error("Error deleting chapter: ", error);
-        return { success: false, error: `Failed to delete chapter: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -152,7 +161,7 @@ export async function addUnit(values: UnitFormValues) {
         return { success: true, data: newUnit };
     } catch (error: any) {
         console.error("Error adding unit: ", error);
-        return { success: false, error: `Failed to add unit: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -168,7 +177,7 @@ export async function updateUnit(id: string, values: UnitFormValues) {
         return { success: true, data: updatedUnit };
     } catch (error: any) {
         console.error("Error updating unit: ", error);
-        return { success: false, error: `Failed to update unit: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
 
@@ -179,6 +188,6 @@ export async function deleteUnit(id: string) {
         return { success: true };
     } catch (error: any) {
         console.error("Error deleting unit: ", error);
-        return { success: false, error: `Failed to delete unit: ${error.message}` };
+        return { success: false, error: error.message };
     }
 }
