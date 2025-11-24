@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useTransition, useEffect } from "react";
@@ -117,13 +118,13 @@ export default function SemestersAdminPage() {
                 </Table>
             </div>
 
-            <SemesterForm 
+            {isFormOpen && <SemesterForm 
                 isOpen={isFormOpen}
                 onOpenChange={setIsFormOpen}
                 onSubmit={handleFormSubmit}
                 defaultValue={selectedSemester}
                 isSubmitting={isSubmitting}
-            />
+            />}
 
             <DeleteConfirmationDialog 
                 isOpen={isDeleteOpen}

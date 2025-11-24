@@ -26,7 +26,7 @@ export default function ChaptersAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedChapter, setSelectedChapter] = useState<Chapter | undefined>(undefined);
 
-    const fetchAllData = async () => {
+    const fetchAllData = () => {
         startFetching(async () => {
             const [chaptersData, coursesData, semestersData] = await Promise.all([getChapters(), getCourses(), getSemesters()]);
             setChapters(chaptersData);
