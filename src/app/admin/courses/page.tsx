@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import { getCourses } from "@/lib/data";
 import {
   Table,
@@ -35,12 +35,12 @@ export default function CoursesAdminPage() {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false);
     const [selectedCourse, setSelectedCourse] = useState<Course | undefined>(undefined);
 
-    useState(() => {
+    useEffect(() => {
         startFetching(async () => {
             const data = await getCourses();
             setCourses(data);
         });
-    });
+    }, []);
 
     const openNewForm = () => {
         setSelectedCourse(undefined);
