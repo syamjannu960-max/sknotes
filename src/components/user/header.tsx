@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BookOpen, ChevronDown, Menu } from 'lucide-react';
+import { BookOpen, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -11,18 +11,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from '@/components/ui/sheet';
 import { useEffect, useState } from 'react';
 import { Course } from '@/lib/types';
 
 export function Header() {
   const pathname = usePathname();
   const [courses, setCourses] = useState<Course[]>([]);
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   useEffect(() => {
     async function fetchCourses() {
@@ -39,16 +33,14 @@ export function Header() {
     fetchCourses();
   }, []);
 
-  const closeSheet = () => setIsSheetOpen(false);
-
   const courseLinks = (
     <>
       <DropdownMenuItem asChild>
-         <Link href="/courses" onClick={closeSheet}>All Courses</Link>
+         <Link href="/courses">All Courses</Link>
       </DropdownMenuItem>
       {courses.map((course) => (
         <DropdownMenuItem key={course.id} asChild>
-          <Link href={`/courses/${course.slug}`} onClick={closeSheet}>{course.name}</Link>
+          <Link href={`/courses/${course.slug}`}>{course.name}</Link>
         </DropdownMenuItem>
       ))}
     </>
@@ -63,11 +55,10 @@ export function Header() {
             <span className="text-xl font-headline font-bold text-foreground group-hover:text-primary transition-colors">SKNotes</span>
           </Link>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-2">
+          <nav className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="link" className={cn("text-muted-foreground hover:text-primary transition-colors px-3 py-2", pathname.startsWith('/courses') && "text-primary font-semibold")}>
+                <Button variant="ghost" className={cn("text-muted-foreground hover:text-primary transition-colors px-3 py-2", pathname.startsWith('/courses') && "text-primary font-semibold")}>
                   Courses <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -76,30 +67,6 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
-          
-          {/* Mobile Navigation */}
-          <div className="md:hidden">
-            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu />
-                  <span className="sr-only">Open menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left">
-                <div className="p-4">
-                  <Link href="/courses" className="flex items-center gap-2 group mb-8" onClick={closeSheet}>
-                      <BookOpen className="h-8 w-8 text-primary"/>
-                      <span className="text-xl font-headline font-bold">SKNotes</span>
-                  </Link>
-                  <nav className="flex flex-col gap-4">
-                      <h3 className="font-semibold text-lg">Courses</h3>
-                      {courseLinks}
-                  </nav>
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
         </div>
       </div>
     </header>
