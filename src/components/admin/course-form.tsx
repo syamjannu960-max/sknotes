@@ -14,6 +14,7 @@ import {
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -40,7 +41,7 @@ export function CourseForm({
 }: CourseFormProps) {
   const form = useForm<CourseFormValues>({
     resolver: zodResolver(courseSchema),
-    defaultValues: defaultValue || { name: "" },
+    defaultValues: defaultValue || { name: "", imageUrl: "" },
   });
 
   const handleFormSubmit = form.handleSubmit(async (data) => {
@@ -49,7 +50,7 @@ export function CourseForm({
   
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-xl">
         <DialogHeader>
           <DialogTitle>{defaultValue?.id ? "Edit Course" : "Add New Course"}</DialogTitle>
         </DialogHeader>
@@ -64,6 +65,22 @@ export function CourseForm({
                   <FormControl>
                     <Input placeholder="e.g., Computer Science" {...field} />
                   </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+             <FormField
+              control={form.control}
+              name="imageUrl"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Image URL (Optional)</FormLabel>
+                  <FormControl>
+                    <Input placeholder="https://example.com/image.jpg" {...field} />
+                  </FormControl>
+                  <FormDescription>
+                    If left blank, a random image will be generated.
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}

@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const courseSchema = z.object({
   id: z.string().optional(),
   name: z.string().min(3, "Course name must be at least 3 characters long."),
+  imageUrl: z.string().url("Must be a valid URL.").optional().or(z.literal('')),
 });
 export type CourseFormValues = z.infer<typeof courseSchema>;
 

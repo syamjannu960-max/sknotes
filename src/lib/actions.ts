@@ -86,7 +86,7 @@ export async function addCourse(values: CourseFormValues) {
         const newCourse = {
             name: values.name,
             slug,
-            imageUrl: `https://picsum.photos/seed/${slug}/600/400`,
+            imageUrl: values.imageUrl || `https://picsum.photos/seed/${slug}/600/400`,
         };
 
         const docRef = await addDoc(collection(db, "courses"), newCourse);
@@ -108,7 +108,14 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         if (!values.name) return error("Course name is required.");
 
         const slug = slugify(values.name);
-        const updatedCourse = { name: values.name, slug };
+        const updatedCourse: {name: string, slug: string, imageUrl?: string} = { 
+            name: values.name, 
+            slug,
+        };
+
+        if (values.imageUrl) {
+            updatedCourse.imageUrl = values.imageUrl;
+        }
 
         await updateDoc(doc(db, "courses", id), updatedCourse);
 
