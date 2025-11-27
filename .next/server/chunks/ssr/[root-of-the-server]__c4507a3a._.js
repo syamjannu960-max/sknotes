@@ -213,7 +213,8 @@ async function handleAdminLogin(prevState, formData) {
         // In a real app, you'd use a more secure method like JWTs.
         // For this demo, we set a simple cookie.
         const user = querySnapshot.docs[0].data();
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cookies"])().set('session', JSON.stringify({
+        //console.log(user);
+        (await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cookies"])()).set('session', JSON.stringify({
             username: user.username,
             isAdmin: true
         }), {
@@ -235,7 +236,7 @@ async function handleAdminLogin(prevState, formData) {
     }
 }
 async function logout() {
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cookies"])().delete('session');
+    (await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cookies"])()).delete('session');
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["redirect"])('/admin/login');
 }
 async function addCourse(values) {

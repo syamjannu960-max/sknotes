@@ -3,18 +3,7 @@
     "00c1b8e9121681f60a7a58edd5f9754af303f020bd": {
       "workers": {
         "app/admin/courses/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/admin/courses/page": "action-browser"
-      }
-    },
-    "002d94ea346186b288994452558419087c6a342198": {
-      "workers": {
-        "app/admin/courses/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
         }
       },
@@ -25,7 +14,7 @@
     "40d22acf6c44f9633eadc575eda839e3c133e11986": {
       "workers": {
         "app/admin/courses/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
         }
       },
@@ -36,7 +25,7 @@
     "6036f5c243be6fc6adc3a6f47fb502bf42d53ec960": {
       "workers": {
         "app/admin/courses/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
         }
       },
@@ -47,7 +36,7 @@
     "40a2d49b631ffae968360ec5c5e6c381f9a1f81e4f": {
       "workers": {
         "app/admin/courses/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/courses/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
         }
       },

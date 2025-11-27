@@ -1,243 +1,294 @@
-
 "use server";
 
 import { revalidatePath } from "next/cache";
 import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, SubjectFormValues, UnitFormValues } from "./schemas";
 import { db } from "./firebase";
-import { collection, addDoc, doc, updateDoc, deleteDoc, query, where, getDocs } from "firebase/firestore";
-import { cookies } from 'next/headers'
+import {
+    collection,
+    addDoc,
+    doc,
+    updateDoc,
+    deleteDoc,
+    query,
+    where,
+    getDocs,
+} from "firebase/firestore";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
+// Helpers
 const success = (data?: any) => ({ success: true, data });
 const error = (message: string) => ({ success: false, error: message });
 
-// Auth Actions
+// ===============================
+// AUTH ACTIONS
+// ===============================
 export async function handleAdminLogin(prevState: any, formData: FormData) {
     try {
-        const username = formData.get('username') as string;
-        const password = formData.get('password') as string;
+        const username = formData.get("username") as string;
+        const password = formData.get("password") as string;
 
         if (!username || !password) {
-            return { success: false, message: 'Username and password are required.' };
+            return { success: false, message: "Username and password are required." };
         }
 
-        const usersRef = collection(db, 'users');
-        const q = query(usersRef, where('username', '==', username), where('password', '==', password));
+        const usersRef = collection(db, "users");
+        const q = query(
+            usersRef,
+            where("username", "==", username),
+            where("password", "==", password)
+        );
+
         const querySnapshot = await getDocs(q);
-
         if (querySnapshot.empty) {
-            return { success: false, message: 'Invalid username or password.' };
+            return { success: false, message: "Invalid username or password." };
         }
-        
-        // In a real app, you'd use a more secure method like JWTs.
-        // For this demo, we set a simple cookie.
-        const user = querySnapshot.docs[0].data();
-        cookies().set('session', JSON.stringify({ username: user.username, isAdmin: true }), {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            maxAge: 60 * 60 * 24, // 1 day
-            path: '/',
-        });
-        
-        return { success: true, message: "Login successful!" };
 
+        const user = querySnapshot.docs[0].data();
+        const cookieStore = await cookies(); 
+        cookieStore.set(
+            "session",
+            JSON.stringify({
+                username: user.username,
+                isAdmin: true,
+            }),
+            {
+                secure: process.env.NODE_ENV === "production",
+                maxAge: 60 * 60 * 24,
+                path: "/",
+            }
+        );
+
+        return { success: true, message: "Login successful!" };
     } catch (e: any) {
-        console.error("handleAdminLogin action error:", e.message);
-        return { success: false, message: 'An unexpected server error occurred.' };
+        console.error("handleAdminLogin ERROR:", e);
+        return { success: false, message: "Server error occurred." };
     }
 }
 
 export async function logout() {
-    cookies().delete('session');
-    redirect('/admin/login');
+    const cookieStore = await cookies();
+    cookieStore.delete("session");
+    redirect("/admin/login");
 }
 
-
-// Course Actions
+// ===============================
+// COURSE ACTIONS
+// ===============================
 export async function addCourse(values: CourseFormValues) {
     try {
         if (!values.name) return error("Course name is required.");
-        
+
         const slug = slugify(values.name);
-        const newCourse = { 
-            name: values.name, 
-            slug: slug,
-            imageUrl: `https://picsum.photos/seed/${slug}/600/400` 
+        const newCourse = {
+            name: values.name,
+            slug,
+            imageUrl: `https://picsum.photos/seed/${slug}/600/400`,
         };
+
         const docRef = await addDoc(collection(db, "courses"), newCourse);
-        
+
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
 
         return success({ ...newCourse, id: docRef.id });
     } catch (e: any) {
-        console.error("addCourse action error:", e.message);
-        return error("Failed to add course. " + e.message);
+        console.error("addCourse ERROR:", e);
+        return error("Failed to add course.");
     }
 }
 
 export async function updateCourse(id: string, values: CourseFormValues) {
     try {
-        if (!id) return error("Course ID is required for an update.");
+        if (!id) return error("Course ID is required.");
         if (!values.name) return error("Course name is required.");
 
-        const courseRef = doc(db, "courses", id);
-        const newSlug = slugify(values.name);
-        const updatedCourse = { name: values.name, slug: newSlug };
-        
-        await updateDoc(courseRef, updatedCourse);
-        
+        const slug = slugify(values.name);
+        const updatedCourse = { name: values.name, slug };
+
+        await updateDoc(doc(db, "courses", id), updatedCourse);
+
         revalidatePath("/admin/courses");
-        revalidatePath("/courses");
-        revalidatePath(`/courses/${newSlug}`);
 
         return success(updatedCourse);
     } catch (e: any) {
-        console.error("updateCourse action error:", e.message);
-        return error("Failed to update course. " + e.message);
+        console.error("updateCourse ERROR:", e);
+        return error("Failed to update course.");
     }
 }
 
 export async function deleteCourse(id: string) {
     try {
-        if (!id) return error("Course ID is required for deletion.");
+        if (!id) return error("Course ID is required.");
+
         await deleteDoc(doc(db, "courses", id));
+
         revalidatePath("/admin/courses");
-        revalidatePath("/courses");
         return success();
     } catch (e: any) {
-        console.error("deleteCourse action error:", e.message);
-        return error("Failed to delete course. " + e.message);
+        console.error("deleteCourse ERROR:", e);
+        return error("Failed to delete course.");
     }
 }
 
-// Semester Actions
+// ===============================
+// SEMESTER ACTIONS
+// ===============================
 export async function addSemester(values: SemesterFormValues) {
     try {
         if (!values.name) return error("Semester name is required.");
-        const newSemester = { name: values.name, slug: slugify(values.name) };
+
+        const newSemester = {
+            name: values.name,
+            slug: slugify(values.name),
+        };
+
         await addDoc(collection(db, "semesters"), newSemester);
+
         revalidatePath("/admin/semesters");
         return success(newSemester);
     } catch (e: any) {
-        console.error("addSemester action error:", e.message);
-        return error("Failed to add semester. " + e.message);
+        console.error("addSemester ERROR:", e);
+        return error("Failed to add semester.");
     }
 }
 
 export async function updateSemester(id: string, values: SemesterFormValues) {
     try {
-        if (!id) return error("Semester ID is required for update.");
-        if (!values.name) return error("Semester name is required.");
-        const semesterRef = doc(db, "semesters", id);
-        const updatedSemester = { name: values.name, slug: slugify(values.name) };
-        await updateDoc(semesterRef, updatedSemester);
+        if (!id) return error("Semester ID is required.");
+
+        const updatedSemester = {
+            name: values.name,
+            slug: slugify(values.name),
+        };
+
+        await updateDoc(doc(db, "semesters", id), updatedSemester);
+
         revalidatePath("/admin/semesters");
         return success(updatedSemester);
     } catch (e: any) {
-        console.error("updateSemester action error:", e.message);
-        return error("Failed to update semester. " + e.message);
+        console.error("updateSemester ERROR:", e);
+        return error("Failed to update semester.");
     }
 }
 
 export async function deleteSemester(id: string) {
     try {
-        if (!id) return error("Semester ID is required for deletion.");
+        if (!id) return error("Semester ID is required.");
+
         await deleteDoc(doc(db, "semesters", id));
+
         revalidatePath("/admin/semesters");
         return success();
     } catch (e: any) {
-        console.error("deleteSemester action error:", e.message);
-        return error("Failed to delete semester. " + e.message);
+        console.error("deleteSemester ERROR:", e);
+        return error("Failed to delete semester.");
     }
 }
 
-// Subject Actions
+// ===============================
+// SUBJECT ACTIONS
+// ===============================
 export async function addSubject(values: SubjectFormValues) {
     try {
-        const newSubject = { 
+        const newSubject = {
             ...values,
             slug: slugify(values.title),
         };
+
         await addDoc(collection(db, "subjects"), newSubject);
+
         revalidatePath("/admin/subjects");
         return success(newSubject);
     } catch (e: any) {
-        console.error("addSubject action error:", e.message);
-        return error("Failed to add subject. " + e.message);
+        console.error("addSubject ERROR:", e);
+        return error("Failed to add subject.");
     }
 }
 
 export async function updateSubject(id: string, values: SubjectFormValues) {
     try {
-        if (!id) return error("Subject ID is required for update.");
-        const subjectRef = doc(db, "subjects", id);
-        const { id: _, ...updateData } = values; // Exclude id from update data
-        const updatedSubject = { ...updateData, slug: slugify(values.title) };
+        if (!id) return error("Subject ID is required.");
 
-        await updateDoc(subjectRef, updatedSubject);
+        const updatedSubject = {
+            ...values,
+            slug: slugify(values.title),
+        };
+
+        await updateDoc(doc(db, "subjects", id), updatedSubject);
+
         revalidatePath("/admin/subjects");
         return success(updatedSubject);
     } catch (e: any) {
-        console.error("updateSubject action error:", e.message);
-        return error("Failed to update subject. " + e.message);
+        console.error("updateSubject ERROR:", e);
+        return error("Failed to update subject.");
     }
 }
 
 export async function deleteSubject(id: string) {
     try {
-        if (!id) return error("Subject ID is required for deletion.");
+        if (!id) return error("Subject ID is required.");
+
         await deleteDoc(doc(db, "subjects", id));
+
         revalidatePath("/admin/subjects");
         return success();
     } catch (e: any) {
-        console.error("deleteSubject action error:", e.message);
-        return error("Failed to delete subject. " + e.message);
+        console.error("deleteSubject ERROR:", e);
+        return error("Failed to delete subject.");
     }
 }
 
-// Unit Actions
+// ===============================
+// UNIT ACTIONS
+// ===============================
 export async function addUnit(values: UnitFormValues) {
     try {
-        const newUnit = { 
+        const newUnit = {
             ...values,
             slug: slugify(values.title),
         };
+
         await addDoc(collection(db, "units"), newUnit);
+
         revalidatePath("/admin/units");
         return success(newUnit);
     } catch (e: any) {
-        console.error("addUnit action error:", e.message);
-        return error("Failed to add unit. " + e.message);
+        console.error("addUnit ERROR:", e);
+        return error("Failed to add unit.");
     }
 }
 
 export async function updateUnit(id: string, values: UnitFormValues) {
     try {
-        if (!id) return error("Unit ID is required for update.");
-        const unitRef = doc(db, "units", id);
-        const { id: _, ...updateData } = values;
-        const updatedUnit = { ...updateData, slug: slugify(values.title) };
+        if (!id) return error("Unit ID is required.");
 
-        await updateDoc(unitRef, updatedUnit);
+        const updatedUnit = {
+            ...values,
+            slug: slugify(values.title),
+        };
+
+        await updateDoc(doc(db, "units", id), updatedUnit);
+
         revalidatePath("/admin/units");
         return success(updatedUnit);
-    } catch (e: any)
-{
-        console.error("updateUnit action error:", e.message);
-        return error("Failed to update unit. " + e.message);
+    } catch (e: any) {
+        console.error("updateUnit ERROR:", e);
+        return error("Failed to update unit.");
     }
 }
 
 export async function deleteUnit(id: string) {
     try {
-        if (!id) return error("Unit ID is required for deletion.");
+        if (!id) return error("Unit ID is required.");
+
         await deleteDoc(doc(db, "units", id));
+
         revalidatePath("/admin/units");
         return success();
     } catch (e: any) {
-        console.error("deleteUnit action error:", e.message);
-        return error("Failed to delete unit. " + e.message);
+        console.error("deleteUnit ERROR:", e);
+        return error("Failed to delete unit.");
     }
 }

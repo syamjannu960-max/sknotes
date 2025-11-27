@@ -1,6 +1,7 @@
 
 import { initializeApp, getApps, getApp, FirebaseOptions } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 import { Course } from "./types";
 
 // These variables are exposed to the client and MUST be prefixed with NEXT_PUBLIC_
@@ -16,6 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase for client-side usage
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore(app);
+const auth = getAuth(app);
 
 // Function to get all courses
 export async function getCourses(): Promise<Course[]> {
@@ -28,4 +30,4 @@ export async function getCourses(): Promise<Course[]> {
   return courseList;
 }
 
-export { app, db };
+export { app, db, auth };

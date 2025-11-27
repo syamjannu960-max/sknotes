@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/user/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { DownloadPdfButton } from "@/components/user/DownloadPdfButton";
 
 type Props = {
     params: { courseSlug: string; semesterSlug: string; subjectSlug: string; unitSlug: string; }
@@ -50,12 +51,7 @@ export default async function UnitPage({ params }: Props) {
                     <h1 className="text-4xl font-bold font-headline">{unit.title}</h1>
                 </div>
                 {subject.pdfUrl && (
-                    <Button asChild className="flex-shrink-0">
-                        <Link href={subject.pdfUrl} target="_blank">
-                            <Download className="mr-2 h-4 w-4" />
-                            Download Subject PDF
-                        </Link>
-                    </Button>
+                    <DownloadPdfButton pdfUrl={subject.pdfUrl} />
                 )}
             </div>
 

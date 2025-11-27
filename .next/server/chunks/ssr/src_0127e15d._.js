@@ -1,0 +1,1939 @@
+module.exports = {
+
+"[project]/src/lib/data:3aa942 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"00a220486f9c6e367ac6b9b19ea0fb9e06c8a45f2d":"getSubjects"},"src/lib/data.ts",""] */ __turbopack_context__.s({
+    "getSubjects": (()=>getSubjects)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var getSubjects = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("00a220486f9c6e367ac6b9b19ea0fb9e06c8a45f2d", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getSubjects"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vZGF0YS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcbid1c2Ugc2VydmVyJztcblxuaW1wb3J0IHsgZGIgfSBmcm9tICcuL2ZpcmViYXNlJztcbmltcG9ydCB0eXBlIHsgQ291cnNlLCBTZW1lc3RlciwgU3ViamVjdCwgVW5pdCwgQ291cnNlV2l0aElkLCBTZW1lc3RlcldpdGhJZCwgU3ViamVjdFdpdGhJZCwgVW5pdFdpdGhJZCB9IGZyb20gJy4vdHlwZXMnO1xuaW1wb3J0IHsgY29sbGVjdGlvbiwgZ2V0RG9jcywgcXVlcnksIHdoZXJlLCBkb2MsIGdldERvYywgZG9jdW1lbnRJZCB9IGZyb20gJ2ZpcmViYXNlL2ZpcmVzdG9yZSc7XG5cbmNvbnN0IGNvdXJzZXNDb2xsZWN0aW9uID0gJ2NvdXJzZXMnO1xuY29uc3Qgc2VtZXN0ZXJzQ29sbGVjdGlvbiA9ICdzZW1lc3RlcnMnO1xuY29uc3Qgc3ViamVjdHNDb2xsZWN0aW9uID0gJ3N1YmplY3RzJztcbmNvbnN0IHVuaXRzQ29sbGVjdGlvbiA9ICd1bml0cyc7XG5cblxuLy8gRGF0YSBmZXRjaGluZyBmdW5jdGlvbnNcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRDb3Vyc2VzKCk6IFByb21pc2U8Q291cnNlV2l0aElkW10+IHtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MoY29sbGVjdGlvbihkYiwgY291cnNlc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5U2x1ZyhzbHVnOiBzdHJpbmcpOiBQcm9taXNlPENvdXJzZVdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBDb3Vyc2UsIGlkOiBkb2MuaWQgfTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8Q291cnNlV2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgZG9jUmVmID0gZG9jKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiwgaWQpO1xuICAgIGNvbnN0IGRvY1NuYXAgPSBhd2FpdCBnZXREb2MoZG9jUmVmKTtcbiAgICBpZiAoIWRvY1NuYXAuZXhpc3RzKCkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgcmV0dXJuIHsgLi4uZG9jU25hcC5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnMoKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgU2VtZXN0ZXIsIGlkOiBkb2MuaWQgfSkpO1xufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U2VtZXN0ZXJCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBzZW1lc3RlcnNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzbHVnXCIsIFwiPT1cIiwgc2x1ZykpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH07XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlckJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWQgfCB1bmRlZmluZWQ+IHtcbiAgICBjb25zdCBkb2NSZWYgPSBkb2MoZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24sIGlkKTtcbiAgICBjb25zdCBkb2NTbmFwID0gYXdhaXQgZ2V0RG9jKGRvY1JlZik7XG4gICAgaWYgKCFkb2NTbmFwLmV4aXN0cygpKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIHJldHVybiB7IC4uLmRvY1NuYXAuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnNGb3JDb3Vyc2UoY291cnNlSWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWRbXT4ge1xuICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc3ViamVjdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJjb3Vyc2VJZFwiLCBcIj09XCIsIGNvdXJzZUlkKSk7XG4gIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgY29uc3Qgc2VtZXN0ZXJJZHMgPSBbLi4ubmV3IFNldChzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gZG9jLmRhdGEoKS5zZW1lc3RlcklkKSldO1xuICBcbiAgaWYgKHNlbWVzdGVySWRzLmxlbmd0aCA9PT0gMCkgcmV0dXJuIFtdO1xuXG4gIGNvbnN0IHNlbWVzdGVyc1F1ZXJ5ID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc2VtZXN0ZXJzQ29sbGVjdGlvbiksIHdoZXJlKGRvY3VtZW50SWQoKSwgJ2luJywgc2VtZXN0ZXJJZHMpKTtcbiAgY29uc3Qgc2VtZXN0ZXJzU25hcHNob3QgPSBhd2FpdCBnZXREb2NzKHNlbWVzdGVyc1F1ZXJ5KTtcbiAgcmV0dXJuIHNlbWVzdGVyc1NuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdWJqZWN0c0ZvclNlbWVzdGVyKGNvdXJzZUlkOiBzdHJpbmcsIHNlbWVzdGVySWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwiY291cnNlSWRcIiwgXCI9PVwiLCBjb3Vyc2VJZCksIHdoZXJlKFwic2VtZXN0ZXJJZFwiLCBcIj09XCIsIHNlbWVzdGVySWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFN1YmplY3QsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RzKCk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTdWJqZWN0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH07XG59O1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3ViamVjdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgc3ViamVjdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcblxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdHNGb3JTdWJqZWN0KHN1YmplY3RJZDogc3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkW10+IHtcbiAgICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgdW5pdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzdWJqZWN0SWRcIiwgXCI9PVwiLCBzdWJqZWN0SWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFVuaXRzKCk6IFByb21pc2U8VW5pdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRVbml0QnlTbHVnKHNsdWc6c3RyaW5nLCBzdWJqZWN0SWQ6c3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpLCB3aGVyZShcInN1YmplY3RJZFwiLCBcIj09XCIsIHN1YmplY3RJZCkpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfTtcbn07XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8VW5pdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgdW5pdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoib1JBMEVzQiJ9
+}}),
+"[project]/src/lib/data:aef33b [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"002d94ea346186b288994452558419087c6a342198":"getCourses"},"src/lib/data.ts",""] */ __turbopack_context__.s({
+    "getCourses": (()=>getCourses)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var getCourses = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("002d94ea346186b288994452558419087c6a342198", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getCourses"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vZGF0YS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcbid1c2Ugc2VydmVyJztcblxuaW1wb3J0IHsgZGIgfSBmcm9tICcuL2ZpcmViYXNlJztcbmltcG9ydCB0eXBlIHsgQ291cnNlLCBTZW1lc3RlciwgU3ViamVjdCwgVW5pdCwgQ291cnNlV2l0aElkLCBTZW1lc3RlcldpdGhJZCwgU3ViamVjdFdpdGhJZCwgVW5pdFdpdGhJZCB9IGZyb20gJy4vdHlwZXMnO1xuaW1wb3J0IHsgY29sbGVjdGlvbiwgZ2V0RG9jcywgcXVlcnksIHdoZXJlLCBkb2MsIGdldERvYywgZG9jdW1lbnRJZCB9IGZyb20gJ2ZpcmViYXNlL2ZpcmVzdG9yZSc7XG5cbmNvbnN0IGNvdXJzZXNDb2xsZWN0aW9uID0gJ2NvdXJzZXMnO1xuY29uc3Qgc2VtZXN0ZXJzQ29sbGVjdGlvbiA9ICdzZW1lc3RlcnMnO1xuY29uc3Qgc3ViamVjdHNDb2xsZWN0aW9uID0gJ3N1YmplY3RzJztcbmNvbnN0IHVuaXRzQ29sbGVjdGlvbiA9ICd1bml0cyc7XG5cblxuLy8gRGF0YSBmZXRjaGluZyBmdW5jdGlvbnNcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRDb3Vyc2VzKCk6IFByb21pc2U8Q291cnNlV2l0aElkW10+IHtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MoY29sbGVjdGlvbihkYiwgY291cnNlc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5U2x1ZyhzbHVnOiBzdHJpbmcpOiBQcm9taXNlPENvdXJzZVdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBDb3Vyc2UsIGlkOiBkb2MuaWQgfTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8Q291cnNlV2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgZG9jUmVmID0gZG9jKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiwgaWQpO1xuICAgIGNvbnN0IGRvY1NuYXAgPSBhd2FpdCBnZXREb2MoZG9jUmVmKTtcbiAgICBpZiAoIWRvY1NuYXAuZXhpc3RzKCkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgcmV0dXJuIHsgLi4uZG9jU25hcC5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnMoKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgU2VtZXN0ZXIsIGlkOiBkb2MuaWQgfSkpO1xufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U2VtZXN0ZXJCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBzZW1lc3RlcnNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzbHVnXCIsIFwiPT1cIiwgc2x1ZykpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH07XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlckJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWQgfCB1bmRlZmluZWQ+IHtcbiAgICBjb25zdCBkb2NSZWYgPSBkb2MoZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24sIGlkKTtcbiAgICBjb25zdCBkb2NTbmFwID0gYXdhaXQgZ2V0RG9jKGRvY1JlZik7XG4gICAgaWYgKCFkb2NTbmFwLmV4aXN0cygpKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIHJldHVybiB7IC4uLmRvY1NuYXAuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnNGb3JDb3Vyc2UoY291cnNlSWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWRbXT4ge1xuICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc3ViamVjdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJjb3Vyc2VJZFwiLCBcIj09XCIsIGNvdXJzZUlkKSk7XG4gIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgY29uc3Qgc2VtZXN0ZXJJZHMgPSBbLi4ubmV3IFNldChzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gZG9jLmRhdGEoKS5zZW1lc3RlcklkKSldO1xuICBcbiAgaWYgKHNlbWVzdGVySWRzLmxlbmd0aCA9PT0gMCkgcmV0dXJuIFtdO1xuXG4gIGNvbnN0IHNlbWVzdGVyc1F1ZXJ5ID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc2VtZXN0ZXJzQ29sbGVjdGlvbiksIHdoZXJlKGRvY3VtZW50SWQoKSwgJ2luJywgc2VtZXN0ZXJJZHMpKTtcbiAgY29uc3Qgc2VtZXN0ZXJzU25hcHNob3QgPSBhd2FpdCBnZXREb2NzKHNlbWVzdGVyc1F1ZXJ5KTtcbiAgcmV0dXJuIHNlbWVzdGVyc1NuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdWJqZWN0c0ZvclNlbWVzdGVyKGNvdXJzZUlkOiBzdHJpbmcsIHNlbWVzdGVySWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwiY291cnNlSWRcIiwgXCI9PVwiLCBjb3Vyc2VJZCksIHdoZXJlKFwic2VtZXN0ZXJJZFwiLCBcIj09XCIsIHNlbWVzdGVySWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFN1YmplY3QsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RzKCk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTdWJqZWN0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH07XG59O1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3ViamVjdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgc3ViamVjdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcblxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdHNGb3JTdWJqZWN0KHN1YmplY3RJZDogc3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkW10+IHtcbiAgICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgdW5pdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzdWJqZWN0SWRcIiwgXCI9PVwiLCBzdWJqZWN0SWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFVuaXRzKCk6IFByb21pc2U8VW5pdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRVbml0QnlTbHVnKHNsdWc6c3RyaW5nLCBzdWJqZWN0SWQ6c3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpLCB3aGVyZShcInN1YmplY3RJZFwiLCBcIj09XCIsIHN1YmplY3RJZCkpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfTtcbn07XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8VW5pdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgdW5pdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoibVJBY3NCIn0=
+}}),
+"[project]/src/lib/data:31a187 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"00c1793332d3faf0f02b11b20a73b8258889696cc1":"getSemesters"},"src/lib/data.ts",""] */ __turbopack_context__.s({
+    "getSemesters": (()=>getSemesters)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var getSemesters = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("00c1793332d3faf0f02b11b20a73b8258889696cc1", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getSemesters"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vZGF0YS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcbid1c2Ugc2VydmVyJztcblxuaW1wb3J0IHsgZGIgfSBmcm9tICcuL2ZpcmViYXNlJztcbmltcG9ydCB0eXBlIHsgQ291cnNlLCBTZW1lc3RlciwgU3ViamVjdCwgVW5pdCwgQ291cnNlV2l0aElkLCBTZW1lc3RlcldpdGhJZCwgU3ViamVjdFdpdGhJZCwgVW5pdFdpdGhJZCB9IGZyb20gJy4vdHlwZXMnO1xuaW1wb3J0IHsgY29sbGVjdGlvbiwgZ2V0RG9jcywgcXVlcnksIHdoZXJlLCBkb2MsIGdldERvYywgZG9jdW1lbnRJZCB9IGZyb20gJ2ZpcmViYXNlL2ZpcmVzdG9yZSc7XG5cbmNvbnN0IGNvdXJzZXNDb2xsZWN0aW9uID0gJ2NvdXJzZXMnO1xuY29uc3Qgc2VtZXN0ZXJzQ29sbGVjdGlvbiA9ICdzZW1lc3RlcnMnO1xuY29uc3Qgc3ViamVjdHNDb2xsZWN0aW9uID0gJ3N1YmplY3RzJztcbmNvbnN0IHVuaXRzQ29sbGVjdGlvbiA9ICd1bml0cyc7XG5cblxuLy8gRGF0YSBmZXRjaGluZyBmdW5jdGlvbnNcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRDb3Vyc2VzKCk6IFByb21pc2U8Q291cnNlV2l0aElkW10+IHtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MoY29sbGVjdGlvbihkYiwgY291cnNlc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5U2x1ZyhzbHVnOiBzdHJpbmcpOiBQcm9taXNlPENvdXJzZVdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBDb3Vyc2UsIGlkOiBkb2MuaWQgfTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvdXJzZUJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8Q291cnNlV2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgZG9jUmVmID0gZG9jKGRiLCBjb3Vyc2VzQ29sbGVjdGlvbiwgaWQpO1xuICAgIGNvbnN0IGRvY1NuYXAgPSBhd2FpdCBnZXREb2MoZG9jUmVmKTtcbiAgICBpZiAoIWRvY1NuYXAuZXhpc3RzKCkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgcmV0dXJuIHsgLi4uZG9jU25hcC5kYXRhKCkgYXMgQ291cnNlLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnMoKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24pKTtcbiAgICByZXR1cm4gc25hcHNob3QuZG9jcy5tYXAoZG9jID0+ICh7IC4uLmRvYy5kYXRhKCkgYXMgU2VtZXN0ZXIsIGlkOiBkb2MuaWQgfSkpO1xufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U2VtZXN0ZXJCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTZW1lc3RlcldpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IHEgPSBxdWVyeShjb2xsZWN0aW9uKGRiLCBzZW1lc3RlcnNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzbHVnXCIsIFwiPT1cIiwgc2x1ZykpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH07XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlckJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWQgfCB1bmRlZmluZWQ+IHtcbiAgICBjb25zdCBkb2NSZWYgPSBkb2MoZGIsIHNlbWVzdGVyc0NvbGxlY3Rpb24sIGlkKTtcbiAgICBjb25zdCBkb2NTbmFwID0gYXdhaXQgZ2V0RG9jKGRvY1JlZik7XG4gICAgaWYgKCFkb2NTbmFwLmV4aXN0cygpKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIHJldHVybiB7IC4uLmRvY1NuYXAuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jU25hcC5pZCB9O1xufVxuXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTZW1lc3RlcnNGb3JDb3Vyc2UoY291cnNlSWQ6IHN0cmluZyk6IFByb21pc2U8U2VtZXN0ZXJXaXRoSWRbXT4ge1xuICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc3ViamVjdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJjb3Vyc2VJZFwiLCBcIj09XCIsIGNvdXJzZUlkKSk7XG4gIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgY29uc3Qgc2VtZXN0ZXJJZHMgPSBbLi4ubmV3IFNldChzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gZG9jLmRhdGEoKS5zZW1lc3RlcklkKSldO1xuICBcbiAgaWYgKHNlbWVzdGVySWRzLmxlbmd0aCA9PT0gMCkgcmV0dXJuIFtdO1xuXG4gIGNvbnN0IHNlbWVzdGVyc1F1ZXJ5ID0gcXVlcnkoY29sbGVjdGlvbihkYiwgc2VtZXN0ZXJzQ29sbGVjdGlvbiksIHdoZXJlKGRvY3VtZW50SWQoKSwgJ2luJywgc2VtZXN0ZXJJZHMpKTtcbiAgY29uc3Qgc2VtZXN0ZXJzU25hcHNob3QgPSBhd2FpdCBnZXREb2NzKHNlbWVzdGVyc1F1ZXJ5KTtcbiAgcmV0dXJuIHNlbWVzdGVyc1NuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFNlbWVzdGVyLCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdWJqZWN0c0ZvclNlbWVzdGVyKGNvdXJzZUlkOiBzdHJpbmcsIHNlbWVzdGVySWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwiY291cnNlSWRcIiwgXCI9PVwiLCBjb3Vyc2VJZCksIHdoZXJlKFwic2VtZXN0ZXJJZFwiLCBcIj09XCIsIHNlbWVzdGVySWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFN1YmplY3QsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RzKCk6IFByb21pc2U8U3ViamVjdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH0pKTtcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN1YmplY3RCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTdWJqZWN0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHN1YmplY3RzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgaWYgKHNuYXBzaG90LmVtcHR5KSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IGRvYyA9IHNuYXBzaG90LmRvY3NbMF07XG4gICAgcmV0dXJuIHsgLi4uZG9jLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jLmlkIH07XG59O1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3ViamVjdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8U3ViamVjdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgc3ViamVjdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBTdWJqZWN0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcblxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdHNGb3JTdWJqZWN0KHN1YmplY3RJZDogc3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkW10+IHtcbiAgICBjb25zdCBxID0gcXVlcnkoY29sbGVjdGlvbihkYiwgdW5pdHNDb2xsZWN0aW9uKSwgd2hlcmUoXCJzdWJqZWN0SWRcIiwgXCI9PVwiLCBzdWJqZWN0SWQpKTtcbiAgICBjb25zdCBzbmFwc2hvdCA9IGF3YWl0IGdldERvY3MocSk7XG4gICAgcmV0dXJuIHNuYXBzaG90LmRvY3MubWFwKGRvYyA9PiAoeyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfSkpO1xufTtcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFVuaXRzKCk6IFByb21pc2U8VW5pdFdpdGhJZFtdPiB7XG4gICAgY29uc3Qgc25hcHNob3QgPSBhd2FpdCBnZXREb2NzKGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbikpO1xuICAgIHJldHVybiBzbmFwc2hvdC5kb2NzLm1hcChkb2MgPT4gKHsgLi4uZG9jLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jLmlkIH0pKTtcbn07XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRVbml0QnlTbHVnKHNsdWc6c3RyaW5nLCBzdWJqZWN0SWQ6c3RyaW5nKTogUHJvbWlzZTxVbml0V2l0aElkIHwgdW5kZWZpbmVkPiB7XG4gICAgY29uc3QgcSA9IHF1ZXJ5KGNvbGxlY3Rpb24oZGIsIHVuaXRzQ29sbGVjdGlvbiksIHdoZXJlKFwic2x1Z1wiLCBcIj09XCIsIHNsdWcpLCB3aGVyZShcInN1YmplY3RJZFwiLCBcIj09XCIsIHN1YmplY3RJZCkpO1xuICAgIGNvbnN0IHNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICBpZiAoc25hcHNob3QuZW1wdHkpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgZG9jID0gc25hcHNob3QuZG9jc1swXTtcbiAgICByZXR1cm4geyAuLi5kb2MuZGF0YSgpIGFzIFVuaXQsIGlkOiBkb2MuaWQgfTtcbn07XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0VW5pdEJ5SWQoaWQ6IHN0cmluZyk6IFByb21pc2U8VW5pdFdpdGhJZCB8IHVuZGVmaW5lZD4ge1xuICAgIGNvbnN0IGRvY1JlZiA9IGRvYyhkYiwgdW5pdHNDb2xsZWN0aW9uLCBpZCk7XG4gICAgY29uc3QgZG9jU25hcCA9IGF3YWl0IGdldERvYyhkb2NSZWYpO1xuICAgIGlmICghZG9jU25hcC5leGlzdHMoKSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICByZXR1cm4geyAuLi5kb2NTbmFwLmRhdGEoKSBhcyBVbml0LCBpZDogZG9jU25hcC5pZCB9O1xufTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoicVJBbUNzQiJ9
+}}),
+"[project]/src/components/ui/table.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Table": (()=>Table),
+    "TableBody": (()=>TableBody),
+    "TableCaption": (()=>TableCaption),
+    "TableCell": (()=>TableCell),
+    "TableFooter": (()=>TableFooter),
+    "TableHead": (()=>TableHead),
+    "TableHeader": (()=>TableHeader),
+    "TableRow": (()=>TableRow)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+;
+;
+;
+const Table = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative w-full overflow-auto",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+            ref: ref,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-full caption-bottom text-sm", className),
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/table.tsx",
+            lineNumber: 10,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 9,
+        columnNumber: 3
+    }, this));
+Table.displayName = "Table";
+const TableHeader = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("[&_tr]:border-b", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 23,
+        columnNumber: 3
+    }, this));
+TableHeader.displayName = "TableHeader";
+const TableBody = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("[&_tr:last-child]:border-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 31,
+        columnNumber: 3
+    }, this));
+TableBody.displayName = "TableBody";
+const TableFooter = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tfoot", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("border-t bg-muted/50 font-medium [&>tr]:last:border-b-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 43,
+        columnNumber: 3
+    }, this));
+TableFooter.displayName = "TableFooter";
+const TableRow = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 58,
+        columnNumber: 3
+    }, this));
+TableRow.displayName = "TableRow";
+const TableHead = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 73,
+        columnNumber: 3
+    }, this));
+TableHead.displayName = "TableHead";
+const TableCell = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("p-4 align-middle [&:has([role=checkbox])]:pr-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 88,
+        columnNumber: 3
+    }, this));
+TableCell.displayName = "TableCell";
+const TableCaption = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("caption", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("mt-4 text-sm text-muted-foreground", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/table.tsx",
+        lineNumber: 100,
+        columnNumber: 3
+    }, this));
+TableCaption.displayName = "TableCaption";
+;
+}}),
+"[project]/src/components/admin/admin-page-header.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "AdminPageHeader": (()=>AdminPageHeader)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PlusCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-plus.js [app-ssr] (ecmascript) <export default as PlusCircle>");
+;
+;
+;
+function AdminPageHeader({ title, actionText, onActionClick }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-center justify-between mb-6 border-b pb-4",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                className: "text-3xl font-bold font-headline",
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/src/components/admin/admin-page-header.tsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                onClick: onActionClick,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PlusCircle$3e$__["PlusCircle"], {
+                        className: "mr-2 h-4 w-4"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/admin/admin-page-header.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this),
+                    actionText
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/admin/admin-page-header.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/admin/admin-page-header.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+}}),
+"[project]/src/lib/schemas.ts [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "chapterSchema": (()=>chapterSchema),
+    "courseSchema": (()=>courseSchema),
+    "semesterSchema": (()=>semesterSchema),
+    "subjectSchema": (()=>subjectSchema),
+    "unitSchema": (()=>unitSchema)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zod/lib/index.mjs [app-ssr] (ecmascript)");
+;
+const courseSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].object({
+    id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().optional(),
+    name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(3, "Course name must be at least 3 characters long.")
+});
+const semesterSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].object({
+    id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().optional(),
+    name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(3, "Semester name must be at least 3 characters long.")
+});
+const subjectSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].object({
+    id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().optional(),
+    title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(5, "Subject title must be at least 5 characters long."),
+    courseId: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(1, "You must select a course."),
+    semesterId: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(1, "You must select a semester."),
+    description: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(20, "Description must be at least 20 characters long."),
+    pdfUrl: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().url("Must be a valid URL.").optional().or(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].literal(''))
+});
+const unitSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].object({
+    id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().optional(),
+    title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(5, "Unit title must be at least 5 characters long."),
+    subjectId: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(1, "You must select a subject."),
+    content: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["z"].string().min(20, "Content must be at least 20 characters long.")
+});
+const chapterSchema = subjectSchema;
+}}),
+"[project]/src/components/ui/dialog.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Dialog": (()=>Dialog),
+    "DialogClose": (()=>DialogClose),
+    "DialogContent": (()=>DialogContent),
+    "DialogDescription": (()=>DialogDescription),
+    "DialogFooter": (()=>DialogFooter),
+    "DialogHeader": (()=>DialogHeader),
+    "DialogOverlay": (()=>DialogOverlay),
+    "DialogPortal": (()=>DialogPortal),
+    "DialogTitle": (()=>DialogTitle),
+    "DialogTrigger": (()=>DialogTrigger)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+const Dialog = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"];
+const DialogTrigger = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"];
+const DialogPortal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"];
+const DialogClose = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Close"];
+const DialogOverlay = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 21,
+        columnNumber: 3
+    }, this));
+DialogOverlay.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"].displayName;
+const DialogContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, children, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogPortal, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogOverlay, {}, void 0, false, {
+                fileName: "[project]/src/components/ui/dialog.tsx",
+                lineNumber: 37,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
+                ref: ref,
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg", className),
+                ...props,
+                children: [
+                    children,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Close"], {
+                        className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                className: "h-4 w-4"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ui/dialog.tsx",
+                                lineNumber: 48,
+                                columnNumber: 9
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "sr-only",
+                                children: "Close"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ui/dialog.tsx",
+                                lineNumber: 49,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/ui/dialog.tsx",
+                        lineNumber: 47,
+                        columnNumber: 7
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/ui/dialog.tsx",
+                lineNumber: 38,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 36,
+        columnNumber: 3
+    }, this));
+DialogContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
+const DialogHeader = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col space-y-1.5 text-center sm:text-left", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 60,
+        columnNumber: 3
+    }, this);
+DialogHeader.displayName = "DialogHeader";
+const DialogFooter = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 74,
+        columnNumber: 3
+    }, this);
+DialogFooter.displayName = "DialogFooter";
+const DialogTitle = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-lg font-semibold leading-none tracking-tight", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 88,
+        columnNumber: 3
+    }, this));
+DialogTitle.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"].displayName;
+const DialogDescription = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-sm text-muted-foreground", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/dialog.tsx",
+        lineNumber: 103,
+        columnNumber: 3
+    }, this));
+DialogDescription.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"].displayName;
+;
+}}),
+"[project]/src/components/ui/label.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Label": (()=>Label)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-label/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/class-variance-authority/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+const labelVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70");
+const Label = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(labelVariants(), className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/label.tsx",
+        lineNumber: 18,
+        columnNumber: 3
+    }, this));
+Label.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"].displayName;
+;
+}}),
+"[project]/src/components/ui/form.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Form": (()=>Form),
+    "FormControl": (()=>FormControl),
+    "FormDescription": (()=>FormDescription),
+    "FormField": (()=>FormField),
+    "FormItem": (()=>FormItem),
+    "FormLabel": (()=>FormLabel),
+    "FormMessage": (()=>FormMessage),
+    "useFormField": (()=>useFormField)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-slot/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/label.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+const Form = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormProvider"];
+const FormFieldContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])({});
+const FormField = ({ ...props })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FormFieldContext.Provider, {
+        value: {
+            name: props.name
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Controller"], {
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/form.tsx",
+            lineNumber: 39,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+};
+const useFormField = ()=>{
+    const fieldContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(FormFieldContext);
+    const itemContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(FormItemContext);
+    const { getFieldState, formState } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFormContext"])();
+    const fieldState = getFieldState(fieldContext.name, formState);
+    if (!fieldContext) {
+        throw new Error("useFormField should be used within <FormField>");
+    }
+    const { id } = itemContext;
+    return {
+        id,
+        name: fieldContext.name,
+        formItemId: `${id}-form-item`,
+        formDescriptionId: `${id}-form-item-description`,
+        formMessageId: `${id}-form-item-message`,
+        ...fieldState
+    };
+};
+const FormItemContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])({});
+const FormItem = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>{
+    const id = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FormItemContext.Provider, {
+        value: {
+            id
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: ref,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("space-y-2", className),
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/form.tsx",
+            lineNumber: 83,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 82,
+        columnNumber: 5
+    }, this);
+});
+FormItem.displayName = "FormItem";
+const FormLabel = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>{
+    const { error, formItemId } = useFormField();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(error && "text-destructive", className),
+        htmlFor: formItemId,
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 96,
+        columnNumber: 5
+    }, this);
+});
+FormLabel.displayName = "FormLabel";
+const FormControl = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ ...props }, ref)=>{
+    const { error, formItemId, formDescriptionId, formMessageId } = useFormField();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"], {
+        ref: ref,
+        id: formItemId,
+        "aria-describedby": !error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`,
+        "aria-invalid": !!error,
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 113,
+        columnNumber: 5
+    }, this);
+});
+FormControl.displayName = "FormControl";
+const FormDescription = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>{
+    const { formDescriptionId } = useFormField();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        ref: ref,
+        id: formDescriptionId,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-sm text-muted-foreground", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 135,
+        columnNumber: 5
+    }, this);
+});
+FormDescription.displayName = "FormDescription";
+const FormMessage = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, children, ...props }, ref)=>{
+    const { error, formMessageId } = useFormField();
+    const body = error ? String(error?.message ?? "") : children;
+    if (!body) {
+        return null;
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        ref: ref,
+        id: formMessageId,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-sm font-medium text-destructive", className),
+        ...props,
+        children: body
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/form.tsx",
+        lineNumber: 157,
+        columnNumber: 5
+    }, this);
+});
+FormMessage.displayName = "FormMessage";
+;
+}}),
+"[project]/src/components/ui/select.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Select": (()=>Select),
+    "SelectContent": (()=>SelectContent),
+    "SelectGroup": (()=>SelectGroup),
+    "SelectItem": (()=>SelectItem),
+    "SelectLabel": (()=>SelectLabel),
+    "SelectScrollDownButton": (()=>SelectScrollDownButton),
+    "SelectScrollUpButton": (()=>SelectScrollUpButton),
+    "SelectSeparator": (()=>SelectSeparator),
+    "SelectTrigger": (()=>SelectTrigger),
+    "SelectValue": (()=>SelectValue)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-select/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-up.js [app-ssr] (ecmascript) <export default as ChevronUp>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+const Select = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"];
+const SelectGroup = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Group"];
+const SelectValue = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Value"];
+const SelectTrigger = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, children, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1", className),
+        ...props,
+        children: [
+            children,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Icon"], {
+                asChild: true,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                    className: "h-4 w-4 opacity-50"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui/select.tsx",
+                    lineNumber: 29,
+                    columnNumber: 7
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/select.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 19,
+        columnNumber: 3
+    }, this));
+SelectTrigger.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"].displayName;
+const SelectScrollUpButton = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollUpButton"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex cursor-default items-center justify-center py-1", className),
+        ...props,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
+            className: "h-4 w-4"
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/select.tsx",
+            lineNumber: 47,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 39,
+        columnNumber: 3
+    }, this));
+SelectScrollUpButton.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollUpButton"].displayName;
+const SelectScrollDownButton = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollDownButton"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex cursor-default items-center justify-center py-1", className),
+        ...props,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+            className: "h-4 w-4"
+        }, void 0, false, {
+            fileName: "[project]/src/components/ui/select.tsx",
+            lineNumber: 64,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 56,
+        columnNumber: 3
+    }, this));
+SelectScrollDownButton.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollDownButton"].displayName;
+const SelectContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, children, position = "popper", ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
+            ref: ref,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2", position === "popper" && "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1", className),
+            position: position,
+            ...props,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectScrollUpButton, {}, void 0, false, {
+                    fileName: "[project]/src/components/ui/select.tsx",
+                    lineNumber: 86,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Viewport"], {
+                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("p-1", position === "popper" && "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]"),
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui/select.tsx",
+                    lineNumber: 87,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectScrollDownButton, {}, void 0, false, {
+                    fileName: "[project]/src/components/ui/select.tsx",
+                    lineNumber: 96,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/ui/select.tsx",
+            lineNumber: 75,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 74,
+        columnNumber: 3
+    }, this));
+SelectContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
+const SelectLabel = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("py-1.5 pl-8 pr-2 text-sm font-semibold", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 106,
+        columnNumber: 3
+    }, this));
+SelectLabel.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"].displayName;
+const SelectItem = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, children, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Item"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50", className),
+        ...props,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "absolute left-2 flex h-3.5 w-3.5 items-center justify-center",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ItemIndicator"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                        className: "h-4 w-4"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/select.tsx",
+                        lineNumber: 128,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui/select.tsx",
+                    lineNumber: 127,
+                    columnNumber: 7
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/select.tsx",
+                lineNumber: 126,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ItemText"], {
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/select.tsx",
+                lineNumber: 132,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 118,
+        columnNumber: 3
+    }, this));
+SelectItem.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Item"].displayName;
+const SelectSeparator = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("-mx-1 my-1 h-px bg-muted", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/select.tsx",
+        lineNumber: 141,
+        columnNumber: 3
+    }, this));
+SelectSeparator.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"].displayName;
+;
+}}),
+"[project]/src/components/ui/textarea.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Textarea": (()=>Textarea)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+;
+;
+;
+const Textarea = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm', className),
+        ref: ref,
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/textarea.tsx",
+        lineNumber: 8,
+        columnNumber: 7
+    }, this);
+});
+Textarea.displayName = 'Textarea';
+;
+}}),
+"[project]/src/ai/flows/data:03dfb2 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"4017c250a66196b78b7291fe2d5c8bc9fb7bb586fa":"enrichSubjectContent"},"src/ai/flows/enrich-subject-content.ts",""] */ __turbopack_context__.s({
+    "enrichSubjectContent": (()=>enrichSubjectContent)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var enrichSubjectContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("4017c250a66196b78b7291fe2d5c8bc9fb7bb586fa", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "enrichSubjectContent"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vZW5yaWNoLXN1YmplY3QtY29udGVudC50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHNlcnZlcic7XG5cbi8qKlxuICogQGZpbGVPdmVydmlldyBBbiBBSSBhZ2VudCB0aGF0IGVucmljaGVzIHN1YmplY3QgY29udGVudCB3aXRoIHN1Z2dlc3RlZCB0b3BpY3MuXG4gKlxuICogLSBlbnJpY2hTdWJqZWN0Q29udGVudCAtIEEgZnVuY3Rpb24gdGhhdCBoYW5kbGVzIHRoZSBzdWJqZWN0IGNvbnRlbnQgZW5yaWNobWVudCBwcm9jZXNzLlxuICogLSBFbnJpY2hTdWJqZWN0Q29udGVudElucHV0IC0gVGhlIGlucHV0IHR5cGUgZm9yIHRoZSBlbnJpY2hTdWJqZWN0Q29udGVudCBmdW5jdGlvbi5cbiAqIC0gRW5yaWNoU3ViamVjdENvbnRlbnRPdXRwdXQgLSBUaGUgcmV0dXJuIHR5cGUgZm9yIHRoZSBlbnJpY2hTdWJqZWN0Q29udGVudCBmdW5jdGlvbi5cbiAqL1xuXG5pbXBvcnQge2FpfSBmcm9tICdAL2FpL2dlbmtpdCc7XG5pbXBvcnQge3p9IGZyb20gJ2dlbmtpdCc7XG5cbmNvbnN0IEVucmljaFN1YmplY3RDb250ZW50SW5wdXRTY2hlbWEgPSB6Lm9iamVjdCh7XG4gIHN1YmplY3RUZXh0OiB6XG4gICAgLnN0cmluZygpXG4gICAgLmRlc2NyaWJlKCdUaGUgZXhpc3RpbmcgdGV4dCBjb250ZW50IG9mIHRoZSBzdWJqZWN0LicpLFxufSk7XG5leHBvcnQgdHlwZSBFbnJpY2hTdWJqZWN0Q29udGVudElucHV0ID0gei5pbmZlcjxcbiAgdHlwZW9mIEVucmljaFN1YmplY3RDb250ZW50SW5wdXRTY2hlbWFcbj47XG5cbmNvbnN0IEVucmljaFN1YmplY3RDb250ZW50T3V0cHV0U2NoZW1hID0gei5vYmplY3Qoe1xuICBzdWdnZXN0ZWRUb3BpY3M6IHpcbiAgICAuc3RyaW5nKClcbiAgICAuZGVzY3JpYmUoJ1N1Z2dlc3RlZCB0b3BpY3MgdG8gZW5yaWNoIHRoZSBzdWJqZWN0IGNvbnRlbnQgd2l0aC4nKSxcbn0pO1xuZXhwb3J0IHR5cGUgRW5yaWNoU3ViamVjdENvbnRlbnRPdXRwdXQgPSB6LmluZmVyPFxuICB0eXBlb2YgRW5yaWNoU3ViamVjdENvbnRlbnRPdXRwdXRTY2hlbWFcbj47XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBlbnJpY2hTdWJqZWN0Q29udGVudChcbiAgaW5wdXQ6IEVucmljaFN1YmplY3RDb250ZW50SW5wdXRcbik6IFByb21pc2U8RW5yaWNoU3ViamVjdENvbnRlbnRPdXRwdXQ+IHtcbiAgcmV0dXJuIGVucmljaFN1YmplY3RDb250ZW50RmxvdyhpbnB1dCk7XG59XG5cbmNvbnN0IHByb21wdCA9IGFpLmRlZmluZVByb21wdCh7XG4gIG5hbWU6ICdlbnJpY2hTdWJqZWN0Q29udGVudFByb21wdCcsXG4gIGlucHV0OiB7c2NoZW1hOiBFbnJpY2hTdWJqZWN0Q29udGVudElucHV0U2NoZW1hfSxcbiAgb3V0cHV0OiB7c2NoZW1hOiBFbnJpY2hTdWJqZWN0Q29udGVudE91dHB1dFNjaGVtYX0sXG4gIHByb21wdDogYFlvdSBhcmUgYW4gQUkgYXNzaXN0YW50IGhlbHBpbmcgdG8gZW5yaWNoIGVkdWNhdGlvbmFsIHN1YmplY3QgY29udGVudC5cblxuICBCYXNlZCBvbiB0aGUgZXhpc3Rpbmcgc3ViamVjdCB0ZXh0LCBzdWdnZXN0IGFkZGl0aW9uYWwgdG9waWNzIHRoYXQgY291bGQgYmUgYWRkZWQgdG8gaW1wcm92ZSB0aGUgbWF0ZXJpYWwuXG5cbiAgRXhpc3RpbmcgU3ViamVjdCBUZXh0OiB7e3tzdWJqZWN0VGV4dH19fVxuXG4gIFN1Z2dlc3RlZCBUb3BpY3M6YCxcbn0pO1xuXG5jb25zdCBlbnJpY2hTdWJqZWN0Q29udGVudEZsb3cgPSBhaS5kZWZpbmVGbG93KFxuICB7XG4gICAgbmFtZTogJ2VucmljaFN1YmplY3RDb250ZW50RmxvdycsXG4gICAgaW5wdXRTY2hlbWE6IEVucmljaFN1YmplY3RDb250ZW50SW5wdXRTY2hlbWEsXG4gICAgb3V0cHV0U2NoZW1hOiBFbnJpY2hTdWJqZWN0Q29udGVudE91dHB1dFNjaGVtYSxcbiAgfSxcbiAgYXN5bmMgaW5wdXQgPT4ge1xuICAgIGNvbnN0IHtvdXRwdXR9ID0gYXdhaXQgcHJvbXB0KGlucHV0KTtcbiAgICByZXR1cm4gb3V0cHV0ITtcbiAgfVxuKTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoib1RBK0JzQiJ9
+}}),
+"[project]/src/components/ui/alert.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Alert": (()=>Alert),
+    "AlertDescription": (()=>AlertDescription),
+    "AlertTitle": (()=>AlertTitle)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/class-variance-authority/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const alertVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground", {
+    variants: {
+        variant: {
+            default: "bg-background text-foreground",
+            destructive: "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive"
+        }
+    },
+    defaultVariants: {
+        variant: "default"
+    }
+});
+const Alert = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, variant, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        role: "alert",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(alertVariants({
+            variant
+        }), className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert.tsx",
+        lineNumber: 26,
+        columnNumber: 3
+    }, this));
+Alert.displayName = "Alert";
+const AlertTitle = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("mb-1 font-medium leading-none tracking-tight", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert.tsx",
+        lineNumber: 39,
+        columnNumber: 3
+    }, this));
+AlertTitle.displayName = "AlertTitle";
+const AlertDescription = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-sm [&_p]:leading-relaxed", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert.tsx",
+        lineNumber: 51,
+        columnNumber: 3
+    }, this));
+AlertDescription.displayName = "AlertDescription";
+;
+}}),
+"[project]/src/components/admin/subject-form.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "SubjectForm": (()=>SubjectForm)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@hookform/resolvers/zod/dist/zod.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$schemas$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/schemas.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/dialog.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/form.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/select.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/input.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-ssr] (ecmascript) <export default as Loader2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/textarea.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/use-toast.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$ai$2f$flows$2f$data$3a$03dfb2__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/ai/flows/data:03dfb2 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/alert.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function SubjectForm({ isOpen, onOpenChange, onSubmit, defaultValue, isSubmitting, courses, semesters }) {
+    const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToast"])();
+    const [isEnriching, setIsEnriching] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [suggestions, setSuggestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
+    const form = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useForm"])({
+        resolver: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["zodResolver"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$schemas$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["subjectSchema"]),
+        defaultValues: defaultValue || {
+            title: "",
+            courseId: "",
+            semesterId: "",
+            description: "",
+            pdfUrl: ""
+        }
+    });
+    const handleEnrichContent = async ()=>{
+        const currentDescription = form.getValues('description');
+        if (!currentDescription || currentDescription.length < 20) {
+            toast({
+                variant: 'destructive',
+                title: 'Content is too short',
+                description: 'Write more content in the description to get relevant suggestions.'
+            });
+            return;
+        }
+        setIsEnriching(true);
+        setSuggestions('');
+        try {
+            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$ai$2f$flows$2f$data$3a$03dfb2__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["enrichSubjectContent"])({
+                subjectText: currentDescription
+            });
+            setSuggestions(result.suggestedTopics);
+            toast({
+                title: 'AI Suggestions Generated!',
+                description: 'Check the suggestions below the form.'
+            });
+        } catch (error) {
+            console.error(error);
+            toast({
+                variant: 'destructive',
+                title: 'AI Enrichment Failed'
+            });
+        } finally{
+            setIsEnriching(false);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
+        open: isOpen,
+        onOpenChange: onOpenChange,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
+            className: "sm:max-w-2xl",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                        children: defaultValue?.id ? "Edit Subject" : "Add New Subject"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                        lineNumber: 71,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                    lineNumber: 70,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Form"], {
+                    ...form,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                        onSubmit: form.handleSubmit(onSubmit),
+                        className: "space-y-4 max-h-[80vh] overflow-y-auto p-1 pr-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
+                                        control: form.control,
+                                        name: "courseId",
+                                        render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormItem"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormLabel"], {
+                                                        children: "Course"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 25
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
+                                                        onValueChange: field.onChange,
+                                                        defaultValue: field.value,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormControl"], {
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                                        placeholder: "Select a course"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                        lineNumber: 80,
+                                                                        columnNumber: 53
+                                                                    }, void 0)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                    lineNumber: 80,
+                                                                    columnNumber: 38
+                                                                }, void 0)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 80,
+                                                                columnNumber: 25
+                                                            }, void 0),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                                children: courses.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                        value: c.id,
+                                                                        children: c.name
+                                                                    }, c.id, false, {
+                                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                        lineNumber: 81,
+                                                                        columnNumber: 58
+                                                                    }, void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 81,
+                                                                columnNumber: 25
+                                                            }, void 0)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 79,
+                                                        columnNumber: 25
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 83,
+                                                        columnNumber: 25
+                                                    }, void 0)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 77,
+                                                columnNumber: 21
+                                            }, void 0)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 76,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
+                                        control: form.control,
+                                        name: "semesterId",
+                                        render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormItem"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormLabel"], {
+                                                        children: "Semester"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 25
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
+                                                        onValueChange: field.onChange,
+                                                        defaultValue: field.value,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormControl"], {
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                                        placeholder: "Select a semester"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                        lineNumber: 90,
+                                                                        columnNumber: 53
+                                                                    }, void 0)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                    lineNumber: 90,
+                                                                    columnNumber: 38
+                                                                }, void 0)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 90,
+                                                                columnNumber: 25
+                                                            }, void 0),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                                children: semesters.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                        value: s.id,
+                                                                        children: s.name
+                                                                    }, s.id, false, {
+                                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                        lineNumber: 91,
+                                                                        columnNumber: 60
+                                                                    }, void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 91,
+                                                                columnNumber: 25
+                                                            }, void 0)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 89,
+                                                        columnNumber: 25
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 93,
+                                                        columnNumber: 25
+                                                    }, void 0)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 87,
+                                                columnNumber: 21
+                                            }, void 0)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 86,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 75,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "title",
+                                render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormItem"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormLabel"], {
+                                                children: "Subject Title"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 99,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormControl"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "e.g., Introduction to Algorithms",
+                                                    ...field
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                    lineNumber: 100,
+                                                    columnNumber: 34
+                                                }, void 0)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 100,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 101,
+                                                columnNumber: 21
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 98,
+                                        columnNumber: 17
+                                    }, void 0)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 97,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "description",
+                                render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormItem"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-between",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormLabel"], {
+                                                        children: "Description / Syllabus"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 107,
+                                                        columnNumber: 25
+                                                    }, void 0),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                        type: "button",
+                                                        size: "sm",
+                                                        variant: "outline",
+                                                        onClick: handleEnrichContent,
+                                                        disabled: isEnriching,
+                                                        children: [
+                                                            isEnriching ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                                className: "mr-2 h-4 w-4 animate-spin"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 109,
+                                                                columnNumber: 44
+                                                            }, void 0) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                                                className: "mr-2 h-4 w-4 text-yellow-400"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                                lineNumber: 109,
+                                                                columnNumber: 95
+                                                            }, void 0),
+                                                            "Enrich with AI"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                        lineNumber: 108,
+                                                        columnNumber: 25
+                                                    }, void 0)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormControl"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
+                                                    placeholder: "Provide a detailed description or syllabus for the subject.",
+                                                    ...field,
+                                                    rows: 8
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                    lineNumber: 113,
+                                                    columnNumber: 34
+                                                }, void 0)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 113,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 114,
+                                                columnNumber: 21
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 105,
+                                        columnNumber: 17
+                                    }, void 0)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this),
+                            suggestions && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                        className: "h-4 w-4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertTitle"], {
+                                        children: "AI Suggested Topics"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 120,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDescription"], {
+                                        className: "whitespace-pre-wrap text-xs",
+                                        children: suggestions
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 121,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 118,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "pdfUrl",
+                                render: ({ field })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormItem"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormLabel"], {
+                                                children: "PDF URL (Optional)"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormControl"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "https://example.com/subject.pdf",
+                                                    ...field
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                    lineNumber: 127,
+                                                    columnNumber: 34
+                                                }, void 0)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 127,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormDescription"], {
+                                                children: "Link to a publicly accessible PDF file for this subject."
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 128,
+                                                columnNumber: 21
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 129,
+                                                columnNumber: 21
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 125,
+                                        columnNumber: 17
+                                    }, void 0)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 124,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogFooter"], {
+                                className: "sticky bottom-0 bg-background pt-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogClose"], {
+                                        asChild: true,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                            type: "button",
+                                            variant: "secondary",
+                                            disabled: isSubmitting,
+                                            children: "Cancel"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/admin/subject-form.tsx",
+                                            lineNumber: 133,
+                                            columnNumber: 36
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 133,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                        type: "submit",
+                                        disabled: isSubmitting,
+                                        children: [
+                                            isSubmitting && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                className: "mr-2 h-4 w-4 animate-spin"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                                lineNumber: 135,
+                                                columnNumber: 34
+                                            }, this),
+                                            isSubmitting ? "Saving..." : "Save Subject"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                                        lineNumber: 134,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/admin/subject-form.tsx",
+                                lineNumber: 132,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/admin/subject-form.tsx",
+                        lineNumber: 74,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/admin/subject-form.tsx",
+                    lineNumber: 73,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/admin/subject-form.tsx",
+            lineNumber: 69,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/admin/subject-form.tsx",
+        lineNumber: 68,
+        columnNumber: 5
+    }, this);
+}
+}}),
+"[project]/src/components/ui/alert-dialog.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "AlertDialog": (()=>AlertDialog),
+    "AlertDialogAction": (()=>AlertDialogAction),
+    "AlertDialogCancel": (()=>AlertDialogCancel),
+    "AlertDialogContent": (()=>AlertDialogContent),
+    "AlertDialogDescription": (()=>AlertDialogDescription),
+    "AlertDialogFooter": (()=>AlertDialogFooter),
+    "AlertDialogHeader": (()=>AlertDialogHeader),
+    "AlertDialogOverlay": (()=>AlertDialogOverlay),
+    "AlertDialogPortal": (()=>AlertDialogPortal),
+    "AlertDialogTitle": (()=>AlertDialogTitle),
+    "AlertDialogTrigger": (()=>AlertDialogTrigger)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-alert-dialog/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+const AlertDialog = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"];
+const AlertDialogTrigger = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"];
+const AlertDialogPortal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"];
+const AlertDialogOverlay = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className),
+        ...props,
+        ref: ref
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 19,
+        columnNumber: 3
+    }, this));
+AlertDialogOverlay.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"].displayName;
+const AlertDialogContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AlertDialogPortal, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AlertDialogOverlay, {}, void 0, false, {
+                fileName: "[project]/src/components/ui/alert-dialog.tsx",
+                lineNumber: 35,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
+                ref: ref,
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg", className),
+                ...props
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/alert-dialog.tsx",
+                lineNumber: 36,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 34,
+        columnNumber: 3
+    }, this));
+AlertDialogContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
+const AlertDialogHeader = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col space-y-2 text-center sm:text-left", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 52,
+        columnNumber: 3
+    }, this);
+AlertDialogHeader.displayName = "AlertDialogHeader";
+const AlertDialogFooter = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 66,
+        columnNumber: 3
+    }, this);
+AlertDialogFooter.displayName = "AlertDialogFooter";
+const AlertDialogTitle = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-lg font-semibold", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 80,
+        columnNumber: 3
+    }, this));
+AlertDialogTitle.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"].displayName;
+const AlertDialogDescription = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-sm text-muted-foreground", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 92,
+        columnNumber: 3
+    }, this));
+AlertDialogDescription.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"].displayName;
+const AlertDialogAction = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Action"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buttonVariants"])(), className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 105,
+        columnNumber: 3
+    }, this));
+AlertDialogAction.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Action"].displayName;
+const AlertDialogCancel = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Cancel"], {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buttonVariants"])({
+            variant: "outline"
+        }), "mt-2 sm:mt-0", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/alert-dialog.tsx",
+        lineNumber: 117,
+        columnNumber: 3
+    }, this));
+AlertDialogCancel.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$alert$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Cancel"].displayName;
+;
+}}),
+"[project]/src/components/admin/delete-confirmation-dialog.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "DeleteConfirmationDialog": (()=>DeleteConfirmationDialog)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/alert-dialog.tsx [app-ssr] (ecmascript)");
+;
+;
+function DeleteConfirmationDialog({ isOpen, onOpenChange, onConfirm, itemName }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialog"], {
+        open: isOpen,
+        onOpenChange: onOpenChange,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogContent"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogHeader"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogTitle"], {
+                            children: "Are you absolutely sure?"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogDescription"], {
+                            children: [
+                                'This action cannot be undone. This will permanently delete the item "',
+                                itemName,
+                                '".'
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogFooter"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogCancel"], {
+                            children: "Cancel"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDialogAction"], {
+                            onClick: onConfirm,
+                            className: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+                            children: "Delete"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+            lineNumber: 27,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/admin/delete-confirmation-dialog.tsx",
+        lineNumber: 26,
+        columnNumber: 5
+    }, this);
+}
+}}),
+"[project]/src/lib/data:2e33c3 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"404dc927f246c27bb481d29cefabb05a96c41b9191":"addSubject"},"src/lib/actions.ts",""] */ __turbopack_context__.s({
+    "addSubject": (()=>addSubject)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var addSubject = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("404dc927f246c27bb481d29cefabb05a96c41b9191", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "addSubject"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vYWN0aW9ucy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzZXJ2ZXJcIjtcblxuaW1wb3J0IHsgcmV2YWxpZGF0ZVBhdGggfSBmcm9tIFwibmV4dC9jYWNoZVwiO1xuaW1wb3J0IHsgc2x1Z2lmeSB9IGZyb20gXCIuL3V0aWxzXCI7XG5pbXBvcnQgeyBDb3Vyc2VGb3JtVmFsdWVzLCBTZW1lc3RlckZvcm1WYWx1ZXMsIFN1YmplY3RGb3JtVmFsdWVzLCBVbml0Rm9ybVZhbHVlcyB9IGZyb20gXCIuL3NjaGVtYXNcIjtcbmltcG9ydCB7IGRiIH0gZnJvbSBcIi4vZmlyZWJhc2VcIjtcbmltcG9ydCB7XG4gICAgY29sbGVjdGlvbixcbiAgICBhZGREb2MsXG4gICAgZG9jLFxuICAgIHVwZGF0ZURvYyxcbiAgICBkZWxldGVEb2MsXG4gICAgcXVlcnksXG4gICAgd2hlcmUsXG4gICAgZ2V0RG9jcyxcbn0gZnJvbSBcImZpcmViYXNlL2ZpcmVzdG9yZVwiO1xuaW1wb3J0IHsgY29va2llcyB9IGZyb20gXCJuZXh0L2hlYWRlcnNcIjtcbmltcG9ydCB7IHJlZGlyZWN0IH0gZnJvbSBcIm5leHQvbmF2aWdhdGlvblwiO1xuXG4vLyBIZWxwZXJzXG5jb25zdCBzdWNjZXNzID0gKGRhdGE/OiBhbnkpID0+ICh7IHN1Y2Nlc3M6IHRydWUsIGRhdGEgfSk7XG5jb25zdCBlcnJvciA9IChtZXNzYWdlOiBzdHJpbmcpID0+ICh7IHN1Y2Nlc3M6IGZhbHNlLCBlcnJvcjogbWVzc2FnZSB9KTtcblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQVVUSCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gaGFuZGxlQWRtaW5Mb2dpbihwcmV2U3RhdGU6IGFueSwgZm9ybURhdGE6IEZvcm1EYXRhKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgdXNlcm5hbWUgPSBmb3JtRGF0YS5nZXQoXCJ1c2VybmFtZVwiKSBhcyBzdHJpbmc7XG4gICAgICAgIGNvbnN0IHBhc3N3b3JkID0gZm9ybURhdGEuZ2V0KFwicGFzc3dvcmRcIikgYXMgc3RyaW5nO1xuXG4gICAgICAgIGlmICghdXNlcm5hbWUgfHwgIXBhc3N3b3JkKSB7XG4gICAgICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJVc2VybmFtZSBhbmQgcGFzc3dvcmQgYXJlIHJlcXVpcmVkLlwiIH07XG4gICAgICAgIH1cblxuICAgICAgICBjb25zdCB1c2Vyc1JlZiA9IGNvbGxlY3Rpb24oZGIsIFwidXNlcnNcIik7XG4gICAgICAgIGNvbnN0IHEgPSBxdWVyeShcbiAgICAgICAgICAgIHVzZXJzUmVmLFxuICAgICAgICAgICAgd2hlcmUoXCJ1c2VybmFtZVwiLCBcIj09XCIsIHVzZXJuYW1lKSxcbiAgICAgICAgICAgIHdoZXJlKFwicGFzc3dvcmRcIiwgXCI9PVwiLCBwYXNzd29yZClcbiAgICAgICAgKTtcblxuICAgICAgICBjb25zdCBxdWVyeVNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICAgICAgaWYgKHF1ZXJ5U25hcHNob3QuZW1wdHkpIHtcbiAgICAgICAgICAgIHJldHVybiB7IHN1Y2Nlc3M6IGZhbHNlLCBtZXNzYWdlOiBcIkludmFsaWQgdXNlcm5hbWUgb3IgcGFzc3dvcmQuXCIgfTtcbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHVzZXIgPSBxdWVyeVNuYXBzaG90LmRvY3NbMF0uZGF0YSgpO1xuICAgICAgICBjb25zdCBjb29raWVTdG9yZSA9IGF3YWl0IGNvb2tpZXMoKTsgXG4gICAgICAgIGNvb2tpZVN0b3JlLnNldChcbiAgICAgICAgICAgIFwic2Vzc2lvblwiLFxuICAgICAgICAgICAgSlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICAgICAgICAgIHVzZXJuYW1lOiB1c2VyLnVzZXJuYW1lLFxuICAgICAgICAgICAgICAgIGlzQWRtaW46IHRydWUsXG4gICAgICAgICAgICB9KSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBzZWN1cmU6IHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSBcInByb2R1Y3Rpb25cIixcbiAgICAgICAgICAgICAgICBtYXhBZ2U6IDYwICogNjAgKiAyNCxcbiAgICAgICAgICAgICAgICBwYXRoOiBcIi9cIixcbiAgICAgICAgICAgIH1cbiAgICAgICAgKTtcblxuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiB0cnVlLCBtZXNzYWdlOiBcIkxvZ2luIHN1Y2Nlc3NmdWwhXCIgfTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImhhbmRsZUFkbWluTG9naW4gRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJTZXJ2ZXIgZXJyb3Igb2NjdXJyZWQuXCIgfTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBsb2dvdXQoKSB7XG4gICAgY29uc3QgY29va2llU3RvcmUgPSBhd2FpdCBjb29raWVzKCk7XG4gICAgY29va2llU3RvcmUuZGVsZXRlKFwic2Vzc2lvblwiKTtcbiAgICByZWRpcmVjdChcIi9hZG1pbi9sb2dpblwiKTtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQ09VUlNFIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRDb3Vyc2UodmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgbmV3Q291cnNlID0ge1xuICAgICAgICAgICAgbmFtZTogdmFsdWVzLm5hbWUsXG4gICAgICAgICAgICBzbHVnLFxuICAgICAgICAgICAgaW1hZ2VVcmw6IGBodHRwczovL3BpY3N1bS5waG90b3Mvc2VlZC8ke3NsdWd9LzYwMC80MDBgLFxuICAgICAgICB9O1xuXG4gICAgICAgIGNvbnN0IGRvY1JlZiA9IGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcImNvdXJzZXNcIiksIG5ld0NvdXJzZSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vY291cnNlc1wiKTtcbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvY291cnNlc1wiKTtcblxuICAgICAgICByZXR1cm4gc3VjY2Vzcyh7IC4uLm5ld0NvdXJzZSwgaWQ6IGRvY1JlZi5pZCB9KTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImFkZENvdXJzZSBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgY291cnNlLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVDb3Vyc2UoaWQ6IHN0cmluZywgdmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgdXBkYXRlZENvdXJzZSA9IHsgbmFtZTogdmFsdWVzLm5hbWUsIHNsdWcgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpLCB1cGRhdGVkQ291cnNlKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuXG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRDb3Vyc2UpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZUNvdXJzZShpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU0VNRVNURVIgQUNUSU9OU1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGFkZFNlbWVzdGVyKHZhbHVlczogU2VtZXN0ZXJGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiU2VtZXN0ZXIgbmFtZSBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgbmV3U2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInNlbWVzdGVyc1wiKSwgbmV3U2VtZXN0ZXIpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3NlbWVzdGVyc1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3U2VtZXN0ZXIpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU2VtZXN0ZXIgRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4gZXJyb3IoXCJGYWlsZWQgdG8gYWRkIHNlbWVzdGVyLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVTZW1lc3RlcihpZDogc3RyaW5nLCB2YWx1ZXM6IFNlbWVzdGVyRm9ybVZhbHVlcykge1xuICAgIHRyeSB7XG4gICAgICAgIGlmICghaWQpIHJldHVybiBlcnJvcihcIlNlbWVzdGVyIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkU2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IHVwZGF0ZURvYyhkb2MoZGIsIFwic2VtZXN0ZXJzXCIsIGlkKSwgdXBkYXRlZFNlbWVzdGVyKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRTZW1lc3Rlcik7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZVNlbWVzdGVyKGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJTZW1lc3RlciBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzZW1lc3RlcnNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU1VCSkVDVCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gYWRkU3ViamVjdCh2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgbmV3U3ViamVjdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCBhZGREb2MoY29sbGVjdGlvbihkYiwgXCJzdWJqZWN0c1wiKSwgbmV3U3ViamVjdCk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vc3ViamVjdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKG5ld1N1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gdXBkYXRlU3ViamVjdChpZDogc3RyaW5nLCB2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgdXBkYXRlZFN1YmplY3QgPSB7XG4gICAgICAgICAgICAuLi52YWx1ZXMsXG4gICAgICAgICAgICBzbHVnOiBzbHVnaWZ5KHZhbHVlcy50aXRsZSksXG4gICAgICAgIH07XG5cbiAgICAgICAgYXdhaXQgdXBkYXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCksIHVwZGF0ZWRTdWJqZWN0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zdWJqZWN0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3ModXBkYXRlZFN1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZGVsZXRlU3ViamVjdChpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCkpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3N1YmplY3RzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBVTklUIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRVbml0KHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBjb25zdCBuZXdVbml0ID0ge1xuICAgICAgICAgICAgLi4udmFsdWVzLFxuICAgICAgICAgICAgc2x1Zzogc2x1Z2lmeSh2YWx1ZXMudGl0bGUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInVuaXRzXCIpLCBuZXdVbml0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi91bml0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3VW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJhZGRVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGFkZCB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVVbml0KGlkOiBzdHJpbmcsIHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkVW5pdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSwgdXBkYXRlZFVuaXQpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3VuaXRzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2Vzcyh1cGRhdGVkVW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVVbml0KGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vdW5pdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSB1bml0LlwiKTtcbiAgICB9XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6InNSQWdNc0IifQ==
+}}),
+"[project]/src/lib/data:c88627 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"604bf6e2ecb80f3e5d5b9ec72ce7f156daa4e14746":"updateSubject"},"src/lib/actions.ts",""] */ __turbopack_context__.s({
+    "updateSubject": (()=>updateSubject)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var updateSubject = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("604bf6e2ecb80f3e5d5b9ec72ce7f156daa4e14746", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "updateSubject"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vYWN0aW9ucy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzZXJ2ZXJcIjtcblxuaW1wb3J0IHsgcmV2YWxpZGF0ZVBhdGggfSBmcm9tIFwibmV4dC9jYWNoZVwiO1xuaW1wb3J0IHsgc2x1Z2lmeSB9IGZyb20gXCIuL3V0aWxzXCI7XG5pbXBvcnQgeyBDb3Vyc2VGb3JtVmFsdWVzLCBTZW1lc3RlckZvcm1WYWx1ZXMsIFN1YmplY3RGb3JtVmFsdWVzLCBVbml0Rm9ybVZhbHVlcyB9IGZyb20gXCIuL3NjaGVtYXNcIjtcbmltcG9ydCB7IGRiIH0gZnJvbSBcIi4vZmlyZWJhc2VcIjtcbmltcG9ydCB7XG4gICAgY29sbGVjdGlvbixcbiAgICBhZGREb2MsXG4gICAgZG9jLFxuICAgIHVwZGF0ZURvYyxcbiAgICBkZWxldGVEb2MsXG4gICAgcXVlcnksXG4gICAgd2hlcmUsXG4gICAgZ2V0RG9jcyxcbn0gZnJvbSBcImZpcmViYXNlL2ZpcmVzdG9yZVwiO1xuaW1wb3J0IHsgY29va2llcyB9IGZyb20gXCJuZXh0L2hlYWRlcnNcIjtcbmltcG9ydCB7IHJlZGlyZWN0IH0gZnJvbSBcIm5leHQvbmF2aWdhdGlvblwiO1xuXG4vLyBIZWxwZXJzXG5jb25zdCBzdWNjZXNzID0gKGRhdGE/OiBhbnkpID0+ICh7IHN1Y2Nlc3M6IHRydWUsIGRhdGEgfSk7XG5jb25zdCBlcnJvciA9IChtZXNzYWdlOiBzdHJpbmcpID0+ICh7IHN1Y2Nlc3M6IGZhbHNlLCBlcnJvcjogbWVzc2FnZSB9KTtcblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQVVUSCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gaGFuZGxlQWRtaW5Mb2dpbihwcmV2U3RhdGU6IGFueSwgZm9ybURhdGE6IEZvcm1EYXRhKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgdXNlcm5hbWUgPSBmb3JtRGF0YS5nZXQoXCJ1c2VybmFtZVwiKSBhcyBzdHJpbmc7XG4gICAgICAgIGNvbnN0IHBhc3N3b3JkID0gZm9ybURhdGEuZ2V0KFwicGFzc3dvcmRcIikgYXMgc3RyaW5nO1xuXG4gICAgICAgIGlmICghdXNlcm5hbWUgfHwgIXBhc3N3b3JkKSB7XG4gICAgICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJVc2VybmFtZSBhbmQgcGFzc3dvcmQgYXJlIHJlcXVpcmVkLlwiIH07XG4gICAgICAgIH1cblxuICAgICAgICBjb25zdCB1c2Vyc1JlZiA9IGNvbGxlY3Rpb24oZGIsIFwidXNlcnNcIik7XG4gICAgICAgIGNvbnN0IHEgPSBxdWVyeShcbiAgICAgICAgICAgIHVzZXJzUmVmLFxuICAgICAgICAgICAgd2hlcmUoXCJ1c2VybmFtZVwiLCBcIj09XCIsIHVzZXJuYW1lKSxcbiAgICAgICAgICAgIHdoZXJlKFwicGFzc3dvcmRcIiwgXCI9PVwiLCBwYXNzd29yZClcbiAgICAgICAgKTtcblxuICAgICAgICBjb25zdCBxdWVyeVNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICAgICAgaWYgKHF1ZXJ5U25hcHNob3QuZW1wdHkpIHtcbiAgICAgICAgICAgIHJldHVybiB7IHN1Y2Nlc3M6IGZhbHNlLCBtZXNzYWdlOiBcIkludmFsaWQgdXNlcm5hbWUgb3IgcGFzc3dvcmQuXCIgfTtcbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHVzZXIgPSBxdWVyeVNuYXBzaG90LmRvY3NbMF0uZGF0YSgpO1xuICAgICAgICBjb25zdCBjb29raWVTdG9yZSA9IGF3YWl0IGNvb2tpZXMoKTsgXG4gICAgICAgIGNvb2tpZVN0b3JlLnNldChcbiAgICAgICAgICAgIFwic2Vzc2lvblwiLFxuICAgICAgICAgICAgSlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICAgICAgICAgIHVzZXJuYW1lOiB1c2VyLnVzZXJuYW1lLFxuICAgICAgICAgICAgICAgIGlzQWRtaW46IHRydWUsXG4gICAgICAgICAgICB9KSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBzZWN1cmU6IHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSBcInByb2R1Y3Rpb25cIixcbiAgICAgICAgICAgICAgICBtYXhBZ2U6IDYwICogNjAgKiAyNCxcbiAgICAgICAgICAgICAgICBwYXRoOiBcIi9cIixcbiAgICAgICAgICAgIH1cbiAgICAgICAgKTtcblxuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiB0cnVlLCBtZXNzYWdlOiBcIkxvZ2luIHN1Y2Nlc3NmdWwhXCIgfTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImhhbmRsZUFkbWluTG9naW4gRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJTZXJ2ZXIgZXJyb3Igb2NjdXJyZWQuXCIgfTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBsb2dvdXQoKSB7XG4gICAgY29uc3QgY29va2llU3RvcmUgPSBhd2FpdCBjb29raWVzKCk7XG4gICAgY29va2llU3RvcmUuZGVsZXRlKFwic2Vzc2lvblwiKTtcbiAgICByZWRpcmVjdChcIi9hZG1pbi9sb2dpblwiKTtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQ09VUlNFIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRDb3Vyc2UodmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgbmV3Q291cnNlID0ge1xuICAgICAgICAgICAgbmFtZTogdmFsdWVzLm5hbWUsXG4gICAgICAgICAgICBzbHVnLFxuICAgICAgICAgICAgaW1hZ2VVcmw6IGBodHRwczovL3BpY3N1bS5waG90b3Mvc2VlZC8ke3NsdWd9LzYwMC80MDBgLFxuICAgICAgICB9O1xuXG4gICAgICAgIGNvbnN0IGRvY1JlZiA9IGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcImNvdXJzZXNcIiksIG5ld0NvdXJzZSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vY291cnNlc1wiKTtcbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvY291cnNlc1wiKTtcblxuICAgICAgICByZXR1cm4gc3VjY2Vzcyh7IC4uLm5ld0NvdXJzZSwgaWQ6IGRvY1JlZi5pZCB9KTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImFkZENvdXJzZSBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgY291cnNlLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVDb3Vyc2UoaWQ6IHN0cmluZywgdmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgdXBkYXRlZENvdXJzZSA9IHsgbmFtZTogdmFsdWVzLm5hbWUsIHNsdWcgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpLCB1cGRhdGVkQ291cnNlKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuXG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRDb3Vyc2UpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZUNvdXJzZShpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU0VNRVNURVIgQUNUSU9OU1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGFkZFNlbWVzdGVyKHZhbHVlczogU2VtZXN0ZXJGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiU2VtZXN0ZXIgbmFtZSBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgbmV3U2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInNlbWVzdGVyc1wiKSwgbmV3U2VtZXN0ZXIpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3NlbWVzdGVyc1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3U2VtZXN0ZXIpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU2VtZXN0ZXIgRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4gZXJyb3IoXCJGYWlsZWQgdG8gYWRkIHNlbWVzdGVyLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVTZW1lc3RlcihpZDogc3RyaW5nLCB2YWx1ZXM6IFNlbWVzdGVyRm9ybVZhbHVlcykge1xuICAgIHRyeSB7XG4gICAgICAgIGlmICghaWQpIHJldHVybiBlcnJvcihcIlNlbWVzdGVyIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkU2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IHVwZGF0ZURvYyhkb2MoZGIsIFwic2VtZXN0ZXJzXCIsIGlkKSwgdXBkYXRlZFNlbWVzdGVyKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRTZW1lc3Rlcik7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZVNlbWVzdGVyKGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJTZW1lc3RlciBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzZW1lc3RlcnNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU1VCSkVDVCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gYWRkU3ViamVjdCh2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgbmV3U3ViamVjdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCBhZGREb2MoY29sbGVjdGlvbihkYiwgXCJzdWJqZWN0c1wiKSwgbmV3U3ViamVjdCk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vc3ViamVjdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKG5ld1N1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gdXBkYXRlU3ViamVjdChpZDogc3RyaW5nLCB2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgdXBkYXRlZFN1YmplY3QgPSB7XG4gICAgICAgICAgICAuLi52YWx1ZXMsXG4gICAgICAgICAgICBzbHVnOiBzbHVnaWZ5KHZhbHVlcy50aXRsZSksXG4gICAgICAgIH07XG5cbiAgICAgICAgYXdhaXQgdXBkYXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCksIHVwZGF0ZWRTdWJqZWN0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zdWJqZWN0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3ModXBkYXRlZFN1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZGVsZXRlU3ViamVjdChpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCkpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3N1YmplY3RzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBVTklUIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRVbml0KHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBjb25zdCBuZXdVbml0ID0ge1xuICAgICAgICAgICAgLi4udmFsdWVzLFxuICAgICAgICAgICAgc2x1Zzogc2x1Z2lmeSh2YWx1ZXMudGl0bGUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInVuaXRzXCIpLCBuZXdVbml0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi91bml0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3VW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJhZGRVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGFkZCB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVVbml0KGlkOiBzdHJpbmcsIHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkVW5pdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSwgdXBkYXRlZFVuaXQpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3VuaXRzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2Vzcyh1cGRhdGVkVW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVVbml0KGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vdW5pdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSB1bml0LlwiKTtcbiAgICB9XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6InlSQWlOc0IifQ==
+}}),
+"[project]/src/lib/data:f07cf4 [app-ssr] (ecmascript) <text/javascript>": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+/* __next_internal_action_entry_do_not_use__ [{"40fb6164113a303d0e37d2312b40b715ff116d96e7":"deleteSubject"},"src/lib/actions.ts",""] */ __turbopack_context__.s({
+    "deleteSubject": (()=>deleteSubject)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
+"use turbopack no side effects";
+;
+var deleteSubject = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("40fb6164113a303d0e37d2312b40b715ff116d96e7", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "deleteSubject"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vYWN0aW9ucy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzZXJ2ZXJcIjtcblxuaW1wb3J0IHsgcmV2YWxpZGF0ZVBhdGggfSBmcm9tIFwibmV4dC9jYWNoZVwiO1xuaW1wb3J0IHsgc2x1Z2lmeSB9IGZyb20gXCIuL3V0aWxzXCI7XG5pbXBvcnQgeyBDb3Vyc2VGb3JtVmFsdWVzLCBTZW1lc3RlckZvcm1WYWx1ZXMsIFN1YmplY3RGb3JtVmFsdWVzLCBVbml0Rm9ybVZhbHVlcyB9IGZyb20gXCIuL3NjaGVtYXNcIjtcbmltcG9ydCB7IGRiIH0gZnJvbSBcIi4vZmlyZWJhc2VcIjtcbmltcG9ydCB7XG4gICAgY29sbGVjdGlvbixcbiAgICBhZGREb2MsXG4gICAgZG9jLFxuICAgIHVwZGF0ZURvYyxcbiAgICBkZWxldGVEb2MsXG4gICAgcXVlcnksXG4gICAgd2hlcmUsXG4gICAgZ2V0RG9jcyxcbn0gZnJvbSBcImZpcmViYXNlL2ZpcmVzdG9yZVwiO1xuaW1wb3J0IHsgY29va2llcyB9IGZyb20gXCJuZXh0L2hlYWRlcnNcIjtcbmltcG9ydCB7IHJlZGlyZWN0IH0gZnJvbSBcIm5leHQvbmF2aWdhdGlvblwiO1xuXG4vLyBIZWxwZXJzXG5jb25zdCBzdWNjZXNzID0gKGRhdGE/OiBhbnkpID0+ICh7IHN1Y2Nlc3M6IHRydWUsIGRhdGEgfSk7XG5jb25zdCBlcnJvciA9IChtZXNzYWdlOiBzdHJpbmcpID0+ICh7IHN1Y2Nlc3M6IGZhbHNlLCBlcnJvcjogbWVzc2FnZSB9KTtcblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQVVUSCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gaGFuZGxlQWRtaW5Mb2dpbihwcmV2U3RhdGU6IGFueSwgZm9ybURhdGE6IEZvcm1EYXRhKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgdXNlcm5hbWUgPSBmb3JtRGF0YS5nZXQoXCJ1c2VybmFtZVwiKSBhcyBzdHJpbmc7XG4gICAgICAgIGNvbnN0IHBhc3N3b3JkID0gZm9ybURhdGEuZ2V0KFwicGFzc3dvcmRcIikgYXMgc3RyaW5nO1xuXG4gICAgICAgIGlmICghdXNlcm5hbWUgfHwgIXBhc3N3b3JkKSB7XG4gICAgICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJVc2VybmFtZSBhbmQgcGFzc3dvcmQgYXJlIHJlcXVpcmVkLlwiIH07XG4gICAgICAgIH1cblxuICAgICAgICBjb25zdCB1c2Vyc1JlZiA9IGNvbGxlY3Rpb24oZGIsIFwidXNlcnNcIik7XG4gICAgICAgIGNvbnN0IHEgPSBxdWVyeShcbiAgICAgICAgICAgIHVzZXJzUmVmLFxuICAgICAgICAgICAgd2hlcmUoXCJ1c2VybmFtZVwiLCBcIj09XCIsIHVzZXJuYW1lKSxcbiAgICAgICAgICAgIHdoZXJlKFwicGFzc3dvcmRcIiwgXCI9PVwiLCBwYXNzd29yZClcbiAgICAgICAgKTtcblxuICAgICAgICBjb25zdCBxdWVyeVNuYXBzaG90ID0gYXdhaXQgZ2V0RG9jcyhxKTtcbiAgICAgICAgaWYgKHF1ZXJ5U25hcHNob3QuZW1wdHkpIHtcbiAgICAgICAgICAgIHJldHVybiB7IHN1Y2Nlc3M6IGZhbHNlLCBtZXNzYWdlOiBcIkludmFsaWQgdXNlcm5hbWUgb3IgcGFzc3dvcmQuXCIgfTtcbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHVzZXIgPSBxdWVyeVNuYXBzaG90LmRvY3NbMF0uZGF0YSgpO1xuICAgICAgICBjb25zdCBjb29raWVTdG9yZSA9IGF3YWl0IGNvb2tpZXMoKTsgXG4gICAgICAgIGNvb2tpZVN0b3JlLnNldChcbiAgICAgICAgICAgIFwic2Vzc2lvblwiLFxuICAgICAgICAgICAgSlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICAgICAgICAgIHVzZXJuYW1lOiB1c2VyLnVzZXJuYW1lLFxuICAgICAgICAgICAgICAgIGlzQWRtaW46IHRydWUsXG4gICAgICAgICAgICB9KSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBzZWN1cmU6IHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSBcInByb2R1Y3Rpb25cIixcbiAgICAgICAgICAgICAgICBtYXhBZ2U6IDYwICogNjAgKiAyNCxcbiAgICAgICAgICAgICAgICBwYXRoOiBcIi9cIixcbiAgICAgICAgICAgIH1cbiAgICAgICAgKTtcblxuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiB0cnVlLCBtZXNzYWdlOiBcIkxvZ2luIHN1Y2Nlc3NmdWwhXCIgfTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImhhbmRsZUFkbWluTG9naW4gRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgbWVzc2FnZTogXCJTZXJ2ZXIgZXJyb3Igb2NjdXJyZWQuXCIgfTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBsb2dvdXQoKSB7XG4gICAgY29uc3QgY29va2llU3RvcmUgPSBhd2FpdCBjb29raWVzKCk7XG4gICAgY29va2llU3RvcmUuZGVsZXRlKFwic2Vzc2lvblwiKTtcbiAgICByZWRpcmVjdChcIi9hZG1pbi9sb2dpblwiKTtcbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gQ09VUlNFIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRDb3Vyc2UodmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgbmV3Q291cnNlID0ge1xuICAgICAgICAgICAgbmFtZTogdmFsdWVzLm5hbWUsXG4gICAgICAgICAgICBzbHVnLFxuICAgICAgICAgICAgaW1hZ2VVcmw6IGBodHRwczovL3BpY3N1bS5waG90b3Mvc2VlZC8ke3NsdWd9LzYwMC80MDBgLFxuICAgICAgICB9O1xuXG4gICAgICAgIGNvbnN0IGRvY1JlZiA9IGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcImNvdXJzZXNcIiksIG5ld0NvdXJzZSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vY291cnNlc1wiKTtcbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvY291cnNlc1wiKTtcblxuICAgICAgICByZXR1cm4gc3VjY2Vzcyh7IC4uLm5ld0NvdXJzZSwgaWQ6IGRvY1JlZi5pZCB9KTtcbiAgICB9IGNhdGNoIChlOiBhbnkpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcImFkZENvdXJzZSBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgY291cnNlLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVDb3Vyc2UoaWQ6IHN0cmluZywgdmFsdWVzOiBDb3Vyc2VGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiQ291cnNlIG5hbWUgaXMgcmVxdWlyZWQuXCIpO1xuXG4gICAgICAgIGNvbnN0IHNsdWcgPSBzbHVnaWZ5KHZhbHVlcy5uYW1lKTtcbiAgICAgICAgY29uc3QgdXBkYXRlZENvdXJzZSA9IHsgbmFtZTogdmFsdWVzLm5hbWUsIHNsdWcgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpLCB1cGRhdGVkQ291cnNlKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuXG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRDb3Vyc2UpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZUNvdXJzZShpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiQ291cnNlIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcImNvdXJzZXNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9jb3Vyc2VzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlQ291cnNlIEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSBjb3Vyc2UuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU0VNRVNURVIgQUNUSU9OU1xuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGFkZFNlbWVzdGVyKHZhbHVlczogU2VtZXN0ZXJGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCF2YWx1ZXMubmFtZSkgcmV0dXJuIGVycm9yKFwiU2VtZXN0ZXIgbmFtZSBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgbmV3U2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInNlbWVzdGVyc1wiKSwgbmV3U2VtZXN0ZXIpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3NlbWVzdGVyc1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3U2VtZXN0ZXIpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU2VtZXN0ZXIgRVJST1I6XCIsIGUpO1xuICAgICAgICByZXR1cm4gZXJyb3IoXCJGYWlsZWQgdG8gYWRkIHNlbWVzdGVyLlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVTZW1lc3RlcihpZDogc3RyaW5nLCB2YWx1ZXM6IFNlbWVzdGVyRm9ybVZhbHVlcykge1xuICAgIHRyeSB7XG4gICAgICAgIGlmICghaWQpIHJldHVybiBlcnJvcihcIlNlbWVzdGVyIElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkU2VtZXN0ZXIgPSB7XG4gICAgICAgICAgICBuYW1lOiB2YWx1ZXMubmFtZSxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLm5hbWUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IHVwZGF0ZURvYyhkb2MoZGIsIFwic2VtZXN0ZXJzXCIsIGlkKSwgdXBkYXRlZFNlbWVzdGVyKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKHVwZGF0ZWRTZW1lc3Rlcik7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZVNlbWVzdGVyKGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJTZW1lc3RlciBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzZW1lc3RlcnNcIiwgaWQpKTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zZW1lc3RlcnNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVTZW1lc3RlciBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc2VtZXN0ZXIuXCIpO1xuICAgIH1cbn1cblxuLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gU1VCSkVDVCBBQ1RJT05TXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gYWRkU3ViamVjdCh2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgbmV3U3ViamVjdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCBhZGREb2MoY29sbGVjdGlvbihkYiwgXCJzdWJqZWN0c1wiKSwgbmV3U3ViamVjdCk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vc3ViamVjdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKG5ld1N1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiYWRkU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBhZGQgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gdXBkYXRlU3ViamVjdChpZDogc3RyaW5nLCB2YWx1ZXM6IFN1YmplY3RGb3JtVmFsdWVzKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgY29uc3QgdXBkYXRlZFN1YmplY3QgPSB7XG4gICAgICAgICAgICAuLi52YWx1ZXMsXG4gICAgICAgICAgICBzbHVnOiBzbHVnaWZ5KHZhbHVlcy50aXRsZSksXG4gICAgICAgIH07XG5cbiAgICAgICAgYXdhaXQgdXBkYXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCksIHVwZGF0ZWRTdWJqZWN0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi9zdWJqZWN0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3ModXBkYXRlZFN1YmplY3QpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwidXBkYXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byB1cGRhdGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZGVsZXRlU3ViamVjdChpZDogc3RyaW5nKSB7XG4gICAgdHJ5IHtcbiAgICAgICAgaWYgKCFpZCkgcmV0dXJuIGVycm9yKFwiU3ViamVjdCBJRCBpcyByZXF1aXJlZC5cIik7XG5cbiAgICAgICAgYXdhaXQgZGVsZXRlRG9jKGRvYyhkYiwgXCJzdWJqZWN0c1wiLCBpZCkpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3N1YmplY3RzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2VzcygpO1xuICAgIH0gY2F0Y2ggKGU6IGFueSkge1xuICAgICAgICBjb25zb2xlLmVycm9yKFwiZGVsZXRlU3ViamVjdCBFUlJPUjpcIiwgZSk7XG4gICAgICAgIHJldHVybiBlcnJvcihcIkZhaWxlZCB0byBkZWxldGUgc3ViamVjdC5cIik7XG4gICAgfVxufVxuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4vLyBVTklUIEFDVElPTlNcbi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhZGRVbml0KHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBjb25zdCBuZXdVbml0ID0ge1xuICAgICAgICAgICAgLi4udmFsdWVzLFxuICAgICAgICAgICAgc2x1Zzogc2x1Z2lmeSh2YWx1ZXMudGl0bGUpLFxuICAgICAgICB9O1xuXG4gICAgICAgIGF3YWl0IGFkZERvYyhjb2xsZWN0aW9uKGRiLCBcInVuaXRzXCIpLCBuZXdVbml0KTtcblxuICAgICAgICByZXZhbGlkYXRlUGF0aChcIi9hZG1pbi91bml0c1wiKTtcbiAgICAgICAgcmV0dXJuIHN1Y2Nlc3MobmV3VW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJhZGRVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGFkZCB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVVbml0KGlkOiBzdHJpbmcsIHZhbHVlczogVW5pdEZvcm1WYWx1ZXMpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBjb25zdCB1cGRhdGVkVW5pdCA9IHtcbiAgICAgICAgICAgIC4uLnZhbHVlcyxcbiAgICAgICAgICAgIHNsdWc6IHNsdWdpZnkodmFsdWVzLnRpdGxlKSxcbiAgICAgICAgfTtcblxuICAgICAgICBhd2FpdCB1cGRhdGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSwgdXBkYXRlZFVuaXQpO1xuXG4gICAgICAgIHJldmFsaWRhdGVQYXRoKFwiL2FkbWluL3VuaXRzXCIpO1xuICAgICAgICByZXR1cm4gc3VjY2Vzcyh1cGRhdGVkVW5pdCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJ1cGRhdGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIHVwZGF0ZSB1bml0LlwiKTtcbiAgICB9XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVVbml0KGlkOiBzdHJpbmcpIHtcbiAgICB0cnkge1xuICAgICAgICBpZiAoIWlkKSByZXR1cm4gZXJyb3IoXCJVbml0IElEIGlzIHJlcXVpcmVkLlwiKTtcblxuICAgICAgICBhd2FpdCBkZWxldGVEb2MoZG9jKGRiLCBcInVuaXRzXCIsIGlkKSk7XG5cbiAgICAgICAgcmV2YWxpZGF0ZVBhdGgoXCIvYWRtaW4vdW5pdHNcIik7XG4gICAgICAgIHJldHVybiBzdWNjZXNzKCk7XG4gICAgfSBjYXRjaCAoZTogYW55KSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoXCJkZWxldGVVbml0IEVSUk9SOlwiLCBlKTtcbiAgICAgICAgcmV0dXJuIGVycm9yKFwiRmFpbGVkIHRvIGRlbGV0ZSB1bml0LlwiKTtcbiAgICB9XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6InlSQW9Pc0IifQ==
+}}),
+"[project]/src/app/admin/subjects/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>SubjectsAdminPage)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$3aa942__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:3aa942 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$aef33b__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:aef33b [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$31a187__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:31a187 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/table.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/square-pen.js [app-ssr] (ecmascript) <export default as Edit>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-ssr] (ecmascript) <export default as Trash2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$admin$2d$page$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/admin/admin-page-header.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$subject$2d$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/admin/subject-form.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/use-toast.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$delete$2d$confirmation$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/admin/delete-confirmation-dialog.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$2e33c3__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:2e33c3 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$c88627__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:c88627 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$f07cf4__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/lib/data:f07cf4 [app-ssr] (ecmascript) <text/javascript>");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function SubjectsAdminPage() {
+    const [subjects, setSubjects] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [courses, setCourses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [semesters, setSemesters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [isFetching, startFetching] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransition"])();
+    const [isSubmitting, startSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransition"])();
+    const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToast"])();
+    const [isFormOpen, setIsFormOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isDeleteOpen, setIsDeleteOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [selectedSubject, setSelectedSubject] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(undefined);
+    const fetchAllData = ()=>{
+        startFetching(async ()=>{
+            const [subjectsData, coursesData, semestersData] = await Promise.all([
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$3aa942__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["getSubjects"])(),
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$aef33b__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["getCourses"])(),
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$31a187__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["getSemesters"])()
+            ]);
+            setSubjects(subjectsData || []);
+            setCourses(coursesData || []);
+            setSemesters(semestersData || []);
+        });
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        fetchAllData();
+    }, []);
+    const openNewForm = ()=>{
+        setSelectedSubject(undefined);
+        setIsFormOpen(true);
+    };
+    const openEditForm = (subject)=>{
+        setSelectedSubject(subject);
+        setIsFormOpen(true);
+    };
+    const openDeleteDialog = (subject)=>{
+        setSelectedSubject(subject);
+        setIsDeleteOpen(true);
+    };
+    const handleFormSubmit = async (values)=>{
+        startSubmitting(async ()=>{
+            const action = values.id ? ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$c88627__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["updateSubject"])(values.id, values) : ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$2e33c3__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["addSubject"])(values);
+            const result = await action();
+            if (result.success) {
+                toast({
+                    title: `Subject ${values.id ? 'updated' : 'added'} successfully`
+                });
+                fetchAllData();
+                setIsFormOpen(false);
+            } else {
+                toast({
+                    variant: 'destructive',
+                    title: "Error",
+                    description: result.error
+                });
+            }
+        });
+    };
+    const handleDeleteConfirm = async ()=>{
+        if (!selectedSubject) return;
+        startSubmitting(async ()=>{
+            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$3a$f07cf4__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["deleteSubject"])(selectedSubject.id);
+            if (result.success) {
+                toast({
+                    title: "Subject deleted successfully"
+                });
+                fetchAllData();
+                setIsDeleteOpen(false);
+            } else {
+                toast({
+                    variant: 'destructive',
+                    title: "Error",
+                    description: result.error
+                });
+            }
+        });
+    };
+    const getCourseName = (courseId)=>courses.find((c)=>c.id === courseId)?.name || 'N/A';
+    const getSemesterName = (semesterId)=>semesters.find((s)=>s.id === semesterId)?.name || 'N/A';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$admin$2d$page$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AdminPageHeader"], {
+                title: "Manage Subjects",
+                actionText: "Add Subject",
+                onActionClick: openNewForm
+            }, void 0, false, {
+                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                lineNumber: 91,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "rounded-lg border bg-card text-card-foreground shadow-sm",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Subject Title"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                        lineNumber: 97,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Course"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                        lineNumber: 98,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Semester"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        className: "w-[100px] text-right",
+                                        children: "Actions"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                        lineNumber: 100,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                lineNumber: 96,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                            lineNumber: 95,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                            children: isFetching ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                    colSpan: 4,
+                                    className: "text-center",
+                                    children: "Loading..."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                    lineNumber: 105,
+                                    columnNumber: 39
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                lineNumber: 105,
+                                columnNumber: 29
+                            }, this) : subjects.map((subject)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "font-medium",
+                                            children: subject.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            children: getCourseName(subject.courseId)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                            lineNumber: 109,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            children: getSemesterName(subject.semesterId)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "text-right",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                    variant: "ghost",
+                                                    size: "icon",
+                                                    onClick: ()=>openEditForm(subject),
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__["Edit"], {
+                                                        className: "h-4 w-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                                        lineNumber: 113,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                                    lineNumber: 112,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                    variant: "ghost",
+                                                    size: "icon",
+                                                    className: "text-destructive",
+                                                    onClick: ()=>openDeleteDialog(subject),
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                        className: "h-4 w-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                                        lineNumber: 116,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                                    lineNumber: 115,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                            lineNumber: 111,
+                                            columnNumber: 33
+                                        }, this)
+                                    ]
+                                }, subject.id, true, {
+                                    fileName: "[project]/src/app/admin/subjects/page.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 29
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/admin/subjects/page.tsx",
+                            lineNumber: 103,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/admin/subjects/page.tsx",
+                    lineNumber: 94,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                lineNumber: 93,
+                columnNumber: 13
+            }, this),
+            isFormOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$subject$2d$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SubjectForm"], {
+                isOpen: isFormOpen,
+                onOpenChange: setIsFormOpen,
+                onSubmit: handleFormSubmit,
+                defaultValue: selectedSubject,
+                isSubmitting: isSubmitting,
+                courses: courses,
+                semesters: semesters
+            }, void 0, false, {
+                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                lineNumber: 125,
+                columnNumber: 28
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$admin$2f$delete$2d$confirmation$2d$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DeleteConfirmationDialog"], {
+                isOpen: isDeleteOpen,
+                onOpenChange: setIsDeleteOpen,
+                onConfirm: handleDeleteConfirm,
+                itemName: selectedSubject?.title || ''
+            }, void 0, false, {
+                fileName: "[project]/src/app/admin/subjects/page.tsx",
+                lineNumber: 135,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/admin/subjects/page.tsx",
+        lineNumber: 90,
+        columnNumber: 9
+    }, this);
+}
+}}),
+
+};
+
+//# sourceMappingURL=src_0127e15d._.js.map

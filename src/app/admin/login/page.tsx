@@ -1,21 +1,38 @@
-"use client";
+'use client';
 
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from 'react-dom';
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { useToast } from '@/hooks/use-toast';
+import { handleAdminLogin } from '@/lib/actions';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
 import { BookOpen, Loader2 } from 'lucide-react';
 import Link from 'next/link';
-import { handleAdminLogin } from "@/lib/actions";
-import { useEffect } from "react";
 
 const initialState = {
     success: false,
-    message: "",
+    message: '',
 };
+
+function SubmitButton() {
+    const { pending } = useFormStatus();
+
+    return (
+        <Button type="submit" className="w-full" disabled={pending}>
+            {pending ? (
+                <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Signing In...
+                </>
+            ) : (
+                'Sign In'
+            )}
+        </Button>
+    );
+}
 
 export default function AdminLoginPage() {
     const router = useRouter();
@@ -25,20 +42,18 @@ export default function AdminLoginPage() {
     useEffect(() => {
         if (state.success) {
             toast({
-                title: "Login Successful",
-                description: "Redirecting to dashboard...",
+                title: 'Login Successful',
+                description: 'Redirecting to your dashboard.',
             });
-            // Use router.replace to avoid the login page being in the history
             router.replace('/admin/courses');
         } else if (state.message) {
             toast({
-                variant: "destructive",
-                title: "Login Failed",
+                variant: 'destructive',
+                title: 'Login Failed',
                 description: state.message,
             });
         }
     }, [state, router, toast]);
-
 
     return (
         <div className="flex min-h-screen items-center justify-center bg-muted/40">
@@ -79,13 +94,13 @@ export default function AdminLoginPage() {
                                 defaultValue="password"
                             />
                         </div>
-                        <Button type="submit" className="w-full">
-                           Sign In
-                        </Button>
+                        <SubmitButton />
                     </form>
                 </CardContent>
-                 <CardFooter>
-                    <p className="text-xs text-muted-foreground text-center w-full">Enter your admin username and password. For this demo, a user with username 'admin' and password 'password' is expected.</p>
+                <CardFooter>
+                    <p className="text-xs text-muted-foreground text-center w-full">
+                        For this demo, use username <strong>admin</strong> and password <strong>password</strong>.
+                    </p>
                 </CardFooter>
             </Card>
         </div>

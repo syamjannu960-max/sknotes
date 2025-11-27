@@ -43,10 +43,10 @@ export default async function SubjectPage({ params }: Props) {
                 </div>
                 {subject.pdfUrl && (
                     <Button asChild className="flex-shrink-0">
-                        <Link href={subject.pdfUrl} target="_blank">
+                        <a href={subject.pdfUrl} download>
                             <Download className="mr-2 h-4 w-4" />
                             Download Subject PDF
-                        </Link>
+                        </a>
                     </Button>
                 )}
             </div>
