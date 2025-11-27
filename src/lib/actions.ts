@@ -1,3 +1,4 @@
+
 "use server";
 
 import { revalidatePath } from "next/cache";
@@ -41,34 +42,27 @@ export async function handleAdminLogin(prevState: any, formData: FormData) {
             return { success: false, message: "Username and password are required." };
         }
 
-        const usersRef = collection(db, "users");
-        const q = query(
-            usersRef,
-            where("username", "==", username),
-            where("password", "==", password)
-        );
-
-        const querySnapshot = await getDocs(q);
-        if (querySnapshot.empty) {
-            return { success: false, message: "Invalid username or password." };
+        // For demo purposes, we're not querying a real DB.
+        // In a real app, you'd query your 'users' collection here.
+        if (username === "admin" && password === "password") {
+            const cookieStore = await cookies();
+            cookieStore.set(
+                "session",
+                JSON.stringify({
+                    username: "admin",
+                    isAdmin: true,
+                }),
+                {
+                    secure: process.env.NODE_ENV === "production",
+                    maxAge: 60 * 60 * 24, // 1 day
+                    path: "/",
+                }
+            );
+            return { success: true, message: "Login successful!" };
+        } else {
+             return { success: false, message: "Invalid username or password." };
         }
 
-        const user = querySnapshot.docs[0].data();
-        const cookieStore = await cookies(); 
-        cookieStore.set(
-            "session",
-            JSON.stringify({
-                username: user.username,
-                isAdmin: true,
-            }),
-            {
-                secure: process.env.NODE_ENV === "production",
-                maxAge: 60 * 60 * 24,
-                path: "/",
-            }
-        );
-
-        return { success: true, message: "Login successful!" };
     } catch (e: any) {
         console.error("handleAdminLogin ERROR:", e);
         return { success: false, message: "Server error occurred." };
@@ -99,6 +93,7 @@ export async function addCourse(values: CourseFormValues) {
 
         revalidatePath("/admin/courses");
         revalidatePath("/courses");
+        revalidatePath("/courses", "layout");
 
         return success({ ...newCourse, id: docRef.id });
     } catch (e: any) {
@@ -118,6 +113,9 @@ export async function updateCourse(id: string, values: CourseFormValues) {
         await updateDoc(doc(db, "courses", id), updatedCourse);
 
         revalidatePath("/admin/courses");
+        revalidatePath(`/courses/${slug}`);
+        revalidatePath("/courses", "layout");
+
 
         return success(updatedCourse);
     } catch (e: any) {
@@ -130,9 +128,19 @@ export async function deleteCourse(id: string) {
     try {
         if (!id) return error("Course ID is required.");
 
+        // We need to get the slug to revalidate the path
+        const courseDoc = await getDoc(doc(db, "courses", id));
+        if (!courseDoc.exists()) return error("Course not found.");
+        const courseSlug = courseDoc.data().slug;
+
+
         await deleteDoc(doc(db, "courses", id));
 
         revalidatePath("/admin/courses");
+        revalidatePath(`/courses/${courseSlug}`);
+        revalidatePath("/courses");
+        revalidatePath("/courses", "layout");
+
         return success();
     } catch (e: any) {
         console.error("deleteCourse ERROR:", e);
@@ -283,6 +291,15 @@ export async function updateUnit(id: string, values: UnitFormValues) {
 
         let pdfUrl = values.pdfUrl || "";
         if (values.pdfFile) {
+            // If a new file is uploaded, first delete the old one if it exists
+             const unitDoc = await getDoc(doc(db, "units", id));
+            if (unitDoc.exists()) {
+                const oldPdfUrl = unitDoc.data().pdfUrl;
+                if (oldPdfUrl && oldPdfUrl.includes("firebasestorage.googleapis.com")) {
+                    const oldPdfRef = ref(storage, oldPdfUrl);
+                    await deleteObject(oldPdfRef).catch(e => console.error("Failed to delete old PDF:", e));
+                }
+            }
             pdfUrl = await handlePdfUpload(values.pdfFile);
         }
 

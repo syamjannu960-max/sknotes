@@ -1,9 +1,11 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCourses } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
+import { slugify } from '@/lib/utils';
 
 export const metadata = {
   title: 'Courses | SKNotes',
@@ -21,13 +23,14 @@ export default async function CoursesPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {courses.map((course) => {
             const placeholder = PlaceHolderImages.find(p => p.imageUrl === course.imageUrl);
+            const imageUrl = course.imageUrl || `https://picsum.photos/seed/${slugify(course.name)}/600/400`;
             return (
               <Link href={`/courses/${course.slug}`} key={course.id} className="group block">
                 <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-1.5 border-2 border-transparent hover:border-primary">
                   <CardHeader className="p-0">
                     <div className="relative h-48 w-full">
                         <Image
-                          src={course.imageUrl}
+                          src={imageUrl}
                           alt={course.name}
                           fill
                           className="object-cover"
