@@ -36,9 +36,6 @@ export function Header() {
                 </Link>
               </Button>
             ))}
-             <Button asChild variant="ghost">
-                <Link href="/admin/login">Admin</Link>
-            </Button>
           </nav>
         </div>
       </div>
