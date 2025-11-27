@@ -246,7 +246,7 @@ img, video {
 }
 
 :root {
-  --background: 210 20% 98%;
+  --background: 0 0% 100%;
   --foreground: 0 0% 10%;
   --card: 0 0% 100%;
   --card-foreground: 0 0% 10%;
@@ -277,30 +277,30 @@ img, video {
 }
 
 .dark {
-  --background: 0 0% 4%;
+  --background: 0 0% 0%;
   --foreground: 0 0% 100%;
-  --card: 0 0% 15%;
+  --card: 0 0% 4%;
   --card-foreground: 0 0% 100%;
-  --popover: 0 0% 15%;
+  --popover: 0 0% 4%;
   --popover-foreground: 0 0% 100%;
   --primary: 0 0% 100%;
-  --primary-foreground: 0 0% 4%;
+  --primary-foreground: 0 0% 0%;
   --secondary: 0 0% 15%;
   --secondary-foreground: 0 0% 98%;
   --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 85.1%;
+  --muted-foreground: 0 0% 63%;
   --accent: 0 0% 15%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 25%;
-  --input: 0 0% 25%;
-  --ring: 0 0% 85.1%;
-  --sidebar-background: 0 0% 4%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 100%;
+  --sidebar-background: 0 0% 0%;
   --sidebar-foreground: 0 0% 98%;
   --sidebar-primary: 0 0% 98%;
   --sidebar-primary-foreground: 0 0% 4%;
-  --sidebar-accent: 0 0% 20%;
+  --sidebar-accent: 0 0% 15%;
   --sidebar-accent-foreground: 0 0% 100%;
   --sidebar-border: 0 0% 20%;
   --sidebar-ring: 0 0% 98%;
