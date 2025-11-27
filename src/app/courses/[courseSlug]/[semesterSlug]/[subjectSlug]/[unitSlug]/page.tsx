@@ -50,9 +50,6 @@ export default async function UnitPage({ params }: Props) {
                     <p className="text-base text-primary font-semibold">{subject.title}</p>
                     <h1 className="text-4xl font-bold font-headline">{unit.title}</h1>
                 </div>
-                {unit.pdfUrl && (
-                    <DownloadPdfButton pdfUrl={unit.pdfUrl} />
-                )}
             </div>
 
             <Card>
@@ -61,6 +58,12 @@ export default async function UnitPage({ params }: Props) {
                     <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: unit.chapterContent }} />
                 </CardContent>
             </Card>
+
+            {unit.pdfUrl && (
+                <div className="mt-8 flex justify-center">
+                    <DownloadPdfButton pdfUrl={unit.pdfUrl} />
+                </div>
+            )}
 
             <div className="mt-8 flex justify-between items-center">
                 {prevUnit ? (
