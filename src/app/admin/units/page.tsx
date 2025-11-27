@@ -57,13 +57,14 @@ export default function UnitsAdminPage() {
             const action = values.id ? () => updateUnit(values.id!, values) : () => addUnit(values);
             const result = await action();
 
-            if (result.success) {
-                toast({ title: `Unit ${values.id ? 'updated' : 'added'} successfully` });
-                fetchAllData();
-                setIsFormOpen(false);
-            } else {
+            if (!result.success) {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
+                return;
             }
+            
+            toast({ title: `Unit ${values.id ? 'updated' : 'added'} successfully` });
+            fetchAllData();
+            setIsFormOpen(false);
         });
     };
     
@@ -71,13 +72,15 @@ export default function UnitsAdminPage() {
         if (!selectedUnit) return;
         startSubmitting(async () => {
             const result = await deleteUnit(selectedUnit.id);
-            if (result.success) {
-                toast({ title: "Unit deleted successfully" });
-                fetchAllData();
-                setIsDeleteOpen(false);
-            } else {
+
+            if (!result.success) {
                 toast({ variant: 'destructive', title: "Error", description: result.error });
+                return;
             }
+
+            toast({ title: "Unit deleted successfully" });
+            fetchAllData();
+            setIsDeleteOpen(false);
         });
     }
     
@@ -92,16 +95,18 @@ export default function UnitsAdminPage() {
                     <TableHeader>
                         <TableRow>
                             <TableHead>Unit Title</TableHead>
+                            <TableHead>Chapter Title</TableHead>
                             <TableHead>Subject</TableHead>
                             <TableHead className="w-[100px] text-right">Actions</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {isFetching ? (
-                            <TableRow><TableCell colSpan={3} className="text-center">Loading...</TableCell></TableRow>
+                            <TableRow><TableCell colSpan={4} className="text-center">Loading...</TableCell></TableRow>
                         ) : units.map(unit => (
                             <TableRow key={unit.id}>
                                 <TableCell className="font-medium">{unit.title}</TableCell>
+                                <TableCell>{unit.chapterTitle}</TableCell>
                                 <TableCell>{getSubjectTitle(unit.subjectId)}</TableCell>
                                 <TableCell className="text-right">
                                     <Button variant="ghost" size="icon" onClick={() => openEditForm(unit)}>

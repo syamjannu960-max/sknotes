@@ -17,7 +17,9 @@ import {
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import { logout } from "@/lib/actions";
-import { useAuth } from "@/hooks/use-auth";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import Cookies from "js-cookie";
 
 const menuItems = [
     { href: "/admin/courses", label: "Courses", icon: Book },
@@ -28,7 +30,14 @@ const menuItems = [
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    useAuth(); // This hook will handle redirection
+    const router = useRouter();
+
+    useEffect(() => {
+        const session = Cookies.get('session');
+        if (!session && pathname !== '/admin/login') {
+            router.replace('/admin/login');
+        }
+    }, [pathname, router]);
 
     if (pathname === '/admin/login') {
         return <>{children}</>;
@@ -40,7 +49,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 <SidebarHeader className="group-data-[collapsible=icon]:justify-center">
                     <Link href="/admin/courses" className="flex items-center gap-2">
                         <BookOpen className="h-8 w-8 text-primary" />
-                        <span className="text-xl font-headline font-bold group-data-[collapsible=icon]:hidden">CourseNote</span>
+                        <span className="text-xl font-headline font-bold group-data-[collapsible=icon]:hidden">SKNotes</span>
                     </Link>
                 </SidebarHeader>
                 <SidebarContent>
@@ -87,7 +96,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 <header className="flex items-center justify-between md:hidden mb-4 border-b pb-4">
                     <Link href="/admin/courses" className="flex items-center gap-2">
                         <BookOpen className="h-6 w-6 text-primary" />
-                        <span className="text-lg font-headline font-bold">CourseNote</span>
+                        <span className="text-lg font-headline font-bold">SKNotes</span>
                     </Link>
                     <SidebarTrigger />
                 </header>

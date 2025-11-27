@@ -104,8 +104,8 @@ export async function getUnits(): Promise<UnitWithId[]> {
     return snapshot.docs.map(doc => ({ ...doc.data() as Unit, id: doc.id }));
 };
 
-export async function getUnitBySlug(slug:string, subjectId:string): Promise<UnitWithId | undefined> {
-    const q = query(collection(db, unitsCollection), where("slug", "==", slug), where("subjectId", "==", subjectId));
+export async function getUnitBySlug(slug:string): Promise<UnitWithId | undefined> {
+    const q = query(collection(db, unitsCollection), where("slug", "==", slug));
     const snapshot = await getDocs(q);
     if (snapshot.empty) return undefined;
     const doc = snapshot.docs[0];

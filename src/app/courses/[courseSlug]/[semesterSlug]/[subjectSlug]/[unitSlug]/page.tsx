@@ -14,9 +14,9 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
     const subject = await getSubjectBySlug(params.subjectSlug);
     if (!subject) notFound();
-    const unit = await getUnitBySlug(params.unitSlug, subject.id);
+    const unit = await getUnitBySlug(params.unitSlug);
     if (!unit) notFound();
-    return { title: `${unit.title} | ${subject.title} | CourseNote` };
+    return { title: `${unit.title} | ${subject.title} | SKNotes` };
 }
 
 export default async function UnitPage({ params }: Props) {
@@ -26,7 +26,7 @@ export default async function UnitPage({ params }: Props) {
 
     if (!course || !semester || !subject) notFound();
 
-    const unit = await getUnitBySlug(params.unitSlug, subject.id);
+    const unit = await getUnitBySlug(params.unitSlug);
     if (!unit) notFound();
 
     const allUnits = await getUnitsForSubject(subject.id);
@@ -50,14 +50,15 @@ export default async function UnitPage({ params }: Props) {
                     <p className="text-base text-primary font-semibold">{subject.title}</p>
                     <h1 className="text-4xl font-bold font-headline">{unit.title}</h1>
                 </div>
-                {subject.pdfUrl && (
-                    <DownloadPdfButton pdfUrl={subject.pdfUrl} />
+                {unit.pdfUrl && (
+                    <DownloadPdfButton pdfUrl={unit.pdfUrl} />
                 )}
             </div>
 
             <Card>
                 <CardContent className="p-6">
-                    <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: unit.content }} />
+                    <h2 className="text-2xl font-bold font-headline mb-4">{unit.chapterTitle}</h2>
+                    <div className="prose dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: unit.chapterContent }} />
                 </CardContent>
             </Card>
 

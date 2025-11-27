@@ -66,7 +66,7 @@ export default function AdminLoginPage() {
                 <CardHeader className="text-center">
                     <div className="flex justify-center items-center gap-2 mb-4">
                         <BookOpen className="h-8 w-8 text-primary" />
-                        <span className="text-2xl font-headline font-bold">CourseNote</span>
+                        <span className="text-2xl font-headline font-bold">SKNotes</span>
                     </div>
                     <CardTitle className="text-2xl font-headline">Admin Dashboard</CardTitle>
                     <CardDescription>Enter your credentials to access the admin panel</CardDescription>

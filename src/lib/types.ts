@@ -26,7 +26,9 @@ export type Unit = {
   title: string;
   slug: string;
   subjectId: string;
-  content: string; // Content for this specific unit
+  chapterTitle: string;
+  chapterContent: string; // Content for this specific unit
+  pdfUrl?: string;
 };
 
 // For breadcrumbs

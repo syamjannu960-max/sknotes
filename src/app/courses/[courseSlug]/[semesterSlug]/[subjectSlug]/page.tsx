@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
     const semester = await getSemesterBySlug(params.semesterSlug);
     const subject = await getSubjectBySlug(params.subjectSlug);
     if (!course || !semester || !subject) notFound();
-    return { title: `${subject.title} | CourseNote` };
+    return { title: `${subject.title} | SKNotes` };
 }
 
 export default async function SubjectPage({ params }: Props) {
@@ -41,14 +41,6 @@ export default async function SubjectPage({ params }: Props) {
                     <h1 className="text-4xl font-bold font-headline">{subject.title}</h1>
                     <p className="text-lg text-muted-foreground mt-2">Syllabus & Units</p>
                 </div>
-                {subject.pdfUrl && (
-                    <Button asChild className="flex-shrink-0">
-                        <a href={subject.pdfUrl} download>
-                            <Download className="mr-2 h-4 w-4" />
-                            Download Subject PDF
-                        </a>
-                    </Button>
-                )}
             </div>
 
             <Card className="mb-8">

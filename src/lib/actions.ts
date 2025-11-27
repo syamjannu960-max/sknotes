@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { slugify } from "./utils";
 import { CourseFormValues, SemesterFormValues, SubjectFormValues, UnitFormValues } from "./schemas";
-import { db } from "./firebase";
+import { db, storage } from "./firebase";
 import {
     collection,
     addDoc,
@@ -13,13 +13,21 @@ import {
     query,
     where,
     getDocs,
+    getDoc,
 } from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 // Helpers
 const success = (data?: any) => ({ success: true, data });
 const error = (message: string) => ({ success: false, error: message });
+
+async function handlePdfUpload(pdfFile: File): Promise<string> {
+    const storageRef = ref(storage, `unit-pdfs/${Date.now()}-${pdfFile.name}`);
+    await uploadBytes(storageRef, pdfFile);
+    return getDownloadURL(storageRef);
+}
 
 // ===============================
 // AUTH ACTIONS
@@ -245,9 +253,18 @@ export async function deleteSubject(id: string) {
 // ===============================
 export async function addUnit(values: UnitFormValues) {
     try {
+        let pdfUrl = values.pdfUrl || "";
+        if (values.pdfFile) {
+            pdfUrl = await handlePdfUpload(values.pdfFile);
+        }
+
         const newUnit = {
-            ...values,
+            title: values.title,
             slug: slugify(values.title),
+            subjectId: values.subjectId,
+            chapterTitle: values.chapterTitle,
+            chapterContent: values.chapterContent,
+            pdfUrl,
         };
 
         await addDoc(collection(db, "units"), newUnit);
@@ -264,9 +281,18 @@ export async function updateUnit(id: string, values: UnitFormValues) {
     try {
         if (!id) return error("Unit ID is required.");
 
-        const updatedUnit = {
-            ...values,
+        let pdfUrl = values.pdfUrl || "";
+        if (values.pdfFile) {
+            pdfUrl = await handlePdfUpload(values.pdfFile);
+        }
+
+        const updatedUnit: any = {
+            title: values.title,
             slug: slugify(values.title),
+            subjectId: values.subjectId,
+            chapterTitle: values.chapterTitle,
+            chapterContent: values.chapterContent,
+            pdfUrl,
         };
 
         await updateDoc(doc(db, "units", id), updatedUnit);
@@ -282,6 +308,15 @@ export async function updateUnit(id: string, values: UnitFormValues) {
 export async function deleteUnit(id: string) {
     try {
         if (!id) return error("Unit ID is required.");
+
+        const unitDoc = await getDoc(doc(db, "units", id));
+        if (!unitDoc.exists()) return error("Unit not found.");
+        
+        const unitData = unitDoc.data();
+        if (unitData.pdfUrl && unitData.pdfUrl.includes("firebasestorage.googleapis.com")) {
+            const pdfRef = ref(storage, unitData.pdfUrl);
+            await deleteObject(pdfRef).catch(e => console.error("Failed to delete PDF:", e));
+        }
 
         await deleteDoc(doc(db, "units", id));
 

@@ -26,7 +26,10 @@ export const unitSchema = z.object({
     id: z.string().optional(),
     title: z.string().min(5, "Unit title must be at least 5 characters long."),
     subjectId: z.string().min(1, "You must select a subject."),
-    content: z.string().min(20, "Content must be at least 20 characters long."),
+    chapterTitle: z.string().min(5, "Chapter title must be at least 5 characters long."),
+    chapterContent: z.string().min(20, "Content must be at least 20 characters long."),
+    pdfUrl: z.string().url("Must be a valid URL.").optional().or(z.literal('')),
+    pdfFile: z.instanceof(File).optional(),
 });
 export type UnitFormValues = z.infer<typeof unitSchema>;
 

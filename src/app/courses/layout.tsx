@@ -13,7 +13,7 @@ export default function CoursesLayout({
       </main>
       <footer className="bg-muted text-muted-foreground py-6 mt-12">
         <div className="container mx-auto px-4 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} CourseNote. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} SKNotes. All rights reserved.</p>
         </div>
       </footer>
     </div>

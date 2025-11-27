@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { AuthProvider } from '@/hooks/use-auth';
 
 export const metadata: Metadata = {
-  title: 'CourseNote',
+  title: 'SKNotes',
   description: 'Your modern notes-learning platform.',
 };
 

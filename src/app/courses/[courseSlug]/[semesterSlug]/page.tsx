@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props) {
     const course = await getCourseBySlug(params.courseSlug);
     const semester = await getSemesterBySlug(params.semesterSlug);
     if (!course || !semester) notFound();
-    return { title: `${course.name} - ${semester.name} | CourseNote` };
+    return { title: `${course.name} - ${semester.name} | SKNotes` };
 }
 
 export default async function SemesterPage({ params }: Props) {

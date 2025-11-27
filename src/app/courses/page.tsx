@@ -6,7 +6,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata = {
-  title: 'Courses | CourseNote',
+  title: 'Courses | SKNotes',
 };
 
 export default async function CoursesPage() {

@@ -9,7 +9,7 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
     const course = await getCourseBySlug(params.courseSlug);
     if (!course) notFound();
-    return { title: `${course.name} | CourseNote` };
+    return { title: `${course.name} | SKNotes` };
 }
 
 export default async function CoursePage({ params }: Props) {

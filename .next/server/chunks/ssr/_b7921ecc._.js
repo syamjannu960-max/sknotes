@@ -50,9 +50,9 @@ __turbopack_context__.s({
     "4070ba49f8d215e579e3d01c7ed0489e31391792c2": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCourseBySlug"]),
     "409ab19711a21088eaa2de58122a17caf371f7e1cb": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSubjectBySlug"]),
     "40d0d64e656546a8d341c5bd0d98249df68a41b983": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSemestersForCourse"]),
+    "40d4d058e635b456d28e5edff8fd9b983978d5b1ba": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"]),
     "40f6aeae9b80e91aeedd3df8013015b574a1bc033f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitsForSubject"]),
-    "608ab27ba14d46e1d6e792d3aefb1b5a24d3268005": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSubjectsForSemester"]),
-    "60d4d058e635b456d28e5edff8fd9b983978d5b1ba": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"])
+    "608ab27ba14d46e1d6e792d3aefb1b5a24d3268005": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSubjectsForSemester"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/data.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i('[project]/.next-internal/server/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/data.ts [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <locals>');
@@ -75,9 +75,9 @@ __turbopack_context__.s({
     "4070ba49f8d215e579e3d01c7ed0489e31391792c2": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["4070ba49f8d215e579e3d01c7ed0489e31391792c2"]),
     "409ab19711a21088eaa2de58122a17caf371f7e1cb": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["409ab19711a21088eaa2de58122a17caf371f7e1cb"]),
     "40d0d64e656546a8d341c5bd0d98249df68a41b983": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["40d0d64e656546a8d341c5bd0d98249df68a41b983"]),
+    "40d4d058e635b456d28e5edff8fd9b983978d5b1ba": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["40d4d058e635b456d28e5edff8fd9b983978d5b1ba"]),
     "40f6aeae9b80e91aeedd3df8013015b574a1bc033f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["40f6aeae9b80e91aeedd3df8013015b574a1bc033f"]),
-    "608ab27ba14d46e1d6e792d3aefb1b5a24d3268005": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["608ab27ba14d46e1d6e792d3aefb1b5a24d3268005"]),
-    "60d4d058e635b456d28e5edff8fd9b983978d5b1ba": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["60d4d058e635b456d28e5edff8fd9b983978d5b1ba"])
+    "608ab27ba14d46e1d6e792d3aefb1b5a24d3268005": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__["608ab27ba14d46e1d6e792d3aefb1b5a24d3268005"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i('[project]/.next-internal/server/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/data.ts [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <module evaluation>');
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$courses$2f5b$courseSlug$5d2f5b$semesterSlug$5d2f5b$subjectSlug$5d2f5b$unitSlug$5d2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$exports$3e$__ = __turbopack_context__.i('[project]/.next-internal/server/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/data.ts [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <exports>');
@@ -246,10 +246,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$user$2f
 async function generateMetadata({ params }) {
     const subject = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSubjectBySlug"])(params.subjectSlug);
     if (!subject) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
-    const unit = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"])(params.unitSlug, subject.id);
+    const unit = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"])(params.unitSlug);
     if (!unit) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     return {
-        title: `${unit.title} | ${subject.title} | CourseNote`
+        title: `${unit.title} | ${subject.title} | SKNotes`
     };
 }
 async function UnitPage({ params }) {
@@ -257,7 +257,7 @@ async function UnitPage({ params }) {
     const semester = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSemesterBySlug"])(params.semesterSlug);
     const subject = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getSubjectBySlug"])(params.subjectSlug);
     if (!course || !semester || !subject) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
-    const unit = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"])(params.unitSlug, subject.id);
+    const unit = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitBySlug"])(params.unitSlug);
     if (!unit) (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     const allUnits = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUnitsForSubject"])(subject.id);
     const currentIndex = allUnits.findIndex((u)=>u.id === unit.id);
@@ -321,8 +321,8 @@ async function UnitPage({ params }) {
                         lineNumber: 49,
                         columnNumber: 17
                     }, this),
-                    subject.pdfUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$user$2f$DownloadPdfButton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["DownloadPdfButton"], {
-                        pdfUrl: subject.pdfUrl
+                    unit.pdfUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$user$2f$DownloadPdfButton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["DownloadPdfButton"], {
+                        pdfUrl: unit.pdfUrl
                     }, void 0, false, {
                         fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
                         lineNumber: 54,
@@ -337,17 +337,27 @@ async function UnitPage({ params }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
                     className: "p-6",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "prose dark:prose-invert max-w-none",
-                        dangerouslySetInnerHTML: {
-                            __html: unit.content
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                        lineNumber: 60,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-2xl font-bold font-headline mb-4",
+                            children: unit.chapterTitle
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
+                            lineNumber: 60,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "prose dark:prose-invert max-w-none",
+                            dangerouslySetInnerHTML: {
+                                __html: unit.chapterContent
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
+                            lineNumber: 61,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
                     lineNumber: 59,
                     columnNumber: 17
@@ -370,7 +380,7 @@ async function UnitPage({ params }) {
                                     className: "mr-2 h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 29
                                 }, this),
                                 " Prev: ",
@@ -378,16 +388,16 @@ async function UnitPage({ params }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 68,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                        lineNumber: 66,
+                        lineNumber: 67,
                         columnNumber: 21
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                         fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                        lineNumber: 71,
+                        lineNumber: 72,
                         columnNumber: 21
                     }, this),
                     nextUnit ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -403,28 +413,28 @@ async function UnitPage({ params }) {
                                     className: "ml-2 h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 76,
                                     columnNumber: 52
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                            lineNumber: 74,
+                            lineNumber: 75,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                        lineNumber: 73,
+                        lineNumber: 74,
                         columnNumber: 21
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                         fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                        lineNumber: 78,
+                        lineNumber: 79,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.tsx",
-                lineNumber: 64,
+                lineNumber: 65,
                 columnNumber: 13
             }, this)
         ]

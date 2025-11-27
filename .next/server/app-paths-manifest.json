@@ -1,8 +1,6 @@
 {
   "/admin/courses/page": "app/admin/courses/page.js",
   "/admin/login/page": "app/admin/login/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/subjects/page": "app/admin/subjects/page.js",
   "/admin/units/page": "app/admin/units/page.js",
   "/api/courses/route": "app/api/courses/route.js",
   "/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page": "app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.js",
