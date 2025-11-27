@@ -1,6 +1,5 @@
 {
   "/api/courses/route": "app/api/courses/route.js",
-  "/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page": "app/courses/[courseSlug]/[semesterSlug]/[subjectSlug]/[unitSlug]/page.js",
   "/courses/page": "app/courses/page.js",
   "/page": "app/page.js"
 }
