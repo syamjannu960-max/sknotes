@@ -8,6 +8,9 @@ export async function GET() {
     const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
     return NextResponse.json({ success: true, data });
   } catch (e) {
-    return NextResponse.json({ success: false, error: e.message }, { status: 500 });
+    if (e instanceof Error) {
+        return NextResponse.json({ success: false, error: e.message }, { status: 500 });
+    }
+    return NextResponse.json({ success: false, error: "An unknown error has occurred." }, { status: 500 });
   }
 }
