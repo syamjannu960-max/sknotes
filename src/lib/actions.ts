@@ -42,15 +42,20 @@ export async function handleAdminLogin(prevState: any, formData: FormData) {
             return { success: false, message: "Username and password are required." };
         }
 
-        // For demo purposes, we're not querying a real DB.
-        // In a real app, you'd query your 'users' collection here.
-        if (username === "admin" && password === "password") {
+        const usersRef = collection(db, "users");
+        const q = query(usersRef, where("username", "==", username), where("password", "==", password));
+        const querySnapshot = await getDocs(q);
+
+
+        if (!querySnapshot.empty) {
+            // In a real app, you'd want to use a more secure session management system.
+            // For this demo, we'll set a simple cookie.
             const cookieStore = await cookies();
             cookieStore.set(
                 "session",
                 JSON.stringify({
-                    username: "admin",
-                    isAdmin: true,
+                    username: username,
+                    isAdmin: true, // You might have a role field in your user document
                 }),
                 {
                     secure: process.env.NODE_ENV === "production",

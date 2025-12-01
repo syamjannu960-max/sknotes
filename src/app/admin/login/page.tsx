@@ -1,8 +1,8 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useFormStatus } from 'react-dom';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useTransition } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { handleAdminLogin } from '@/lib/actions';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -37,7 +37,7 @@ function SubmitButton() {
 export default function AdminLoginPage() {
     const router = useRouter();
     const { toast } = useToast();
-    const [state, formAction] = useFormState(handleAdminLogin, initialState);
+    const [state, formAction] = useActionState(handleAdminLogin, initialState);
 
     useEffect(() => {
         if (state.success) {
@@ -81,7 +81,6 @@ export default function AdminLoginPage() {
                                 type="text"
                                 placeholder="admin"
                                 required
-                                defaultValue="admin"
                             />
                         </div>
                         <div className="space-y-2">
@@ -91,7 +90,6 @@ export default function AdminLoginPage() {
                                 name="password"
                                 type="password"
                                 required
-                                defaultValue="password"
                             />
                         </div>
                         <SubmitButton />
@@ -99,7 +97,7 @@ export default function AdminLoginPage() {
                 </CardContent>
                 <CardFooter>
                     <p className="text-xs text-muted-foreground text-center w-full">
-                        For this demo, use username <strong>admin</strong> and password <strong>password</strong>.
+                        Login with the credentials stored in your 'users' collection.
                     </p>
                 </CardFooter>
             </Card>
